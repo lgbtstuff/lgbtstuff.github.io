@@ -1,2 +1,1 @@
-p.content < "Hello World! This is red!"
-<img src="logo.png" alt="Logo" style="width:500px;height:500px;>
+p.content < <img src="logo.png" alt="Logo" style="width:500px;height:500px;>
