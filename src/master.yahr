@@ -1,0 +1,10 @@
+option(name: "out-dir") < "../"
+option(name: "embed-css") < "true"
+
+defaults
+    fragment(name: "main") < "frag/main.frag"
+    css(name: "main") < "css/main.css"
+    alias(name: "title") < "Replace me!"
+
+page(path: "index.page")
+  alias(name: "title") < "Home page!"
