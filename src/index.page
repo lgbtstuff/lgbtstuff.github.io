@@ -1,2 +1,2 @@
 p.content < "Hello World! This is red!"
-<img src="https://github.com/lgbtstuff/lgbtstuff.github.io.git/logo.png" alt="Logo">
+<img src="logo.png" alt="Logo" style="width:500px;height:500px;>
