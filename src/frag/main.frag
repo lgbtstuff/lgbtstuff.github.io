@@ -9,4 +9,5 @@ body
         img
             src: "logo.png"
             alt: "Logo"
-            style: "width:500px;height:500px;"
+            width: "500"
+            height: "500"
