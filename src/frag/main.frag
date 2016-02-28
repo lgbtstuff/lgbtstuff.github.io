@@ -5,9 +5,8 @@ body
     div
         #[content]
 
-    p.header
-        img
-            src: "logo.png"
-            alt: "Logo"
-            width: "500"
-            height: "500"
+    header < img
+        src: "logo.png"
+        alt: "Logo"
+        width: "500"
+        height: "500"
