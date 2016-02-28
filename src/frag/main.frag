@@ -1,12 +1,14 @@
 head
-    title < "#[alias title] || DonOfAnne"
+    title < "#[alias title]"
 
 body
     div
         #[content]
 
-    header < img
-        src: "logo.png"
-        alt: "Logo"
-        width: "500"
-        height: "500"
+    header
+        "Hello everybody!"
+        img
+            src: "logo.png"
+            alt: "Logo"
+            width: "500"
+            height: "500"
