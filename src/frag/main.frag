@@ -5,10 +5,9 @@ body
     div
         #[content]
 
-    header
+    p.header
         "Hello everybody!"
         img
             src: "logo.png"
             alt: "Logo"
-            width: "500"
-            height: "500"
+            style: "height: 500px; width: 500px;"
