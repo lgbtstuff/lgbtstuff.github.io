@@ -6,8 +6,8 @@ body
         #[content]
 
     p.header
-        "Hello everybody!"
+        "Hello!"
         img
-            src: "logo.png"
+            src: "images/logo.png/"
             alt: "Logo"
             style: "height: 500px; width: 500px;"
