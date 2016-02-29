@@ -8,6 +8,6 @@ body
     p.header
         "Hello!"
         img
-            src: "images\logo.png\"
+            src: "images\logo.png"
             alt: "Logo"
             style: "height: 500px; width: 500px;"
