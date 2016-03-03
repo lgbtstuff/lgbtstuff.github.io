@@ -2,4 +2,24 @@ body {background-color: lightblue;}
 p.content { color: red; }
 p.header { color: black; }
 
+/*
+* The nav menu
+*/
+
+/* Move the menu to the right */
+ul#nav { padding: 2; }
+
+/* Make it a horizontal list */
 ul#nav li { display:inline; }
+
+/* Hyperlink Colors and styling*/
+ul#nav li a
+{
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px;
+}
+ul#nav li a:hover, ul#nav li a:active
+{
+	color: pink;
+}
