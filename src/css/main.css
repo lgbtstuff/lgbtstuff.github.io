@@ -5,17 +5,8 @@ body
 
 p.header
 {
-	background-image: url("images/rainbow.jpg");
-	background-color: white;
+	background: white url("images/rainbow.jpg") no-repeat fixed left center;
 	color: black;
-}
-
-p.content
-{ 
-	background-image: url("images/rainbow.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
 }
 
 /*
@@ -34,7 +25,7 @@ ul#nav li a
 	text-decoration: none;
 	color: black;
 	transition: color 0.2s ease;
-	padding: 10px 2px;
+	padding: 2px 20px;
 	font-size: 60%;
 }
 ul#nav li a:hover
