@@ -1,2 +1,5 @@
 body {background-color: lightblue;}
 p.content { color: red; }
+p.header { color: black; }
+
+ul#nav li { display:inline; }
