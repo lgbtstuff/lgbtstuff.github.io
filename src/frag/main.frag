@@ -7,7 +7,7 @@ body
             li < a(href: "index.html") < img
                 src: "images\logo.png"
                 alt: "Logo"
-                style: "height: 60px; width: 60px;"
+                style: "height: 150px; width: 150px;"
             li < a(href: "index.html") < "Home"
             li < a(href: "dictionary.html") < "Dictionary"
             li < a(href: "history.html") < "LGBT History"
