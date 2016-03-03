@@ -1,3 +1,8 @@
+body
+{
+	background-color: lightblue;
+}
+
 p.header
 {
 	background-image: url("images/rainbow.jpg");
@@ -11,15 +16,14 @@ p.content
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
-	background-color: lightblue;
 }
 
 /*
 * The nav menu
 */
 
-/* Move the menu almost all the way to the left */
-ul#nav { padding: 2; }
+/* Move the menu slightly to the right */
+ul#nav { padding: 3; }
 
 /* Make it a horizontal list */
 ul#nav li { display:inline; }
@@ -29,8 +33,9 @@ ul#nav li a
 {
 	text-decoration: none;
 	color: black;
-	padding: 10px 20px;
-	font-size: 100%;
+	transition: color 0.2s ease;
+	padding: 10px 2px;
+	font-size: 60%;
 }
 ul#nav li a:hover
 {
