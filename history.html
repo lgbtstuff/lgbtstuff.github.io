@@ -17,12 +17,6 @@
             	background: white url("images/rainbow.png") no-repeat fixed top left;
             }
             
-            p.header
-            {
-            	margin: 0px;
-            	color: black;
-            }
-            
             /*
             * The nav menu
             */
@@ -35,7 +29,11 @@
             }
             
             /* Make nav a horizontal list */
-            ul#nav li { display:inline; }
+            ul#nav li
+            {
+            	display:inline;
+            	font-size: 20;
+            }
             
             /* Hyperlink Colors and styling*/
             ul#nav li a
@@ -60,45 +58,41 @@
         </style>
     </head>
     <body>
-        <p class="header">
-            <nav>
-                <font size="60%">
-                    <ul id="nav" style="list-style-type:none">
-                        <li>
-                            <a href="index.html">
-                                <img src="images\logo.png" alt="Logo" style="height: 150px; width: 150px;">
-                                </img>
-                           </a>
-                        </li>
-                        <li>
-                            <a href="index.html">
-                                Home
-                           </a>
-                        </li>
-                        <li>
-                            <a href="dictionary.html">
-                                Dictionary
-                           </a>
-                        </li>
-                        <li>
-                            <a href="history.html">
-                                LGBT History
-                           </a>
-                        </li>
-                        <li>
-                            <a href="help.html">
-                                Help Resources
-                           </a>
-                        </li>
-                        <li>
-                            <a href="map.html">
-                                Legislation Map
-                           </a>
-                        </li>
-                    </ul>
-                </font>
-            </nav>
-        </p>
+        <nav>
+            <ul id="nav" style="list-style-type:none">
+                <li>
+                    <a href="index.html">
+                        <img src="images\logo.png" alt="Logo" style="height: 150px; width: 150px;">
+                        </img>
+                   </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        Home
+                   </a>
+                </li>
+                <li>
+                    <a href="dictionary.html">
+                        Dictionary
+                   </a>
+                </li>
+                <li>
+                    <a href="history.html">
+                        LGBT History
+                   </a>
+                </li>
+                <li>
+                    <a href="help.html">
+                        Help Resources
+                   </a>
+                </li>
+                <li>
+                    <a href="map.html">
+                        Legislation Map
+                   </a>
+                </li>
+            </ul>
+        </nav>
         <div>
             <p class="content">
                 This is the history!

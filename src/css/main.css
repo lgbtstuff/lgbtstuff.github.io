@@ -10,12 +10,6 @@ nav
 	background: white url("images/rainbow.png") no-repeat fixed top left;
 }
 
-p.header
-{
-	margin: 0px;
-	color: black;
-}
-
 /*
 * The nav menu
 */
@@ -28,7 +22,11 @@ ul#nav
 }
 
 /* Make nav a horizontal list */
-ul#nav li { display:inline; }
+ul#nav li
+{
+	display:inline;
+	font-size: 20;
+}
 
 /* Hyperlink Colors and styling*/
 ul#nav li a
