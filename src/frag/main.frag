@@ -3,7 +3,7 @@ head
 
 body
     p.header
-        nav < font(size: "20")
+        nav < font(size: "15")
             ul#nav(style: "list-style-type:none")
                 li < a(href: "index.html") < img
                     src: "images\logo.png"
