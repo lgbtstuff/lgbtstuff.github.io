@@ -7,7 +7,7 @@ p.header { color: black; }
 */
 
 /* Move the menu to the right */
-ul#nav { padding: 2; }
+ul#nav { padding: 0; }
 
 /* Make it a horizontal list */
 ul#nav li { display:inline; }
@@ -21,5 +21,5 @@ ul#nav li a
 }
 ul#nav li a:hover, ul#nav li a:active
 {
-	color: pink;
+	color: gray;
 }
