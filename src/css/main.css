@@ -7,7 +7,7 @@ body
 nav
 {
 	margin: 0px;
-	background: white url("images/rainbow.jpg") no-repeat fixed left center;
+	background: white url("images/rainbow.jpg") repeat-x fixed left center;
 }
 
 p.header
@@ -37,7 +37,7 @@ ul#nav li a
 	color: black;
 	transition: color 0.2s ease;
 	padding: 2px 20px;
-	font-size: 60%;
+	font-size: 30;
 }
 ul#nav li a:hover
 {
@@ -49,4 +49,5 @@ ul#nav li a:hover
 p.content
 {
 	color: black;
+	margin: 15px;
 }
