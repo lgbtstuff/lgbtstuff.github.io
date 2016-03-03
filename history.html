@@ -19,7 +19,6 @@
             p.header
             {
             	margin-top: 2px;
-            	background: white url("images/rainbow.jpg") no-repeat fixed left center;
             	color: black;
             }
             
@@ -27,8 +26,13 @@
             * The nav menu
             */
             
-            /* Move the menu slightly to the right */
-            ul#nav { padding: 0; }
+            /* Remove margins and padding for the menu */
+            ul#nav
+            {
+            	padding: 0;
+            	margin: 0;
+            	background: white url("images/rainbow.jpg") no-repeat fixed left center;
+            }
             
             /* Make it a horizontal list */
             ul#nav li { display:inline; }
