@@ -37,7 +37,7 @@ ul#nav li a
 	color: black;
 	transition: color 0.2s ease;
 	padding: 2px 20px;
-	font-size: 30;
+	font-size: 20;
 }
 ul#nav li a:hover
 {

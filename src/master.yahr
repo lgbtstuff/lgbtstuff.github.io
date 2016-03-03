@@ -6,9 +6,7 @@ defaults
     css(name: "main") < "css/main.css"
     alias(name: "title") < "Replace me!"
 
-page(path: "index.page")
-  alias(name: "title") < "Home"
-
+page(path: "index.page") < alias(name: "title") < "Home"
 page(path: "dictionary.page") < alias(name: "title") < "Dictionary"
 page(path: "history.page") < alias(name: "title") < "LGBT History"
 page(path: "help.page") < alias(name: "title") < "Help Resources"
