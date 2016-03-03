@@ -1,13 +1,22 @@
-body {background-color: lightblue;}
-p.content { color: red; }
-p.header { color: black; }
+body
+{ 
+	background-image: url("images/rainbow.jpg");
+	background-color: lightblue;
+}
+
+p.header
+{
+	background-image: url("images/rainbow.jpg");
+	background-color: white;
+	color: black;
+}
 
 /*
 * The nav menu
 */
 
-/* Move the menu to the right */
-ul#nav { padding: 0; }
+/* Move the menu almost all the way to the left */
+ul#nav { padding: 2; }
 
 /* Make it a horizontal list */
 ul#nav li { display:inline; }
@@ -18,8 +27,16 @@ ul#nav li a
 	text-decoration: none;
 	color: black;
 	padding: 10px 20px;
+	font-size: 250%;
 }
-ul#nav li a:hover, ul#nav li a:active
+ul#nav li a:hover
 {
-	color: gray;
+	color: darkgray;
+	transition: color 0.2s ease;
+}
+
+/* The actual content of each page */
+p.content
+{
+	color: darkgray;
 }

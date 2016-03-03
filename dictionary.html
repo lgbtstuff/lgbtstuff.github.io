@@ -5,16 +5,25 @@
             LGBT  - Dictionary
         </title>
         <style>
-            body {background-color: lightblue;}
-            p.content { color: red; }
-            p.header { color: black; }
+            body
+            { 
+            	background-image: url("images/rainbow.jpg");
+            	background-color: lightblue;
+            }
+            
+            p.header
+            {
+            	background-image: url("images/rainbow.jpg");
+            	background-color: white;
+            	color: black;
+            }
             
             /*
             * The nav menu
             */
             
-            /* Move the menu to the right */
-            ul#nav { padding: 0; }
+            /* Move the menu almost all the way to the left */
+            ul#nav { padding: 2; }
             
             /* Make it a horizontal list */
             ul#nav li { display:inline; }
@@ -25,49 +34,59 @@
             	text-decoration: none;
             	color: black;
             	padding: 10px 20px;
+            	font-size: 250%;
             }
-            ul#nav li a:hover, ul#nav li a:active
+            ul#nav li a:hover
             {
-            	color: gray;
+            	color: darkgray;
+            	transition: color 0.2s ease;
+            }
+            
+            /* The actual content of each page */
+            p.content
+            {
+            	color: darkgray;
             }
         </style>
     </head>
     <body>
         <p class="header">
             <nav>
-                <ul id="nav" style="list-style-type:none">
-                    <li>
-                        <a href="index.html">
-                            <img src="images\logo.png" alt="Logo" style="height: 150px; width: 150px;">
-                            </img>
-                       </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            Home
-                       </a>
-                    </li>
-                    <li>
-                        <a href="dictionary.html">
-                            Dictionary
-                       </a>
-                    </li>
-                    <li>
-                        <a href="history.html">
-                            LGBT History
-                       </a>
-                    </li>
-                    <li>
-                        <a href="help.html">
-                            Help Resources
-                       </a>
-                    </li>
-                    <li>
-                        <a href="map.html">
-                            Legislation Map
-                       </a>
-                    </li>
-                </ul>
+                <font size="20">
+                    <ul id="nav" style="list-style-type:none">
+                        <li>
+                            <a href="index.html">
+                                <img src="images\logo.png" alt="Logo" style="height: 150px; width: 150px;">
+                                </img>
+                           </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                Home
+                           </a>
+                        </li>
+                        <li>
+                            <a href="dictionary.html">
+                                Dictionary
+                           </a>
+                        </li>
+                        <li>
+                            <a href="history.html">
+                                LGBT History
+                           </a>
+                        </li>
+                        <li>
+                            <a href="help.html">
+                                Help Resources
+                           </a>
+                        </li>
+                        <li>
+                            <a href="map.html">
+                                Legislation Map
+                           </a>
+                        </li>
+                    </ul>
+                </font>
             </nav>
         </p>
         <div>
