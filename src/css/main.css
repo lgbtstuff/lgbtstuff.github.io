@@ -14,7 +14,7 @@ p.header
 */
 
 /* Move the menu slightly to the right */
-ul#nav { padding: 3; }
+ul#nav { padding: 0; }
 
 /* Make it a horizontal list */
 ul#nav li { display:inline; }
