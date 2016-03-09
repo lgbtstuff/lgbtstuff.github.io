@@ -9,6 +9,7 @@ nav
 {
 	margin: 0px;
 	background: white url("images/rainbow.png") no-repeat fixed top left;
+	background-size: contain;
 	font-size: 1.5em;
 	font-family: Quicksand, sans-serif; 
 }
