@@ -2,13 +2,15 @@ body
 {
 	margin: 0px;
 	background-color: lightblue;
+	font-size: 100%;
 }
 
 nav
 {
 	margin: 0px;
 	background: white url("images/rainbow.png") no-repeat fixed top left;
-	font-size: 40;
+	font-size: 2.5em;
+	font-family: Quicksand, "Times New Roman", sans-serif; 
 }
 
 /*
