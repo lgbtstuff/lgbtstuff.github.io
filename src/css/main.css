@@ -8,6 +8,7 @@ nav
 {
 	margin: 0px;
 	background: white url("images/rainbow.png") no-repeat fixed top left;
+	font-size: 40;
 }
 
 /*
@@ -19,7 +20,6 @@ ul#nav
 {
 	padding: 0;
 	margin: auto;
-	font-size: 40;
 }
 
 /* Make nav a horizontal list */
