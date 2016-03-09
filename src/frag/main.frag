@@ -1,5 +1,9 @@
 head
-    title < "LGBT  - #[alias title]"
+    title < "LGBT - #[alias title]"
+    link
+        href: "https://fonts.googleapis.com/css?family=Quicksand"
+        rel: "stylesheet"
+        type: "text/css"
 
 body
     nav
