@@ -19,13 +19,13 @@ ul#nav
 {
 	padding: 0;
 	margin: auto;
+	font-size: 40;
 }
 
 /* Make nav a horizontal list */
 ul#nav li
 {
 	display:inline;
-	font-size: 40;
 }
 
 /* Hyperlink Colors and styling*/
