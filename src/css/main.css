@@ -38,6 +38,7 @@ ul#nav li
 /* Hyperlink Colors and styling*/
 ul#nav li a
 {
+	color: black;
 	text-decoration: none;
 	transition: background 0.4s linear;
 	padding: 0.125em 1.25em;
