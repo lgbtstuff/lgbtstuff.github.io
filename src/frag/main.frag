@@ -11,8 +11,7 @@ head
 body
     nav
         ul#nav(style: "list-style-type:none")
-            li < a(href: "index.html") < img
-                id: "logo"
+            li.logo < a(href: "index.html") < img
                 src: "images\logo.png"
                 alt: "Logo"
                 style: "height: 150px; width: 150px;"
