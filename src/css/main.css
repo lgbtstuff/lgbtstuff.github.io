@@ -24,7 +24,7 @@ nav
 /* Horizontally center and remove padding from the menu */
 ul#nav
 {
-	padding: 10%;
+	padding-left: 10%;
 	margin: auto;
 }
 
