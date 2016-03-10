@@ -40,16 +40,15 @@ ul#nav li a
 	font-size: 1em;
 	font-family: Quicksand, sans-serif;
 	text-decoration: none;
-	padding: 0.125em 1.25em;
-	transition: padding 0.4s ease;
-	transition: font-size 0.4s ease;
+	padding: 0.25em 1.25em;
+	transition: padding 2s ease;
+	transition: font-size 2s ease;
 }
 
 ul#nav li:not(.logo) a:hover
 {
-	text-decoration: underline;
-	padding: 0.125em 2em;
-	font-size: 2em;
+	padding: 0em 2em;
+	font-size: 1.5em;
 }
 
 /* If the browser width is real small, add a scroll bar to the nav */
