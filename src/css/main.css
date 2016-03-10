@@ -54,6 +54,7 @@ ul#nav li a:hover
 {
 	nav
 	{
+		max-height: 7em;
 		overflow-x: scroll;
 	}
 }
