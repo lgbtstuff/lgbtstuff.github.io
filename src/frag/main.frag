@@ -6,9 +6,9 @@ head
         type: "text/css"
 
 body
-    div(id: "nav")
+    nav
         ul#nav(style: "list-style-type:none")
-            li < a(href: "index.html") < img
+            li < a(href: "index.html") < img.logo
                 src: "images\logo.png"
                 alt: "Logo"
                 style: "height: 150px; width: 150px;"
@@ -17,5 +17,5 @@ body
             li < a(href: "history.html") < "LGBT History"
             li < a(href: "help.html") < "Help Resources"
             li < a(href: "map.html") < "Legislation Map"
-    div(id: "content")
+    section
         #[content]
