@@ -24,7 +24,7 @@ nav
 /* Horizontally center and remove padding from the menu */
 ul#nav
 {
-	padding-left: 10%;
+	padding-left: 5%;
 	margin: auto;
 }
 
@@ -50,7 +50,7 @@ ul#nav li a:hover
 }
 
 /* If the browser width is real small, add a scroll bar to the nav */
-@media only screen and ( max-width: 600px )
+@media only screen and ( max-width: 1250px )
 {
 	nav
 	{
