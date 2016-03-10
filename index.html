@@ -56,8 +56,10 @@
             
             ul#nav li a:hover
             {
-            	background: radial-gradient(darkgray, rgba(0,0,0,0));
+            	background: radial-gradient(darkgray 10%, rgba(0,0,0,0) 90%);
+            	color: white;
             	transition: color 0.2s ease;
+            	transition: background 0.2s ease;
             }
             
             /* If the browser width is real small, add a scroll bar to the nav */
@@ -67,6 +69,9 @@
             	{
             		max-height: 7.5em;
             		overflow-x: scroll;
+            		white-space: nowrap;
+            		background: white url("images/rainbow.png") no-repeat fixed top left;
+            		background-size: auto, 6.5em;
             	}
             }
             
