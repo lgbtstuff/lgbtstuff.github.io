@@ -13,7 +13,7 @@ nav
 	max-height: 6.5em;
 	background: white url("images/rainbow.png") no-repeat fixed top left;
 	background-size: auto, 6.5em;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-family: Quicksand, sans-serif;
 }
 
@@ -39,20 +39,23 @@ ul#nav li a
 {
 	text-decoration: none;
 	color: black;
+	/* For the sake of transitioning back no background */
+	background-color: rgba(0,0,0,0);
 	transition: color 0.2s ease;
+	transition: background 0.5s ease;
 	padding: 2px 20px;
 }
 
 ul#nav li a:hover
 {
-	background: radial-gradient(darkgray 10%, rgba(0,0,0,0) 90%);
-	color: white;
+	background: radial-gradient(gray 5%, rgba(0,0,0,0) 95%);
+	color: lightgray;
 	transition: color 0.2s ease;
-	transition: background 0.2s ease;
+	transition: background-color 0.5s ease;
 }
 
 /* If the browser width is real small, add a scroll bar to the nav */
-@media only screen and ( max-width: 1250px )
+@media only screen and ( max-width: 1245px )
 {
 	nav
 	{
