@@ -32,9 +32,7 @@ ul#nav
 /* Make nav a horizontal list */
 ul#nav li
 {
-	background: rgba( 255, 255, 255, 1);
 	display:inline;
-	transition: background 0.4s ease;
 }
 
 /* Hyperlink Colors and styling*/
@@ -43,6 +41,8 @@ ul#nav li a
 	color: black;
 	text-decoration: none;
 	padding: 0.125em 1.25em;
+	background: rgba( 255, 255, 255, 1);
+	transition: background 0.4s ease;
 }
 
 ul#nav li:not(.logo) a:hover
