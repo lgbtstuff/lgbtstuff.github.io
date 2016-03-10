@@ -32,23 +32,23 @@ ul#nav
 /* Make nav a horizontal list */
 ul#nav li
 {
-	opacity: 0;
+	background: rgba( 255, 255, 255, 1);
 	display:inline;
-	transition: opacity 0.4s ease;
+	transition: background 0.4s ease;
 }
 
 /* Hyperlink Colors and styling*/
 ul#nav li a
 {
-	opacity: 1;
 	color: black;
 	text-decoration: none;
 	padding: 0.125em 1.25em;
 }
 
-ul#nav li:not(.logo):hover
+ul#nav li:not(.logo) a:hover
 {
 	background: radial-gradient(closest-side, lightblue, transparent );
+	background: rgba( 255, 255, 255, 0 );
 }
 
 /* If the browser width is real small, add a scroll bar to the nav */
