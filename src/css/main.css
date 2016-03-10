@@ -13,8 +13,6 @@ nav
 	max-height: 10em;
 	background: white url("images/rainbow.png") no-repeat fixed top left;
 	background-size: auto, 6.5em;
-	font-size: 1em;
-	font-family: Quicksand, sans-serif;
 	box-shadow: 0em 0.3em 0.3em rgba( 0, 0, 0, 0.2 );
 }
 
@@ -39,16 +37,19 @@ ul#nav li
 ul#nav li a
 {
 	color: black;
+	font-size: 1em;
+	font-family: Quicksand, sans-serif;
 	text-decoration: none;
 	padding: 0.125em 1.25em;
-	background: rgba( 255, 255, 255, 1);
-	transition: background 0.4s ease;
+	transition: padding 0.4s ease;
+	transition: font-size 0.4s ease;
 }
 
 ul#nav li:not(.logo) a:hover
 {
-	background: radial-gradient(closest-side, lightblue, transparent );
-	background: rgba( 255, 255, 255, 0 );
+	text-decoration: underline;
+	padding: 0.125em 2em;
+	font-size: 2em;
 }
 
 /* If the browser width is real small, add a scroll bar to the nav */
