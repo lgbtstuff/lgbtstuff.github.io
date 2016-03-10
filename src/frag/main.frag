@@ -4,6 +4,9 @@ head
         href: "https://fonts.googleapis.com/css?family=Quicksand"
         rel: "stylesheet"
         type: "text/css"
+    link
+        rel: "icon"
+        href: "images\logo.png"
 
 body
     nav

@@ -45,7 +45,7 @@ ul#nav li a
 
 ul#nav li a:hover
 {
-	color: darkgray;
+	background: radial-gradient(darkgray, rgba(0,0,0,0));
 	transition: color 0.2s ease;
 }
 
@@ -54,7 +54,7 @@ ul#nav li a:hover
 {
 	nav
 	{
-		max-height: 7em;
+		max-height: 7.5em;
 		overflow-x: scroll;
 	}
 }
