@@ -11,7 +11,7 @@
         <style>
             body
             {
-            	margin: 0px;
+            	margin: 0;
             	width: 100%;
             	background-color: lightblue;
             	font-size: 16px;
@@ -19,7 +19,7 @@
             
             nav
             {
-            	margin: 0px;
+            	margin: 0;
             	width: 100%;
             	max-height: 10em;
             	background: white url("images/rainbow.png") no-repeat fixed top left;
@@ -50,23 +50,18 @@
             ul#nav li a
             {
             	text-decoration: none;
-            	color: black;
-            	transition: color 0.4s ease;
-            	/* For the sake of transitioning back no background */
-            	background-color: rgba( 0, 0, 0, 0 );
             	transition: background 0.4s linear;
             	padding: 0.125em 1.25em;
             }
             
             ul#nav li:not(.logo) a:hover
             {
-            	color: rgba( 0, 0, 0, 0.2 );
             	transition: color 0.4s ease;
             	background: radial-gradient(closest-side, lightblue, transparent );
             }
             
             /* If the browser width is real small, add a scroll bar to the nav */
-            @media only screen and ( max-width: 1245px )
+            @media only screen and ( max-width: 900px )
             {
             	nav
             	{
@@ -81,7 +76,7 @@
             p.content
             {
             	color: black;
-            	margin: 15px;
+            	margin: 1em;
             }
         </style>
     </head>
