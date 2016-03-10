@@ -12,7 +12,7 @@ nav
 	width: 100%;
 	max-height: 6.5em;
 	background: white url("images/rainbow.png") no-repeat fixed top left;
-	background-size: auto, 10%;
+	background-size: auto, 6.5em;
 	font-size: 1.5em;
 	font-family: Quicksand, sans-serif;
 }
