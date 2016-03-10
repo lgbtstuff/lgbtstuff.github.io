@@ -5,7 +5,7 @@ body
 	font-size: 100%;
 }
 
-nav
+#nav
 {
 	margin: 0px;
 	background: white url("images/rainbow.png") no-repeat fixed top left;
