@@ -24,6 +24,7 @@
             	background-size: auto, 6.5em;
             	font-size: 1.5em;
             	font-family: Quicksand, sans-serif;
+            	white-space: nowrap;
             }
             
             /*
@@ -33,7 +34,7 @@
             /* Horizontally center and remove padding from the menu */
             ul#nav
             {
-            	padding: 0;
+            	padding: 10%;
             	margin: auto;
             }
             
@@ -51,10 +52,20 @@
             	transition: color 0.2s ease;
             	padding: 2px 20px;
             }
+            
             ul#nav li a:hover
             {
             	color: darkgray;
             	transition: color 0.2s ease;
+            }
+            
+            /* If the browser width is real small, add a scroll bar to the nav */
+            @media only screen and ( max-width: 600px )
+            {
+            	nav
+            	{
+            		overflow-x: scroll;
+            	}
             }
             
             /* The actual content of each page */
