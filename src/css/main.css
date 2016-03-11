@@ -47,7 +47,7 @@ ul#nav li a
 ul#nav li:not(.logo) a:hover
 {
 	font-size: 1.25em;
-	padding: 0em 1.25em;
+	padding: -0.5em 1.25em;
 }
 
 /* If the browser width is real small, add a scroll bar to the nav */
