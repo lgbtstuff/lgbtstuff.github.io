@@ -3,7 +3,7 @@ body
 	margin: 0;
 	width: 100%;
 	background-color: lightblue;
-	background-image: url("images/hexagon_topRight.png"), url("images/hexagon_bottomLeft.png");
+	background-image: url("images/hexagon_topRight.png"), url("images/hexagon_lowerLeft.png");
 	background-repeat: no-repeat, no-repeat;
 	background-attachment: scroll, scroll;
 	background-position: top right, bottom left;
