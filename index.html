@@ -14,8 +14,10 @@
             	margin: 0;
             	width: 100%;
             	background-color: lightblue;
-            	background: url("images/hexagon_topRight.png") no-repeat scroll right bottom,
-            				url("images/hexagon_bottomLeft.png") no-repeat scroll top left;
+            	background-image: url("images/hexagon_topRight.png"), url("images/hexagon_bottomLeft.png");
+            	background-repeat: no-repeat, no-repeat;
+            	background-attachment: scroll, scroll;
+            	background-position: top right, bottom left;
             	font-size: 16px;
             }
             
