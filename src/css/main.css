@@ -10,7 +10,7 @@ body
 	font-size: 16px;
 }
 
-nav
+nav.main
 {
 	margin: 0;
 	width: 100%;
@@ -34,7 +34,7 @@ ul#nav
 /* Make nav a horizontal list */
 ul#nav li
 {
-	display:inline;
+	display: inline;
 }
 
 /* Hyperlink Colors and styling*/

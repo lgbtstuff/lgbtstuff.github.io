@@ -9,7 +9,7 @@ head
         href: "images\logo.png"
 
 body
-    nav
+    nav.main
         ul#nav(style: "list-style-type:none")
             li.logo < a(href: "index.html") < img
                 src: "images\logo.png"

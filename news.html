@@ -9,6 +9,24 @@
         <link rel="icon" href="images\logo.png">
         </link>
         <style>
+            nav.dict
+            {
+            	margin: 0;
+            	width: 100%;
+            	max-height: 10.25em;
+            	background-color: white;
+            }
+            
+            ul#dictnav li
+            {
+            	color: black;
+            	font-size: 1em;
+            	font-family: Quicksand, sans-serif;
+            	text-decoration: none;
+            	padding: 0.25em 1.25em;
+            }
+        </style>
+        <style>
             body
             {
             	margin: 0;
@@ -21,7 +39,7 @@
             	font-size: 16px;
             }
             
-            nav
+            nav.main
             {
             	margin: 0;
             	width: 100%;
@@ -45,7 +63,7 @@
             /* Make nav a horizontal list */
             ul#nav li
             {
-            	display:inline;
+            	display: inline;
             }
             
             /* Hyperlink Colors and styling*/
@@ -86,7 +104,7 @@
         </style>
     </head>
     <body>
-        <nav>
+        <nav class="main">
             <ul id="nav" style="list-style-type:none">
                 <li class="logo">
                     <a href="index.html">

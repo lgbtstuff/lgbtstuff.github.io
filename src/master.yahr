@@ -3,7 +3,11 @@ option(name: "embed-css") < "true"
 
 defaults
     fragment(name: "main") < "frag/main.frag"
+    fragment(name: "dictionary") < "frag/dictionary.frag"
+
     css(name: "main") < "css/main.css"
+    css(name: "dictionary") < "css/dictionary.css"
+
     alias(name: "title") < "Replace me!"
 
 page(path: "index.page") < alias(name: "title") < "Home"

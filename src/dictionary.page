@@ -1,2 +1,3 @@
 p.content
+    #[frag frag/dictionary]
     "This is the dictionary!"
