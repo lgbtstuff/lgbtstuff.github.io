@@ -20,5 +20,6 @@ body
             li < a(href: "history.html") < "LGBT History"
             li < a(href: "help.html") < "Help Resources"
             li < a(href: "map.html") < "Legislation Map"
+            li < a(href: "news.html") < "Current News"
     section
         #[content]
