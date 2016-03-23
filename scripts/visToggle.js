@@ -1,9 +1,14 @@
-function hide( panel )
-{
-	document.getElementById( panel ).style.display = "none";
-}
+/* load in jquery */
+script < src: "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"
 
-function show( panel )
+$(document).ready(function() 
 {
-	document.getElementById( panel ).style.display = "block";
-}
+    $("#ae").click(function()
+    {
+        $("div.ae").show();
+        $("div.fj").hide();
+        $("div.ko").hide();
+        $("div.pt").hide();
+        $("div.uz").hide();
+    } );
+} );
