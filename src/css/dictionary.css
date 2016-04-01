@@ -8,6 +8,7 @@ nav.dict
 
 ul#dictnav li
 {
+	display: inline;
 	color: black;
 	font-size: 1em;
 	font-family: Quicksand, sans-serif;
