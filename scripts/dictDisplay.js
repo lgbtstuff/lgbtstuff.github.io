@@ -50,7 +50,7 @@ function search( catType, searchFor )
 		for ( var i = 0; i < itemList.length; i++ )
 		{
 			if ( searchFor == itemList[ i ].term.charAt( 0 ) )
-				result += itemList[ i ].toString() + "\n";
+				result += itemList[ i ].toString() + " ";
 		}
 	}
 	// If the terms are being selected by general category
@@ -59,7 +59,7 @@ function search( catType, searchFor )
 		for ( var i = 0; i < itemList.length; i++ )
 		{
 			if ( searchFor == itemList[ i ].term.cat )
-				result += itemList[ i ].toString() + "\n";
+				result += itemList[ i ].toString() + " ";
 		}
 	}
 
