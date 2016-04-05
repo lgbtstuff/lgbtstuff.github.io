@@ -6,12 +6,15 @@
 // To be added to a div on the dictionary page
 function search( catType, searchFor )
 {
+	//Temporary -- for testing
 	document.getElementById("terms").innerHTML = "Yay! The clicking works!";
+
 	// Creates a file reader
 	var reader = new FileReader();
 	
 	// Prepares a variable to store the text from the file
-	reader.onload = function( e ) { var text = reader.result; }
+	var text = "";
+	reader.onload = function( e ) { text = reader.result; }
 	
 	// Reads in the file of dictionary terms
 	reader.readAsText( "Dictionary_Terms.txt" );
