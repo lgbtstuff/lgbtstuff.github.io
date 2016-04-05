@@ -55,7 +55,7 @@ function search( catType, searchFor )
 				newDiv.innerHTML = itemList[ i ].toString();
 
 				// Color the panel of the div
-				newDiv.setAttribute( "class", "w3-container w3-pale-blue w3-leftbar w3-border-blue" );
+				newDiv.setAttribute( "class", colorDiv( itemList[ i ] ) );
 
 				document.getElementById( "terms" ).appendChild( newDiv );
 			}
