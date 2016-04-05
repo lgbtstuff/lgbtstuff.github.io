@@ -41,7 +41,7 @@ function search( catType, searchFor )
 	// Begin the actual searching
 	//
 
-	document.getElementById("terms").innerHTML = "";
+	document.getElementById( "terms" ).innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
 
 	// If the terms are being selected based off of alphabetization
 	if ( catType == 'alpha' )
@@ -49,7 +49,16 @@ function search( catType, searchFor )
 		for ( var i = 0; i < itemList.length; i++ )
 		{
 			if ( searchFor == itemList[ i ].term.charAt( 0 ) )
-				document.getElementById("terms").innerHTML += itemList[ i ].toString() + "\n";
+			{
+				//Create a new div on the webpage
+				var newDiv = document.createElement( "div" );
+				newDiv.innerHTML = itemList[ i ].toString();
+
+				// Color the panel of the div
+				newDiv.setAttribute( "class", colorDiv( itemList[ i ] ) );
+
+				document.getElementById( "terms" ).appendChild( newDiv );
+			}
 		}
 	}
 
@@ -58,11 +67,29 @@ function search( catType, searchFor )
 	{
 		for ( var i = 0; i < itemList.length; i++ )
 		{
-			if ( searchFor == itemList[ i ].term.cat )
-				document.getElementById("terms").innerHTML += itemList[ i ].toString() + "\n";
+			if ( searchFor == itemList[ i ].cat )
+			{
+				//Create a new div on the webpage
+				var newDiv = document.createElement( "div" );
+				newDiv.innerHTML = itemList[ i ].toString();
+
+				// Color the panel of the div
+				newDiv.setAttribute( "class", colorDiv( itemList[ i ] ) );
+
+				document.getElementById( "terms" ).appendChild( newDiv );
+			}
 		}
 	}
 
+}
+
+//Determine the color of the panel based off of the term's category
+function colorDiv( itemElement )
+{
+
+	if ( itemElement.cat.equals("Sexuality"))
+		return "w3-container w3-pale-blue w3-leftbar w3-border-blue";
+	return "w3-container w3-grey w3-leftbar w3-border-black";
 }
 
 // Reads in the text file
