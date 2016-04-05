@@ -4,11 +4,11 @@ p.content
             li < button
                 type: "button"
                 onclick: "search("alpha", "A")"
-                value: "A"
+                "A"
             li < button
                 type: "button"
                 onclick: "search("alpha", "B")"
-                value: "B"
+                "B"
     "This is the dictionary!"
 
     div
