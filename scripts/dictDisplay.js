@@ -38,7 +38,9 @@ function search( catType, searchFor )
 	itemList.sort();
 
 	//Testing
-	document.getElementById("terms").innerHTML = itemList[ 0 ].term;
+	document.getElementById("terms").innerHTML = itemList[ 0 ].toString();
+
+	//The issue is somewhere past here
 
 	/*
 	//
