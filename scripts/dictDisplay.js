@@ -20,9 +20,6 @@ function item( term, definition, cat )
 // To be added to a div on the dictionary page
 function search( catType, searchFor )
 {
-	//Temporary -- for testing
-	document.getElementById("terms").innerHTML = "Yay!\nThe clicking works!";
-
 	// Prepares a variable to store the text from the file
 	var text = readTextFile( "scripts/Dictionary_Terms.txt" );
 	
@@ -45,7 +42,7 @@ function search( catType, searchFor )
 	//
 
 	// The string that will eventually be returned
-	var result;
+	var result = "";
 
 	// If the terms are being selected based off of alphabetization
 	if ( catType == "alpha" )
