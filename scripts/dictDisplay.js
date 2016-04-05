@@ -41,8 +41,7 @@ function search( catType, searchFor )
 	// Begin the actual searching
 	//
 
-	// The string that will eventually be returned
-	var result = "";
+	document.getElementById("terms").innerHTML = "";
 
 	// If the terms are being selected based off of alphabetization
 	if ( catType == 'alpha' )
@@ -50,7 +49,7 @@ function search( catType, searchFor )
 		for ( var i = 0; i < itemList.length; i++ )
 		{
 			if ( searchFor == itemList[ i ].term.charAt( 0 ) )
-				result += itemList[ i ].toString() + "\n";
+				document.getElementById("terms").innerHTML += itemList[ i ].toString() + "\n";
 		}
 	}
 
@@ -60,11 +59,10 @@ function search( catType, searchFor )
 		for ( var i = 0; i < itemList.length; i++ )
 		{
 			if ( searchFor == itemList[ i ].term.cat )
-				result += itemList[ i ].toString() + "\n";
+				document.getElementById("terms").innerHTML += itemList[ i ].toString() + "\n";
 		}
 	}
 
-	document.getElementById("terms").innerHTML = result;
 }
 
 // Reads in the text file
