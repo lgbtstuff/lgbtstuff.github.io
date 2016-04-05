@@ -1,20 +1,15 @@
 p.content
     nav.dict
         ul#dictnav(style: "list-style-type:none")
-            li.ae < "A - E"
-            li.fj < "F - J"
-            li.ko < "K - O"
-            li.pt < "P - T"
-            li.uz < "U - Z"
+            li < button
+                type: "button"
+                onclick: "search("alpha", "A")"
+                value: "A"
+            li < button
+                type: "button"
+                onclick: "search("alpha", "B")"
+                value: "B"
     "This is the dictionary!"
 
-    div.ae
-        "These are the terms in A - E"
-    div.fj
-        "These are the terms in F - J"
-    div.ko
-        "These are the terms in K - O"
-    div.pt
-        "These are the terms in P - T"
-    div.uz
-        "These are the terms in U - Z"
+    div.terms
+        "Dictionary Terms will appear here after you have selected a categorization method."

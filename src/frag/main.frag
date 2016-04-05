@@ -21,6 +21,8 @@ body
             li < a(href: "help.html") < "Help Resources"
             li < a(href: "map.html") < "Legislation Map"
             li < a(href: "news.html") < "Current News"
-    script < src: "visToggle.js"
+
+    script < src: "scripts\dictDisplay.js"
+    
     section
         #[content]

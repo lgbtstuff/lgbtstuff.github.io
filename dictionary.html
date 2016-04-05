@@ -145,43 +145,24 @@
                 </li>
             </ul>
         </nav>
-        <script src="visToggle.js"></script>
+        <script src="scripts\dictDisplay.js"></script>
         <section>
             <p class="content">
                 <nav class="dict">
                     <ul id="dictnav" style="list-style-type:none">
-                        <li class="ae">
-                            A - E
+                        <li>
+                            <button onclick="search('alpha', 'A')" type="button" value="A">
+                            </button>
                         </li>
-                        <li class="fj">
-                            F - J
-                        </li>
-                        <li class="ko">
-                            K - O
-                        </li>
-                        <li class="pt">
-                            P - T
-                        </li>
-                        <li class="uz">
-                            U - Z
+                        <li>
+                            <button onclick="search('alpha', 'B')" type="button" value="B">
+                            </button>
                         </li>
                     </ul>
                 </nav>
                 This is the dictionary!
-                <div class="ae">
-                    These are the terms in A - E
-                </div>
-                <div class="fj">
-                    These are the terms in F - J
-                </div>
-                <div class="ko">
-                    These are the terms in K - O
-                </div>
-                <div class="pt">
-                    These are the terms in P - T
-                </div>
-                <div class="uz">
-                    These are the terms in U - Z
+                <div class="terms">
+                    Dictionary Terms will appear here after you have selected a categorization method.
                 </div>
             </p>
         </section>
