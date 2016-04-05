@@ -36,7 +36,11 @@ function search( catType, searchFor )
 	
 	// Sorts the list alphabetically
 	itemList.sort();
-	
+
+	//Testing
+	document.getElementById("terms").innerHTML = itemList[ 0 ].term;
+
+	/*
 	//
 	// Begin the actual searching
 	//
@@ -64,6 +68,7 @@ function search( catType, searchFor )
 	}
 
 	document.getElementById("terms").innerHTML = result;
+	*/
 }
 
 // Reads in the text file
