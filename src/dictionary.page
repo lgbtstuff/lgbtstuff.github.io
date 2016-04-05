@@ -7,8 +7,8 @@ p.content
                 "A"
             li < button
                 type: "button"
-                onclick: "search("alpha", "B")"
-                "B"
+                onclick: "search("alpha", "G")"
+                "G"
     "This is the dictionary!"
 
     div
