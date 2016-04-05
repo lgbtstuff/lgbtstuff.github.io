@@ -38,20 +38,20 @@ function search( catType, searchFor )
 	itemList.sort();
 
 	//Testing
-	document.getElementById("terms").innerHTML = itemList[ 0 ].toString();
+	document.getElementById("terms").innerHTML = itemList[ 1 ].toString();
 
 	//The issue is somewhere past here
 
-	/*
 	//
 	// Begin the actual searching
 	//
 
+	/* 
 	// The string that will eventually be returned
 	var result = "";
 
 	// If the terms are being selected based off of alphabetization
-	if ( catType == "alpha" )
+	if ( catType == 'alpha' )
 	{
 		for ( var i = 0; i < itemList.length; i++ )
 		{
@@ -60,7 +60,7 @@ function search( catType, searchFor )
 		}
 	}
 	// If the terms are being selected by general category
-	else if (catType == "general")
+	else if (catType == 'general' )
 	{
 		for ( var i = 0; i < itemList.length; i++ )
 		{
