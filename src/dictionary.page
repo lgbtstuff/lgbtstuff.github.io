@@ -11,5 +11,6 @@ p.content
                 value: "B"
     "This is the dictionary!"
 
-    div.terms
+    div
+        id: "terms"
         "Dictionary Terms will appear here after you have selected a categorization method."
