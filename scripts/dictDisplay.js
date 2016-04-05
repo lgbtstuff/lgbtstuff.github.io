@@ -6,6 +6,7 @@
 // To be added to a div on the dictionary page
 function search( catType, searchFor )
 {
+	document.getElementById("terms").innerHTML = "Yay! The clicking works!";
 	// Creates a file reader
 	var reader = new FileReader();
 	
