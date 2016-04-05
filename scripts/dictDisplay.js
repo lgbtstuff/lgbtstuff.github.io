@@ -1,6 +1,20 @@
 // This will allow the user to sort through the dictionary
 // in a variety of ways and display selective terms
 
+// Creates an object for the items in the dictionary
+// "cat" is the category of the term
+function item( term, definition, cat )
+{
+	this.term = term;
+	this.definition = definition;
+	this.cat = cat;
+
+	this.toString = function()
+	{
+		return term + " - " + definition;
+	}
+}
+
 // Returns a String with the terms being searched for 
 // each on separate lines
 // To be added to a div on the dictionary page
@@ -9,33 +23,12 @@ function search( catType, searchFor )
 	//Temporary -- for testing
 	document.getElementById("terms").innerHTML = "Yay!\nThe clicking works!";
 
-	// Creates a file reader
-	var reader = new FileReader();
-	
 	// Prepares a variable to store the text from the file
-	var text = "";
-	reader.onload = function( e ) { text = reader.result; }
-	
-	// Reads in the file of dictionary terms
-	reader.readAsText( "Dictionary_Terms.txt" );
+	var text = readTextFile( "Dictionary_Terms.txt" );
 	
 	// Splits the text file into individual lines, storing
 	// these values in an array
 	var textByLine = text.split( "\n" );
-	
-	// Creates an object for the items in the dictionary
-	// "cat" is the category of the term
-	function item( term, definition, cat )
-	{
-		this.term = term;
-		this.definition = definition;
-		this.cat = cat;
-
-		this.toString = function()
-		{
-			return term + " - " + definition;
-		}
-	}
 
 	// Create an array of all the terms
 	var itemList = [];
@@ -74,4 +67,24 @@ function search( catType, searchFor )
 	}
 
 	document.getElementById("terms").innerHTML = result;
+}
+
+// Reads in the text file
+// Many Thanks to Stack Overflow :)
+function readTextFile( file )
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open( "GET", file, false );
+    rawFile.onreadystatechange = function ()
+    {
+        if( rawFile.readyState === 4 )
+        {
+            if( rawFile.status === 200 || rawFile.status == 0 )
+            {
+                var allText = rawFile.responseText;
+            }
+        }
+    }
+    rawFile.send( null );
+    return allText;
 }
