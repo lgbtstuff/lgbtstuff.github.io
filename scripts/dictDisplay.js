@@ -24,7 +24,7 @@ function search( catType, searchFor )
 	document.getElementById("terms").innerHTML = "Yay!\nThe clicking works!";
 
 	// Prepares a variable to store the text from the file
-	var text = readTextFile( "Dictionary_Terms.txt" );
+	var text = readTextFile( "scripts/Dictionary_Terms.txt" );
 	
 	// Splits the text file into individual lines, storing
 	// these values in an array
