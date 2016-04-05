@@ -7,7 +7,7 @@
 function search( catType, searchFor )
 {
 	//Temporary -- for testing
-	document.getElementById("terms").innerHTML = "Yay! The clicking works!";
+	document.getElementById("terms").innerHTML = "Yay!\nThe clicking works!";
 
 	// Creates a file reader
 	var reader = new FileReader();
@@ -73,5 +73,5 @@ function search( catType, searchFor )
 		}
 	}
 
-	document.getElementById("terms").innerHTML = "Yay! The clicking works!";
+	document.getElementById("terms").innerHTML = result;
 }
