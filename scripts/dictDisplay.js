@@ -74,6 +74,7 @@ function search( catType, searchFor )
 function readTextFile( file )
 {
     var rawFile = new XMLHttpRequest();
+    var allText;
     rawFile.open( "GET", file, false );
     rawFile.onreadystatechange = function ()
     {
@@ -81,7 +82,7 @@ function readTextFile( file )
         {
             if( rawFile.status === 200 || rawFile.status == 0 )
             {
-                var allText = rawFile.responseText;
+                allText = rawFile.responseText;
             }
         }
     }
