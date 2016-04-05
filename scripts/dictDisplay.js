@@ -37,16 +37,12 @@ function search( catType, searchFor )
 	// Sorts the list alphabetically
 	itemList.sort();
 
-	//Testing
-	document.getElementById("terms").innerHTML = itemList[ 1 ].toString();
-
 	//The issue is somewhere past here
 
 	//
 	// Begin the actual searching
 	//
 
-	/* 
 	// The string that will eventually be returned
 	var result = "";
 
@@ -70,7 +66,6 @@ function search( catType, searchFor )
 	}
 
 	document.getElementById("terms").innerHTML = result;
-	*/
 }
 
 // Reads in the text file
