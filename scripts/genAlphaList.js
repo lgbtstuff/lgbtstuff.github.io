@@ -19,8 +19,11 @@
  		// Create the button to be added to the new list element
  		var newButton = document.createElement( 'button' );
 
+ 		// The method invocation to be run onclick as represented by a string
+ 		var toCall = "chooseList( " + listType + ", " + alphabet.substring( i, i + 1 ) + " )";
+
  		// Modify the button to contain the letter and the correct term linkage
- 		newButton.setAttribute( "onclick", "chooseList( listType, alphabet.charAt( i ) )" );
+ 		newButton.setAttribute( "onclick", toCall );
         newButton.appendChild( document.createTextNode( alphabet.charAt( i ) ) );
 
  		// Add the button to the list item
