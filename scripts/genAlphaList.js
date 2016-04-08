@@ -11,7 +11,7 @@
  	var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
  	// Add all the letters as buttons to the list
- 	for ( var i = 0; i < alphabet.length(); i++ )
+ 	for ( var i = 0; i < 26; i++ )
  	{
  		// Create the new list item
  		var entry = document.createElement( 'li' );
