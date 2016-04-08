@@ -1,10 +1,11 @@
 p.content
     nav.dict
         ul#dictnav(style: "list-style-type:none")
-    script
-        genAlphaList( "dictnav", "dictionary" );
     "This is the dictionary!"
 
     div
         id: "terms"
         "Dictionary Terms will appear here after you have selected a categorization method."
+
+    script
+        genAlphaList( "dictnav", "dictionary" );
