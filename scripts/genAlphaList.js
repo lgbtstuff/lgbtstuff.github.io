@@ -6,7 +6,7 @@
  *		What type of terms is this is a list of?
  *		ie. Dictionary terms, historical figures etc.
  */
- function genAlphaList( addList, listType )
+ window.genAlphaList = function( addList, listType )
  {
  	var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
