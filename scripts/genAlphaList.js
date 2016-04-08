@@ -20,7 +20,7 @@
  		var newButton = document.createElement( 'button' );
 
  		// The method invocation to be run onclick as represented by a string
- 		var toCall = "chooseList( " + listType + ", " + alphabet.charAt( i ) + " )";
+ 		var toCall = "chooseList( dictionary, " + alphabet.charAt( i ) + " )";
 
  		// Modify the button to contain the letter and the correct term linkage
  		newButton.setAttribute( "onclick", toCall );
@@ -42,5 +42,7 @@
  */
  function chooseList( listType, searchLetter )
  {
- 	return searchDict( "alpha", searchLetter );
+ 	if ( listType == "dictionary" )
+ 		return searchDict( "alpha", searchLetter );
+ 	if ( listType == "biographies" );	// etc
  }

@@ -94,7 +94,7 @@ function searchDict( catType, searchFor )
 function colorDiv( itemElement )
 {
 
-	if ( itemElement.cat == "Sexuality")
+	if ( itemElement.cat == "Sexuality" )
 		return "w3-container w3-pale-blue w3-leftbar w3-border-blue";
 	return "w3-container w3-grey w3-leftbar w3-border-black";
 }
