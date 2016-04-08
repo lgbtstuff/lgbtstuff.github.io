@@ -40,6 +40,6 @@
  function chooseList( listType, searchLetter )
  {
  	if ( listType == "dictionary" )
- 		return searchDict( "alpha", searchLetter, listType );
- 	if ( listType == "Biographies" );	// etc
+ 		return searchDict( "alpha", searchLetter );
+ 	if ( listType == "biographies" );	// etc
  }
