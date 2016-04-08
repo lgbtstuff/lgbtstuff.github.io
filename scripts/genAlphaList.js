@@ -6,7 +6,7 @@
  *		What type of terms is this is a list of?
  *		ie. Dictionary terms, historical figures etc.
  */
- window.genAlphaList = function( addList, listType )
+ function genAlphaList( addList, listType )
  {
  	var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -40,7 +40,7 @@
  * @param #searchLetter
  *		The letter we're searching for
  */
- window.chooseList = function( listType, searchLetter )
+ function chooseList( listType, searchLetter )
  {
  	if ( listType == "dictionary" )
  		return searchDict( "alpha", searchLetter );
