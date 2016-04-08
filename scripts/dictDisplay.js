@@ -27,6 +27,9 @@ function item( term, definition, cat )
  */
 function searchDict( catType, searchFor, divID )
 {
+	// Typecast divID to a String (it should already be one though)
+	divID = ( String ) divID;
+
 	// Prepares a variable to store the text from the file
 	var text = readTextFile( "scripts/Dictionary_Terms.txt" );
 	
