@@ -1,14 +1,8 @@
 p.content
     nav.dict
         ul#dictnav(style: "list-style-type:none")
-            li < button
-                type: "button"
-                onclick: "search("alpha", "A")"
-                "A"
-            li < button
-                type: "button"
-                onclick: "search("alpha", "G")"
-                "G"
+    script
+        genAlphaList( "dictnav", "dictionary" );
     "This is the dictionary!"
 
     div

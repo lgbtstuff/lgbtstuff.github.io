@@ -154,18 +154,11 @@
             <p class="content">
                 <nav class="dict">
                     <ul id="dictnav" style="list-style-type:none">
-                        <li>
-                            <button onclick="search('alpha', 'A')" type="button">
-                                A
-                            </button>
-                        </li>
-                        <li>
-                            <button onclick="search('alpha', 'G')" type="button">
-                                G
-                            </button>
-                        </li>
                     </ul>
                 </nav>
+                <script>
+                    genAlphaList( "dictnav", "dictionary" );
+                </script>
                 This is the dictionary!
                 <div id="terms">
                     Dictionary Terms will appear here after you have selected a categorization method.

@@ -15,10 +15,17 @@ function item( term, definition, cat )
 	}
 }
 
-// Returns a String with the terms being searched for 
-// each on separate lines
-// To be added to a div on the dictionary page
-function search( catType, searchFor )
+/** Returns a String with the terms being searched for 
+ * each on separate lines
+ * To be added to a div on the dictionary page
+ * @param #catType
+ *		The type of categorization method
+ * @param #searchFor
+ *		What we're searching for!
+ * @param #divID
+ *		The ID of the div to append the terms to
+ */
+function searchDict( catType, searchFor, divID )
 {
 	// Prepares a variable to store the text from the file
 	var text = readTextFile( "scripts/Dictionary_Terms.txt" );
@@ -41,7 +48,7 @@ function search( catType, searchFor )
 	// Begin the actual searching
 	//
 
-	document.getElementById( "terms" ).innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
+	document.getElementById( divID ).innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
 
 	// If the terms are being selected based off of alphabetization
 	if ( catType == 'alpha' )
@@ -57,7 +64,7 @@ function search( catType, searchFor )
 				// Color the panel of the div
 				newDiv.setAttribute( "class", colorDiv( itemList[ i ] ) );
 
-				document.getElementById( "terms" ).appendChild( newDiv );
+				document.getElementById( divID ).appendChild( newDiv );
 			}
 		}
 	}
@@ -76,7 +83,7 @@ function search( catType, searchFor )
 				// Color the panel of the div
 				newDiv.setAttribute( "class", colorDiv( itemList[ i ] ) );
 
-				document.getElementById( "terms" ).appendChild( newDiv );
+				document.getElementById( divID ).appendChild( newDiv );
 			}
 		}
 	}
