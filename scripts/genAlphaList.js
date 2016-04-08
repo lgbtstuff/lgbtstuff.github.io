@@ -39,7 +39,7 @@
  */
  function chooseList( listType, searchLetter )
  {
- 	if ( listType.equals( "dictionary" ) )
+ 	if ( listType == "dictionary" )
  		return searchDict( "alpha", searchLetter, listType );
- 	if ( listType.equals( "Biographies" ) );
+ 	if ( listType == "Biographies" );	// etc
  }
