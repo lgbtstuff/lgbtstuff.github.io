@@ -20,7 +20,7 @@
  		var newButton = document.createElement( 'button' );
 
  		// Modify the button to contain the letter and the correct term linkage
- 		newButton.setAttribute( "onclick", chooseList( listType, alphabet.charAt( i ) ) );
+ 		newButton.setAttribute( "onclick", "chooseList( listType, alphabet.charAt( i ) )" );
         newButton.appendChild( document.createTextNode( alphabet.charAt( i ) ) );
 
  		// Add the button to the list item
