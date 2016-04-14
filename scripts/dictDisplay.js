@@ -103,8 +103,8 @@ function appendTerm( item )
 	var newRow = document.getElementById( "termTable" ).insertRow( 1 );
 
 	// Add two cells to this new row
- 	var termCell = row.insertCell( 0 );
- 	var defCell = row.insertCell( 1 );
+ 	var termCell = newRow.insertCell( 0 );
+ 	var defCell = newRow.insertCell( 1 );
 
  	// Give the new cells their IDs
  	termCell.setAttribute( "class", "term" + item.cat );
