@@ -7,7 +7,7 @@ function item( term, definition, cat, cat2 )
 {
 	this.term = term;
 	this.definition = definition;
-	this.cat1 = cat;
+	this.cat = cat;
 	this.cat2 = cat2;
 
 	this.toString = function()
@@ -52,6 +52,7 @@ function searchDict( catType, searchFor )
 	document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
 
 	// Clear all the previously added terms
+	// Avoid the first row - this is the header
 	while (document.getElementById( "termTable" ).rows.length > 1 )
 		document.getElementById( "termTable" ).deleteRow( 1 );
 

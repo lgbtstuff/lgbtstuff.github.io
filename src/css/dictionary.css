@@ -28,5 +28,5 @@ table.termTable
 td.termSexuality
 {
 	width: 80px;
-	background-color: red;
+	background-color: rgb( 0, 153, 153 );
 }
