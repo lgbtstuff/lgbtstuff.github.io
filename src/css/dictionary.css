@@ -21,7 +21,8 @@ div.terms
 
 table.termTable
 {
-	width: 100%;
+	width: 80%;
+	max-width: 20em
 }
 
 td.termSexuality

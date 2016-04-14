@@ -50,6 +50,10 @@ function searchDict( catType, searchFor )
 
 	document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
 
+	// Clear all the previously added terms
+	while (document.getElementById( "termTable" ).rows.length > 1 )
+		document.getElementById( "termTable" ).deleteRow( 1 );
+
 	// If the terms are being selected based off of alphabetization
 	if ( catType == 'alpha' )
 	{
