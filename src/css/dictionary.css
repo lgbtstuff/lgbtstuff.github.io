@@ -21,11 +21,11 @@ div.terms
 
 table.termTable
 {
-	width: 40em
+	width: 40em;
 }
 
 td.termSexuality
 {
 	max-width: 8em;
-	background-color: blue;
+	background-color: #79CDCD;
 }
