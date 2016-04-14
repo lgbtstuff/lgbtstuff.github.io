@@ -1,11 +1,11 @@
 p.content
     nav.dict
         ul#dictnav(style: "list-style-type:none")
-        
+
     div
         id: "terms"
         "This is the dictionary!"
-        table
+        table.termTable
             id: "termTable"
             tr < th
                 colspan: "2"
