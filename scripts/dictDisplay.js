@@ -48,23 +48,17 @@ function searchDict( catType, searchFor )
 	// Begin the actual searching
 	//
 
-	document.getElementById( "terms" ).innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
+	document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
 
 	// If the terms are being selected based off of alphabetization
 	if ( catType == 'alpha' )
 	{
-		for ( var i = 0; i < itemList.length; i++ )
+		// Go backwards so that final term list is alphabetical
+		for (var i = itemList.length - 1; i >= 0; i--)
 		{
 			if ( searchFor == itemList[ i ].term.charAt( 0 ) )
 			{
-				//Create a new div on the webpage
-				var newDiv = document.createElement( "div" );
-				newDiv.innerHTML = itemList[ i ].toString();
-
-				// Color the panel of the div
-				newDiv.setAttribute( "class", colorDiv( itemList[ i ] ) );
-
-				document.getElementById( "terms" ).appendChild( newDiv );
+				appendTerm( itemList[ i ] );
 			}
 		}
 	}
@@ -72,31 +66,52 @@ function searchDict( catType, searchFor )
 	// If the terms are being selected by general category
 	else if (catType == 'general' )
 	{
-		for ( var i = 0; i < itemList.length; i++ )
+		// Go backwards so that final term list is alphabetical
+		for (var i = itemList.length - 1; i >= 0; i--)
 		{
 			if ( searchFor == itemList[ i ].cat )
 			{
-				//Create a new div on the webpage
-				var newDiv = document.createElement( "div" );
-				newDiv.innerHTML = itemList[ i ].toString();
-
-				// Color the panel of the div
-				newDiv.setAttribute( "class", colorDiv( itemList[ i ] ) );
-
-				document.getElementById( "terms" ).appendChild( newDiv );
+				appendTerm( itemList[ i ] );
 			}
 		}
 	}
 
+	// Utilization of the search bar
+	else if (catType == 'searchbar' )
+	{
+		// Go backwards so that final term list is alphabetical
+ 		for (var i = itemList.length - 1; i >= 0; i--)
+ 		{
+ 			if ( itemList[ i ].term.contains( searchFor ) ||
+ 				itemList[ i ].definition.contains( searchFor ) ||
+ 				itemList[ i ].cat.contains( searchFor ) )
+ 				appendTerm( itemList[ i ] );
+ 		}
+	}
+
 }
 
-//Determine the color of the panel based off of the term's category
-function colorDiv( itemElement )
+/**
+ * Add the selected term to the table of terms
+ * @param #item
+ *		The term to be added to the table
+ */
+function appendTerm( item )
 {
+	// Add a new row to the table below what's already been added
+	// Avoid the heading row
+	var newRow = document.getElementById( "termTable" ).insertRow( 1 );
 
-	if ( itemElement.cat == "Sexuality" )
-		return "w3-container w3-pale-blue w3-leftbar w3-border-blue";
-	return "w3-container w3-grey w3-leftbar w3-border-black";
+	// Add two cells to this new row
+ 	var termCell = row.insertCell( 0 );
+ 	var defCell = row.insertCell( 1 );
+
+ 	// Give the new cells their IDs
+ 	termCell.setAttribute( "class", "term" + item.cat );
+ 	defCell.setAttribute( "class", "definition" + item.cat );
+
+ 	termCell.innerHTML = item.term;
+ 	defCell.innerHTML = item.definition;
 }
 
 // Reads in the text file

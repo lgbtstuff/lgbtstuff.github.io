@@ -29,6 +29,17 @@
             div.terms
             {
             	white-space: pre-wrap;
+            	margin: 4em;
+            }
+            
+            table.termTable
+            {
+            	width: 100%;
+            }
+            
+            td.termSexuality
+            {
+            	background-color: gray;
             }
         </style>
         <style>
@@ -159,7 +170,13 @@
                 </nav>
                 This is the dictionary!
                 <div id="terms">
-                    Dictionary Terms will appear here after you have selected a categorization method.
+                    <table id="termTable">
+                        <tr>
+                            <th colspan="2">
+                                Dictionary Terms will appear here after you have selected a categorization method.
+                            </th>
+                        </tr>
+                    </table>
                 </div>
                 <script>
                     genAlphaList( "dictnav", "dictionary" );
