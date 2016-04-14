@@ -3,11 +3,12 @@
 
 // Creates an object for the items in the dictionary
 // "cat" is the category of the term
-function item( term, definition, cat )
+function item( term, definition, cat, cat2 )
 {
 	this.term = term;
 	this.definition = definition;
-	this.cat = cat;
+	this.cat1 = cat;
+	this.cat2 = cat2;
 
 	this.toString = function()
 	{
@@ -38,8 +39,8 @@ function searchDict( catType, searchFor )
 	var itemList = [];
 	
 	// Add the items from the .txt file to the array of terms
-	for ( var i = 2; i < textByLine.length; i += 4 )
-		itemList.push( new item( textByLine[ i - 2 ], textByLine[ i - 1 ], textByLine[ i ] ) );
+	for ( var i = 3; i < textByLine.length; i += 5 )
+		itemList.push( new item( textByLine[ i - 3 ], textByLine[ i - 2 ], textByLine[ i - 1 ], textByLine[ i ] ) );
 	
 	// Sorts the list alphabetically
 	itemList.sort();
@@ -73,7 +74,7 @@ function searchDict( catType, searchFor )
 		// Go backwards so that final term list is alphabetical
 		for (var i = itemList.length - 1; i >= 0; i--)
 		{
-			if ( searchFor == itemList[ i ].cat )
+			if ( searchFor == itemList[ i ].cat || searchFor == itemList[ i ].cat2 )
 			{
 				appendTerm( itemList[ i ] );
 			}
