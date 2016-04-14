@@ -16,7 +16,7 @@ ul#dictnav li
 div.terms
 {
 	white-space: pre-wrap;
-	margin-left: 4em;
+	margin-left: 1em;
 }
 
 table.termTable
@@ -26,6 +26,6 @@ table.termTable
 
 td.termSexuality
 {
-	width: 8em;
+	width: 80px;
 	background-color: rgb( 0, 153, 153 );
 }
