@@ -1,6 +1,7 @@
 nav.dict
 {
 	width: 100%;
+	margin-left: 1em;
 }
 
 ul#dictnav li
@@ -27,5 +28,5 @@ table.termTable
 td.termSexuality
 {
 	width: 80px;
-	background-color: rgb( 0, 153, 153 );
+	background-color: red;
 }
