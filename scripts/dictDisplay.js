@@ -50,7 +50,7 @@ function searchDict( catType, searchFor )
 	//
 
 	// Add all the terms and then jump out of the method
-	if ( catType == "printAll" )
+	if ( catType == 'printAll' )
 	{
 		// Go backwards so that final term list is alphabetical
 		for (var i = itemList.length - 1; i >= 0; i--)

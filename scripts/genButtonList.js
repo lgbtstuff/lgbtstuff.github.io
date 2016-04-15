@@ -1,4 +1,5 @@
-/** Will add list elements horizontally to the specified list
+/**
+ * Will add list elements horizontally to the specified list
  * @param #addList
  *		The list element onto which the list items will be added
  * @param #listType
