@@ -26,7 +26,7 @@ body
             li < a(href: "news.html") < "Current News"
 
     script < src: "scripts\dictDisplay.js"
-    script < src: "scripts\genAlphaList.js"
+    script < src: "scripts\genButtonList.js"
     
     section
         #[content]
