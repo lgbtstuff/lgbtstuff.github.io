@@ -43,7 +43,7 @@ function searchDict( catType, searchFor )
 		itemList.push( new item( textByLine[ i - 3 ], textByLine[ i - 2 ], textByLine[ i - 1 ], textByLine[ i ] ) );
 	
 	// Sorts the list alphabetically
-	itemList.sort( function( a, b ) { return b.term.charAt( 0 ).toLowerCase() - a.term.charAt( 0 ).toLowerCase() } );
+	itemList.sort( function( a, b ) { return b.term.charAt( 0 ).toLowerCase() - a.term.charAt( 0 ).toLowerCase() >= 0 } );
 
 	//
 	// Begin the actual searching
