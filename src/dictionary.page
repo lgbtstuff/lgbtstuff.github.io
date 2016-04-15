@@ -11,4 +11,4 @@ p.content
 
     script
         var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        genButtonList( "dictnav", "dictionary", alphabet.toCharArray() );
+        genButtonList( "dictnav", "dictionary", alphabet.split("") );
