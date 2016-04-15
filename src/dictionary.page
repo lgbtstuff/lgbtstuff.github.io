@@ -10,4 +10,5 @@ p.content
                 "Dictionary Terms will appear here after you have selected a categorization method."
 
     script
-        genAlphaList( "dictnav", "dictionary" );
+        var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        genButtonList( "dictnav", "dictionary", alphabet.toCharArray() );
