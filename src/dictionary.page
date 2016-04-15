@@ -10,9 +10,7 @@ p.content
                 "Here are all the terms alphabetically. Select a categorization method to narrow your search down further."
 
     script
-    	// Make a list of alphabetical buttons
         var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         genButtonList( "dictnav", "dictionary", alphabet.split("") );
 
-        // Start the page with all the terms printed out
         dictDisplay( "printAll", "" );
