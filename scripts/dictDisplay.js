@@ -49,6 +49,15 @@ function searchDict( catType, searchFor )
 	// Begin the actual searching
 	//
 
+	// Add all the terms and then jump out of the method
+	if ( catType == "printAll" )
+	{
+		// Go backwards so that final term list is alphabetical
+		for (var i = itemList.length - 1; i >= 0; i--)
+			appendTerm( itemList[ i ] );
+		return;
+	}
+
 	document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
 
 	// Clear all the previously added terms
@@ -94,7 +103,6 @@ function searchDict( catType, searchFor )
  				appendTerm( itemList[ i ] );
  		}
 	}
-
 }
 
 /**
