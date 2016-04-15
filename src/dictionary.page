@@ -4,7 +4,7 @@ p.content
         "This is the dictionary!"
     table.termTable
         id: "termTable"
-        tr < th
+        tr < td
             colspan: "2"
             "Here are all the terms alphabetically. Select a categorization method to narrow your search down further."
 
