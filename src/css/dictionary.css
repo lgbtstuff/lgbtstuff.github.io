@@ -26,7 +26,7 @@ th { text-align: left; }
 td { width: 6em; }
 
 /* Color terms based off of category */
-td.termSex { background-color: rgb( 255, 178, 102 ); } /* Orange */
+td.termSexuality { background-color: rgb( 255, 178, 102 ); } /* Orange */
 td.termGender { background-color: rgb( 55, 255, 153 ); } /* Green */
 td.termTrans { background-color: rgb( 255, 153, 255 ); } /* Pink */
 td.termMisc { background-color: rgb( 102, 102, 255 ); } /* Blue */
