@@ -5,107 +5,107 @@ Misc
 
 Sexuality
 capacity for sexual feelings
-Sex
+Sexuality
 
 
 Gay
 a person that identifies as male and is attracted to other men; also an umbrella term for the LGBT+ community
-Sex
+Sexuality
 
 
 Androsexual
 sexual attraction to males
-Sex
+Sexuality
 
 
 Homosexual
 sexual attraction to the same gender
-Sex
+Sexuality
 
 
 Lesbian
 a person that identifies as female and is attracted to other females
-Sex
+Sexuality
 
 
 Gynosexual
 sexual attraction to females
-Sex
+Sexuality
 
 
 Bisexual
 a person that is attracted to two or more genders
-Sex
+Sexuality
 
 
 Multisexual
 umbrella term referring to people attracted to multiple genders
-Sex
+Sexuality
 
 
 Polysexual
 sexual attraction to more than one gender
-Sex
+Sexuality
 
 
 Pansexual
 a person who is attracted to all people, sometimes regardless of gender 
-Sex
+Sexuality
 
 
 Skoliosexual
 a person that is attracted to non-binary individuals
-Sex
+Sexuality
 
 
 Intersex
 a person that is born with sexual anatomy, reproductive organs, and/or chromosome 
-Sex
+Sexuality
 
 
 Allosexual
 someone who experiences sexual attraction
-Sex
+Sexuality
 
 
 Asexual
 experiencing no sexual attraction
-Sex
+Sexuality
 
 
 Demisexual
 experiencing sexual attraction only to people that you have a strong emotional bond with
-Sex
+Sexuality
 
 
 Gray Asexual
 being between allosexual and asexual; minimal sexual attraction
-Sex
+Sexuality
 
 
 Heterosexual
 sexual attraction to one other gender, usually the other one in the binary besides your own
-Sex
+Sexuality
 
 
 Lithosexual
 someone who experiences sexual attraction but doesn't want it to be reciprocated
-Sex
+Sexuality
 
 
 Abrosexual
 having an orientation or feelings about it that constantly change and cannot be pinned down for this reason
-Sex
+Sexuality
 
 
 Novisexual
 feeling complicated attraction or lack thereof in such a way that it is difficult or impossible to fit into one word or term
-Sex
+Sexuality
 
 
 Queer
 an umbrella term for all kinds of ways to not be a straight person 
-Sex
+Sexuality
 Misc
 
 Gender Binary
@@ -220,62 +220,62 @@ Trans
 
 Aromantic
 a person that doesn’t experience romantic attraction
-Sex
+Sexuality
 
 
 Alloromantic
 someone who experiences romantic attraction
-Sex
+Sexuality
 
 
 Heteroromantic
 romantic attraction to the other gender in the binary
-Sex
+Sexuality
 
 
 Gynoromantic
 romantic attraction to females
-Sex
+Sexuality
 
 
 Homoromantic
 romantic attraction to the same gender 
-Sex
+Sexuality
 
 
 Panromantic
 being romantically attracted to all genders
-Sex
+Sexuality
 
 
 Biromantic
 being romantically attracted to two or more genders
-Sex
+Sexuality
 
 
 Quoiromantic
 a term for people that don’t understand romantic attraction, can’t tell if they feel it, can’t distinguish it from other attractions, or don’t feel like they fit anywhere else on the aromantic spectrum
-Sex
+Sexuality
 
 
 Cupioromantic
 someone who doesn't experience romantic attraction but desires a romantic relationship
-Sex
+Sexuality
 
 
 Requiesromantic
 someone who doesn't experience romantic attraction due to exhaustion
-Sex
+Sexuality
 
 
 Gray-Romantic
 between alloromantic and aromantic
-Sex
+Sexuality
 
 
 Demiromantic
 only experiencing romantic attraction after first forming a deep bond with someone 
-Sex
+Sexuality
 
 
 Androgynous
@@ -360,7 +360,7 @@ Misc
 
 Monosexual
 attraction to one gender
-Sex
+Sexuality
 Misc
 
 Heteronormativity
@@ -465,12 +465,12 @@ Gender
 
 Aroflux
 a romantic identity that fluctuates across the romantic spectrum
-Sex
+Sexuality
 
 
 Aceflux
 a sexual identity that fluctuates across the sexual spectrum
-Sex
+Sexuality
 
 
 Duragender

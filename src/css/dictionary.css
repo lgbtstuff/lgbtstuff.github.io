@@ -21,8 +21,9 @@ table.termTable
 	width: 90%;
 }
 
+th { text-align: left; }
 /* Terms have a specific width they cannot exceed */
-td { width: 14em; }
+td { width: 6em; }
 
 /* Color terms based off of category */
 td.termSex { background-color: rgb( 255, 178, 102 ); } /* Orange */
