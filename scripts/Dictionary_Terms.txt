@@ -1,13 +1,478 @@
+Gender
+the state of being male, female, or something else; something felt internally
+Misc
+
+
+Sexuality
+capacity for sexual feelings
+Sex
+
+
 Gay
-Super Gay
-Sexuality
+a person that identifies as male and is attracted to other men; also an umbrella term for the LGBT+ community
+Sex
 
 
-Gay... NOT!
-Boring
-Sexuality
+Androsexual
+sexual attraction to males
+Sex
+
+
+Homosexual
+sexual attraction to the same gender
+Sex
+
+
+Lesbian
+a person that identifies as female and is attracted to other females
+Sex
+
+
+Gynosexual
+sexual attraction to females
+Sex
+
+
+Bisexual
+a person that is attracted to two or more genders
+Sex
+
+
+Multisexual
+umbrella term referring to people attracted to multiple genders
+Sex
+
+
+Polysexual
+sexual attraction to more than one gender
+Sex
+
+
+Pansexual
+a person who is attracted to all people, sometimes regardless of gender 
+Sex
+
+
+Skoliosexual
+a person that is attracted to non-binary individuals
+Sex
+
+
+Intersex
+a person that is born with sexual anatomy, reproductive organs, and/or chromosome 
+Sex
+
+
+Allosexual
+someone who experiences sexual attraction
+Sex
 
 
 Asexual
-Just like not sexual and stuff
-Sexuality
+experiencing no sexual attraction
+Sex
+
+
+Demisexual
+experiencing sexual attraction only to people that you have a strong emotional bond with
+Sex
+
+
+Gray Asexual
+being between allosexual and asexual; minimal sexual attraction
+Sex
+
+
+Heterosexual
+sexual attraction to one other gender, usually the other one in the binary besides your own
+Sex
+
+
+Lithosexual
+someone who experiences sexual attraction but doesn't want it to be reciprocated
+Sex
+
+
+Abrosexual
+having an orientation or feelings about it that constantly change and cannot be pinned down for this reason
+Sex
+
+
+Novisexual
+feeling complicated attraction or lack thereof in such a way that it is difficult or impossible to fit into one word or term
+Sex
+
+
+Queer
+an umbrella term for all kinds of ways to not be a straight person 
+Sex
+Misc
+
+Gender Binary
+the idea that there are only two genders, male and female
+Misc
+
+
+Non-Binary
+umbrella term referring to any gender not part of the binary
+Gender
+
+
+Genderqueer
+someone who identifies with neither, both, or a combination of male and female genders
+Gender
+
+
+Aporagender
+identifying as a gender outside the binary that is neither male nor female in any way; also called maverique or aliagender
+Gender
+
+
+Agender
+not identifying with a gender; not having a gender
+Gender
+
+
+Transgender
+an umbrella term referring to person that identifies with a gender different from the one assigned to them at birth
+Gender
+Trans
+
+Genderfluid
+a person whose gender identity fluctuates
+Gender
+
+
+Two Spirit
+a native american term for a person who exhibits attributes of both male and female 
+Gender
+
+
+Trigender
+a person that identifies with three different genders
+Gender
+
+
+Bigender
+identifying as both male and female; like genderfluid but strictly between binary genders
+Gender
+
+
+Intergender
+an identity between male and female in some way; specific to intersex people
+Gender
+
+
+Androgyne
+an identity between male and female
+Gender
+
+
+Pangender
+identifying as all genders
+Gender
+
+
+Cisgender
+a term referring to an individual whose gender assigned at birth matches their gender identity
+Gender
+
+
+Demigender
+umbrella term for gender identities that partially identify with a gender
+Gender
+
+
+Demigirl
+a person who identifies as partially female
+Gender
+
+
+Demiguy
+a person who identifies as partially male
+Gender
+
+
+Deminon-binary
+a person who identifies as partially non-binary
+Gender
+
+
+Demifluid
+a gender identity where a person possesses one or more fluid genders and one or more static genders
+Gender
+
+
+Demiflux
+a gender identity where a person possesses one or more fluid genders and one or more static genders, where one of the genders is a neutral gender like agender or neutrois
+Gender
+
+
+DMAB
+Designated Male at Birth; A term referring to transgender/ genderqueer/ non binary individuals who were assigned the sex "male" on their birth certificate
+Trans
+
+
+DFAB
+Designated Female at Birth; A term referring to transgender/ genderqueer/ non binary individuals who were assigned the sex "female" on their birth certificate
+Trans
+
+
+Aromantic
+a person that doesn’t experience romantic attraction
+Sex
+
+
+Alloromantic
+someone who experiences romantic attraction
+Sex
+
+
+Heteroromantic
+romantic attraction to the other gender in the binary
+Sex
+
+
+Gynoromantic
+romantic attraction to females
+Sex
+
+
+Homoromantic
+romantic attraction to the same gender 
+Sex
+
+
+Panromantic
+being romantically attracted to all genders
+Sex
+
+
+Biromantic
+being romantically attracted to two or more genders
+Sex
+
+
+Quoiromantic
+a term for people that don’t understand romantic attraction, can’t tell if they feel it, can’t distinguish it from other attractions, or don’t feel like they fit anywhere else on the aromantic spectrum
+Sex
+
+
+Cupioromantic
+someone who doesn't experience romantic attraction but desires a romantic relationship
+Sex
+
+
+Requiesromantic
+someone who doesn't experience romantic attraction due to exhaustion
+Sex
+
+
+Gray-Romantic
+between alloromantic and aromantic
+Sex
+
+
+Demiromantic
+only experiencing romantic attraction after first forming a deep bond with someone 
+Sex
+
+
+Androgynous
+combination of traditionally masculine and feminine characteristics, either in dress of physical characteristics. Unrelated to gender identity
+Gender
+Misc
+
+Gender Blind
+gender is not a factor in attraction
+Misc
+
+
+Gender Dysphoria
+the condition of feeling one's emotional and psychological identity as male or female to be opposite to one's biological sex; typically associated with sadness
+Misc
+Trans
+
+Gender Euphoria
+A sense of joy related to being properly identified in regards to gender
+Misc
+Trans
+
+MTF
+Male to Female- a trans person who has transitioned from their assigned gender of male to true gender of female
+Misc
+Trans
+
+FTM
+Female to Male- a trans person who has transitioned from their assigned gender of male to true gender of female
+Trans
+Misc
+
+Stonewall Riots
+beginning of the Gay Civil Rights Movement
+Misc
+
+
+Binder
+tank top-type thing intended to hide breasts
+Trans
+Misc
+
+Biological Sex
+a classification of reproductive organs into two categories: male and female. A small percentage of people have characteristics or hormones of both or neither
+Trans
+Misc
+
+Gender Reassignment Surgery
+changes genital organs from one gender to another
+Trans
+Misc
+
+Cross Dresser
+a person who chooses to dress in clothing stereotypical of another gender besides their own 
+Misc
+
+
+Erasure
+lack of representation in media, news, and pop culture; trying to hush up the lgbt identity of contemporary and historical figures
+Misc
+
+
+Femme
+way of displaying that is traditionally feminine in dress, gender identity, or manner; this term is typically applied to feminine lesbians and homosexual men
+Misc
+
+
+Lipstick Lesbian
+a subsect of lesbians who present in traditionally feminine ways
+Misc
+
+
+Gender Presentation
+the way a person’s anatomy, clothing, makeup, hairstyle, speech patterns and body language displays a gender
+Misc
+Trans
+
+Gender Role
+A set of expectations, standards, and cultural pressures associated with a particular gender
+Misc
+
+
+Monosexual
+attraction to one gender
+Sex
+Misc
+
+Heteronormativity
+the cultural force that expects all people to be cisgender, heteroromantic and heterosexual
+Misc
+
+
+Hormone Replacement Therapy
+in transgender people, it is the blocking of hormones naturally occurring in the body and replacing them with hormones typical in another gender
+Misc
+Trans
+
+Butch
+way of displaying that is traditionally masculine in dress, gender identity, or manner; this term is typically applied to masculine lesbians and less commonly, homosexual men
+Misc
+
+
+Bear
+a subsect of homosexual male culture formed of men who act in traditionally masculine ways 
+Misc
+
+
+Misgender
+to refer to someone using the incorrect pronouns
+Misc
+Trans
+
+Top Surgery
+a surgery altering someone’s chest to be typical of their gender identity- Ex- breast implants on a transgender woman
+Trans
+Misc
+
+Trans Woman
+a woman assigned male at birth
+Trans
+
+
+Trans Man
+a man assigned female at birth
+Trans
+
+
+Transphobia
+discrimination towards trans people
+Trans
+
+
+Bicurious
+interested in having a sexual experience with a person of the same sex
+Misc
+
+
+Biphobia
+discrimination against middle spectrum individuals in the media and daily life
+Misc
+
+
+Coming Out
+a figure of speech referring to telling people about their sexual, romantic, or gender orientation
+Misc
+
+
+Outing
+an appalling act wherein one person tells others about another person's’ sexual, romantic, or gender orientation
+Misc
+
+
+Polyamory
+the ideology and actions of being in a relationship more than one person, where everyone involved consents; not a part of the LGBT community
+Misc
+
+
+Ze/ Hir
+alternative pronouns; typically used by non binary people
+Misc
+Trans
+
+Questioning
+the state of being uncertain of one's sexual, romantic, or gender identity
+Misc
+
+
+Closet
+the state of concealing one's sexual, romantic, or gender identity
+Misc
+
+
+Passing
+presenting in a way that allows one’s sexual, romantic, or orientation to go unsuspected
+Misc
+
+
+Kinsey Scale
+a test that seeks to determine people’s sexual and romantic orientation
+Misc
+
+
+Polygender
+the state of having more than one gender
+Gender
+
+
+Aroflux
+a romantic identity that fluctuates across the romantic spectrum
+Sex
+
+
+Aceflux
+a sexual identity that fluctuates across the sexual spectrum
+Sex
+
+
+Duragender
+a way to be demigender;having one gender that is longer lasting and more prominent than the other genders experienced
+Gender

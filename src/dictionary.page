@@ -1,6 +1,7 @@
 p.content
     nav.dict
-        ul#dictnav(style: "list-style-type:none")
+        ul#dictnavalpha( style: "list-style-type: none" )
+        ul#dictnavcat( style: "list-style-type: none" )
         "This is the dictionary!"
     table.termTable
         id: "termTable"
@@ -10,5 +11,7 @@ p.content
 
     script
         var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        genButtonList( "dictnav", "dictionary", alphabet.split("") );
+        genButtonList( "dictnavalpha", "dictionary", alphabet.split(""), "alpha" );
+        var categories = [ "Sexuality", "Gender", "Misc", "Trans" ];
+        genButtonList( "dictnavcat", "dictionary", categories, "general" );
         searchDict( "printAll", "" );

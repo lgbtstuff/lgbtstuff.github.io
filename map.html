@@ -17,7 +17,7 @@
             	margin-left: 1em;
             }
             
-            ul#dictnav li
+            ul#dictnavalpha li, ul#dictnavcat li
             {
             	display: inline;
             	color: black;
@@ -34,16 +34,14 @@
             	width: 90%;
             }
             
-            th
-            {
-            	text-align: left;
-            }
+            /* Terms have a specific width they cannot exceed */
+            td { width: 14em; }
             
-            td.termSexuality
-            {
-            	width: 14em;
-            	background-color: rgb( 0, 153, 153 );
-            }
+            /* Color terms based off of category */
+            td.termSex { background-color: rgb( 255, 165, 0 ); }
+            td.termGender { background-color: 0, 255, 128 }
+            td.termTrans { background-color: pink; }
+            td.termMisc { background-color: 102, 102, 255; }
         </style>
         <style>
             body
