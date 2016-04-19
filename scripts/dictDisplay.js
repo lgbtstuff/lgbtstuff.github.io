@@ -98,13 +98,17 @@ function searchDict( catType, searchFor )
 		searchFor = document.getElementById( "searchText" ).value.toLowerCase();
 
 		document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
-		
+
 		// Go backwards so that final term list is alphabetical
  		for (var i = itemList.length - 1; i >= 0; i--)
  		{
- 			if ( itemList[ i ].term.toLowerCase().contains( searchFor ) ||
- 				itemList[ i ].definition.toLowerCase().contains( searchFor ) ||
- 				itemList[ i ].cat.toLowerCase().contains( searchFor ) )
+ 			var term = itemList[ i ].term.toLowerCase();
+ 			var def = itemList[ i ].definition.toLowerCase();
+ 			var cat = itemList[ i ].cat.toLowerCase();
+
+ 			if ( term.contains( searchFor ) ||
+ 				def.contains( searchFor ) ||
+ 				cat.contains( searchFor ) )
  				appendTerm( itemList[ i ] );
  		}
 	}
