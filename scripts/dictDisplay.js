@@ -102,13 +102,10 @@ function searchDict( catType, searchFor )
 		// Go backwards so that final term list is alphabetical
  		for (var i = itemList.length - 1; i >= 0; i--)
  		{
- 			var term = itemList[ i ].term.toLowerCase();
- 			var def = itemList[ i ].definition.toLowerCase();
- 			var cat = itemList[ i ].cat.toLowerCase();
-
- 			if ( term.contains( searchFor ) ||
- 				def.contains( searchFor ) ||
- 				cat.contains( searchFor ) )
+ 			if ( itemList[ i ].term.toLowerCase().indexOf( searchFor ) > -1 ||
+ 				itemList[ i ].definition.toLowerCase().indexOf( searchFor ) > -1 ||
+ 				itemList[ i ].cat.toLowerCase().indexOf( searchFor ) > -1 ||
+ 				itemList[ i ].cat2.toLowerCase().indexOf( searchFor ) > -1 )
  				appendTerm( itemList[ i ] );
  		}
 	}
