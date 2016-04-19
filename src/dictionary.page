@@ -1,22 +1,22 @@
 p.content
     nav.dict
         h1 < "Dictionary"
-        form
-            button#alphaCat
-                onclick: "genButtonList( "dictnav", "dictionary", "", "alpha" )"
-                "Search by First Letter"
+        button#alphaCat
+            onclick: "genButtonList( "dictnav", "dictionary", "", "alpha" )"
+            "Search by First Letter"
 
-            button#categoryCat
-                onclick: "genButtonList( "dictnav", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" )"
-                "Search by Category"
+        button#categoryCat
+            onclick: "genButtonList( "dictnav", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" )"
+            "Search by Category"
 
-            input#searchText
-                type: "text"
-                name: "searchbar"
-                value: "Search Bar"
-            button
-                onclick: "searchDict( "searchbar", "" )"
-                "Search"
+        input#searchText
+            type: "text"
+            name: "searchbar"
+            value: "Search Bar"
+        button
+            onclick: "searchDict( "searchbar", "" )"
+            "Search"
+            
         ul#dictnav
 
     table.termTable
