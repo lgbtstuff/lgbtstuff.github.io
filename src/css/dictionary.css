@@ -21,13 +21,13 @@ table.termTable
 	width: 90%;
 }
 
-th
+table.termTable th
 {
 	text-align: left;
 }
 
 /* Terms have a specific width they cannot exceed */
-td
+table.termTable td
 {
 	width: 6em;
 }
