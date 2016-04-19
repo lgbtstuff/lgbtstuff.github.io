@@ -2,17 +2,11 @@ p.content
     nav.dict
         h1 < "Dictionary"
         form
-            input#alphaCat
-                type: "radio"
-                name: "Alphabetically"
-                value: "Alphabetically"
+            button#alphaCat
                 onclick: "genButtonList( "dictnav", "dictionary", "", "alpha" )"
                 "Search by First Letter"
 
-            input#categoryCat
-                type: "radio"
-                name: "Category"
-                value: "Category"
+            button#categoryCat
                 onclick: "genButtonList( "dictnav", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" )"
                 "Search by Category"
 
