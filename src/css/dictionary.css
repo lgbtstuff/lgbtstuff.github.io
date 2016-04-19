@@ -27,7 +27,7 @@ table.termTable
 }
 
 /* If the screen is too small for the alphabetical buttons */
-@media only screen and ( max-width: 935px )
+@media only screen and ( max-width: 960px )
 {
 	div#dictcatbar
 	{
