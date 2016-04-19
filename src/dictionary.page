@@ -1,13 +1,40 @@
 p.content
     nav.dict
-        "This is the dictionary!"
+        "This is the dictionary! How would you like to sort the terms?"
+        form
+            input#alphaCat
+                type: "radio"
+                name: "Alphabetically"
+                value: "Alphabetically"
+                onclick: "genButtonList( "dictnav", "dictionary", "", "alpha" );"
+            label
+                for: "alphaCat"
+                "Search by First Letter"
+
+            input#categoryCat
+                type: "radio"
+                name: "Category"
+                value: "Category"
+                onclick: "genButtonList( "dictnav", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" );"
+            label
+                for: "categoryCat"
+                "Search by Category"
+
+            input#searchText
+                type: "text"
+                name: "searchbar"
+                value: "Search Bar"
+            button
+                onclick: "searchDict( "searchbar", "" )"
+                "Search"
+        ul#dictnav
         ul#dictnavalpha
         ul#dictnavcat
         ul#dictsearchbar
-            li < form < input#searchText
+            li < input#searchText
                 type: "text"
                 name: "searchbar"
-                value: "Search for anything here!"
+                value: "Search Bar"
             li < button
                 onclick: "searchDict( "searchbar", "" )"
                 "Search"
@@ -19,8 +46,6 @@ p.content
             "Here are all the terms alphabetically. Select a categorization method to narrow your search down further."
 
     script
-        var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        genButtonList( "dictnavalpha", "dictionary", alphabet.split(""), "alpha" );
-        var categories = [ "Sexuality", "Gender", "Misc", "Trans" ];
-        genButtonList( "dictnavcat", "dictionary", categories, "general" );
+        genButtonList( "dictnavalpha", "dictionary", "", "alpha" );
+        genButtonList( "dictnavcat", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" );
         searchDict( "printAll", "" );

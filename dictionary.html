@@ -17,7 +17,7 @@
             	margin-left: 1em;
             }
             
-            ul#dictnavalpha li, ul#dictnavcat li, ul#dictsearchbar
+            ul#dictnavalpha li, ul#dictnavcat li, ul#dictsearchbar, ul#dictnav
             {
             	display: inline;
             	color: black;
@@ -190,17 +190,34 @@
         <section>
             <p class="content">
                 <nav class="dict">
-                    This is the dictionary!
+                    This is the dictionary! How would you like to sort the terms?
+                    <form>
+                        <input id="alphaCat" onclick="genButtonList( 'dictnav', 'dictionary', '', 'alpha' );" name="Alphabetically" type="radio" value="Alphabetically">
+                        </input>
+                        <label for="alphaCat">
+                            Search by First Letter
+                        </label>
+                        <input id="categoryCat" onclick="genButtonList( 'dictnav', 'dictionary', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' );" name="Category" type="radio" value="Category">
+                        </input>
+                        <label for="categoryCat">
+                            Search by Category
+                        </label>
+                        <input id="searchText" name="searchbar" type="text" value="Search Bar">
+                        </input>
+                        <button onclick="searchDict( 'searchbar', '' )">
+                            Search
+                        </button>
+                    </form>
+                    <ul id="dictnav">
+                    </ul>
                     <ul id="dictnavalpha">
                     </ul>
                     <ul id="dictnavcat">
                     </ul>
                     <ul id="dictsearchbar">
                         <li>
-                            <form>
-                                <input id="searchText" name="searchbar" type="text" value="Search for anything here!">
-                                </input>
-                            </form>
+                            <input id="searchText" name="searchbar" type="text" value="Search Bar">
+                            </input>
                         </li>
                         <li>
                             <button onclick="searchDict( 'searchbar', '' )">
@@ -217,10 +234,8 @@
                     </tr>
                 </table>
                 <script>
-                    var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                    genButtonList( "dictnavalpha", "dictionary", alphabet.split(""), "alpha" );
-                    var categories = [ "Sexuality", "Gender", "Misc", "Trans" ];
-                    genButtonList( "dictnavcat", "dictionary", categories, "general" );
+                    genButtonList( "dictnavalpha", "dictionary", "", "alpha" );
+                    genButtonList( "dictnavcat", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" );
                     searchDict( "printAll", "" );
                 </script>
             </p>

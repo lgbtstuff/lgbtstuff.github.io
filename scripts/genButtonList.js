@@ -11,6 +11,12 @@
  */
  function genButtonList( addList, listType, buttonValues, catType )
  {
+ 	if ( catType == "alpha" )
+ 	{
+ 		var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+ 		buttonValues = alphabet.split("");
+ 	}
+
  	// Add all the letters as buttons to the list
  	for ( var i = 0; i < buttonValues.length; i++ )
  	{

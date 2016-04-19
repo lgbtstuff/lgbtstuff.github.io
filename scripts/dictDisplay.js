@@ -92,7 +92,7 @@ function searchDict( catType, searchFor )
 	}
 
 	// Utilization of the search bar
-	else if (catType == 'searchbar' )
+	else if ( catType == 'searchbar' )
 	{
 		// Finds search field input
 		searchFor = document.getElementById( "searchText" ).value.toLowerCase();
@@ -100,7 +100,7 @@ function searchDict( catType, searchFor )
 		document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Search results for: \"" + searchFor + "\"\:";
 
 		// Go backwards so that final term list is alphabetical
- 		for (var i = itemList.length - 1; i >= 0; i--)
+ 		for ( var i = itemList.length - 1; i >= 0; i-- )
  		{
  			if ( itemList[ i ].term.toLowerCase().indexOf( searchFor ) > -1 ||
  				itemList[ i ].definition.toLowerCase().indexOf( searchFor ) > -1 ||
