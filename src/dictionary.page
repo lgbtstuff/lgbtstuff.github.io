@@ -4,12 +4,12 @@ p.content
         ul#dictnavalpha( style: "list-style-type: none" )
         ul#dictnavcat( style: "list-style-type: none" )
         form
-            onsubmit: "searchDict( \"searchbar\", \"\" )"
-            br < input#searchText
+            onsubmit: "searchDict( "searchbar", "" )"
+            input#searchText
                 type: "text"
                 name: "searchbar"
                 value: "Search for anything here!"
-            br < input
+            input
                 type: "submit"
                 value: "Submit"
 
