@@ -1,6 +1,6 @@
 p.content
     nav.dict
-        "This is the dictionary! How would you like to sort the terms?"
+        h1 < "Dictionary"
         form
             input#alphaCat
                 type: "radio"
@@ -28,16 +28,6 @@ p.content
                 onclick: "searchDict( "searchbar", "" )"
                 "Search"
         ul#dictnav
-        ul#dictnavalpha
-        ul#dictnavcat
-        ul#dictsearchbar
-            li < input#searchText
-                type: "text"
-                name: "searchbar"
-                value: "Search Bar"
-            li < button
-                onclick: "searchDict( "searchbar", "" )"
-                "Search"
 
     table.termTable
         id: "termTable"

@@ -17,7 +17,7 @@
             	margin-left: 1em;
             }
             
-            ul#dictnavalpha li, ul#dictnavcat li, ul#dictsearchbar, ul#dictnav
+            ul#dictnav li
             {
             	display: inline;
             	color: black;
@@ -190,7 +190,9 @@
         <section>
             <p class="content">
                 <nav class="dict">
-                    This is the dictionary! How would you like to sort the terms?
+                    <h1>
+                        Dictionary
+                    </h1>
                     <form>
                         <input id="alphaCat" onclick="genButtonList( 'dictnav', 'dictionary', '', 'alpha' );" name="Alphabetically" type="radio" value="Alphabetically">
                         </input>
@@ -209,21 +211,6 @@
                         </button>
                     </form>
                     <ul id="dictnav">
-                    </ul>
-                    <ul id="dictnavalpha">
-                    </ul>
-                    <ul id="dictnavcat">
-                    </ul>
-                    <ul id="dictsearchbar">
-                        <li>
-                            <input id="searchText" name="searchbar" type="text" value="Search Bar">
-                            </input>
-                        </li>
-                        <li>
-                            <button onclick="searchDict( 'searchbar', '' )">
-                                Search
-                            </button>
-                        </li>
                     </ul>
                 </nav>
                 <table class="termTable" id="termTable">
