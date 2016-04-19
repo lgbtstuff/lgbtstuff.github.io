@@ -8,9 +8,16 @@
  * @param #buttonValues
  *		An array of values that the butons will display
  *		and link to the search for
+ * @param #catType
+ *		The categorization method being applied to the terms
  */
  function genButtonList( addList, listType, buttonValues, catType )
  {
+ 	// Empty whichever list the buttons are about to be added to
+ 	clearList( addList );
+
+ 	// If categorization type is alphabetical, use the
+ 	// alphabet for buttons
  	if ( catType == "alpha" )
  	{
  		var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -53,4 +60,16 @@
  	if ( listType == "dictionary" )
  		return searchDict( catType, searchTerm );
  	if ( listType == "biographies" );	// etc
+ }
+
+ /**
+  * Clears the specified list
+  * @parm #toClear
+  *		The ID of the list to be cleared
+  */
+ function clearList( toClear )
+ {
+ 	var list = document.getElementById( toClear );
+ 	while( list.firstChild )
+ 		list.removeChild( list.firstChild );
  }

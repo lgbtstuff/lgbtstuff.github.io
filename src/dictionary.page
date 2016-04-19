@@ -6,7 +6,7 @@ p.content
                 type: "radio"
                 name: "Alphabetically"
                 value: "Alphabetically"
-                onclick: "genButtonList( "dictnav", "dictionary", "", "alpha" );"
+                onclick: "genButtonList( "dictnav", "dictionary", "", "alpha" )"
             label
                 for: "alphaCat"
                 "Search by First Letter"
@@ -15,7 +15,7 @@ p.content
                 type: "radio"
                 name: "Category"
                 value: "Category"
-                onclick: "genButtonList( "dictnav", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" );"
+                onclick: "genButtonList( "dictnav", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" )"
             label
                 for: "categoryCat"
                 "Search by Category"
@@ -36,6 +36,4 @@ p.content
             "Here are all the terms alphabetically. Select a categorization method to narrow your search down further."
 
     script
-        genButtonList( "dictnavalpha", "dictionary", "", "alpha" );
-        genButtonList( "dictnavcat", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" );
         searchDict( "printAll", "" );

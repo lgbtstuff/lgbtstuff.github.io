@@ -194,12 +194,12 @@
                         Dictionary
                     </h1>
                     <form>
-                        <input id="alphaCat" onclick="genButtonList( 'dictnav', 'dictionary', '', 'alpha' );" name="Alphabetically" type="radio" value="Alphabetically">
+                        <input id="alphaCat" onclick="genButtonList( 'dictnav', 'dictionary', '', 'alpha' )" name="Alphabetically" type="radio" value="Alphabetically">
                         </input>
                         <label for="alphaCat">
                             Search by First Letter
                         </label>
-                        <input id="categoryCat" onclick="genButtonList( 'dictnav', 'dictionary', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' );" name="Category" type="radio" value="Category">
+                        <input id="categoryCat" onclick="genButtonList( 'dictnav', 'dictionary', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' )" name="Category" type="radio" value="Category">
                         </input>
                         <label for="categoryCat">
                             Search by Category
@@ -221,8 +221,6 @@
                     </tr>
                 </table>
                 <script>
-                    genButtonList( "dictnavalpha", "dictionary", "", "alpha" );
-                    genButtonList( "dictnavcat", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" );
                     searchDict( "printAll", "" );
                 </script>
             </p>
