@@ -22,16 +22,43 @@ table.termTable
 	border-top
 }
 
-/* Terms have a specific width they cannot exceed */
+td
+{
+	border-spacing: 3px;
+}
+
+/*
+ * Color terms based off of category
+ * Terms have a specific width they cannot exceed
+ */
 td.termSexuality
 {
-	max-width: 10em;
-	border: 2px solid white;
+	background-color: rgb( 255, 178, 102 );	/* Orange */
+	max-width: 15em;
+	border-bottom: 2px solid white;
 	border-collapse: collapse;
 }
 
-/* Color terms based off of category */
-td.termSexuality { background-color: rgb( 255, 178, 102 ); } /* Orange */
-td.termGender { background-color: rgb( 55, 255, 153 ); } /* Green */
-td.termTrans { background-color: rgb( 255, 153, 255 ); } /* Pink */
-td.termMisc { background-color: rgb( 102, 102, 255 ); } /* Blue */
+td.termGender
+{
+	background-color: rgb( 55, 255, 153 );	 /* Green */
+	max-width: 15em;
+	border-bottom: 2px solid white;
+	border-collapse: collapse;
+}
+
+td.termTrans
+{
+	background-color: rgb( 255, 153, 255 );	/* Pink */
+	max-width: 15em;
+	border-bottom: 2px solid white;
+	border-collapse: collapse;
+}
+
+td.termMisc
+{
+	background-color: rgb( 102, 102, 255 );	/* Blue */
+	max-width: 15em;
+	border-bottom: 2px solid white;
+	border-collapse: collapse;
+}
