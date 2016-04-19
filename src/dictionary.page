@@ -1,9 +1,9 @@
 p.content
     nav.dict
         "This is the dictionary!"
-        ul#dictnavalpha()
-        ul#dictnavcat()
-        ul#dictsearchbar()
+        ul#dictnavalpha
+        ul#dictnavcat
+        ul#dictsearchbar
             li < form < input#searchText
                 type: "text"
                 name: "searchbar"
