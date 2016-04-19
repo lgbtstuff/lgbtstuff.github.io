@@ -1,17 +1,16 @@
 p.content
     nav.dict
         "This is the dictionary!"
-        ul#dictnavalpha( style: "list-style-type: none" )
-        ul#dictnavcat( style: "list-style-type: none" )
-        form
-            action: "return searchDict( "searchbar", "" );"
-            input#searchText
+        ul#dictnavalpha()
+        ul#dictnavcat()
+        ul#dictsearchbar()
+            li < form < input#searchText
                 type: "text"
                 name: "searchbar"
                 value: "Search for anything here!"
-            input
-                type: "submit"
-                value: "Submit"
+            li < button
+                onclick: "searchDict( "searchbar", "" )"
+                "Search"
 
     table.termTable
         id: "termTable"

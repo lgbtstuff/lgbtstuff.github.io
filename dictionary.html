@@ -17,7 +17,7 @@
             	margin-left: 1em;
             }
             
-            ul#dictnavalpha li, ul#dictnavcat li
+            ul#dictnavalpha li, ul#dictnavcat li, ul#dictsearchbar
             {
             	display: inline;
             	color: black;
@@ -25,6 +25,7 @@
             	font-family: Quicksand, sans-serif;
             	text-decoration: none;
             	padding: 0.25em 0.25em;
+            	list-style-type: none;
             }
             
             table.termTable
@@ -190,16 +191,23 @@
             <p class="content">
                 <nav class="dict">
                     This is the dictionary!
-                    <ul id="dictnavalpha" style="list-style-type: none">
+                    <ul id="dictnavalpha">
                     </ul>
-                    <ul id="dictnavcat" style="list-style-type: none">
+                    <ul id="dictnavcat">
                     </ul>
-                    <form action="return searchDict( 'searchbar', '' );">
-                        <input id="searchText" name="searchbar" type="text" value="Search for anything here!">
-                        </input>
-                        <input type="submit" value="Submit">
-                        </input>
-                    </form>
+                    <ul id="dictsearchbar">
+                        <li>
+                            <form>
+                                <input id="searchText" name="searchbar" type="text" value="Search for anything here!">
+                                </input>
+                            </form>
+                        </li>
+                        <li>
+                            <button onclick="searchDict( 'searchbar', '' )">
+                                Search
+                            </button>
+                        </li>
+                    </ul>
                 </nav>
                 <table class="termTable" id="termTable">
                     <tr>
