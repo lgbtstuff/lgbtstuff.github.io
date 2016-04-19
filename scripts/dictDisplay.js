@@ -94,12 +94,14 @@ function searchDict( catType, searchFor )
 	// Utilization of the search bar
 	else if (catType == 'searchbar' )
 	{
+		// Finds search field input
+		searchFor = document.getElementById( "searchText" ).value.toLowerCase();
 		// Go backwards so that final term list is alphabetical
  		for (var i = itemList.length - 1; i >= 0; i--)
  		{
- 			if ( itemList[ i ].term.contains( searchFor ) ||
- 				itemList[ i ].definition.contains( searchFor ) ||
- 				itemList[ i ].cat.contains( searchFor ) )
+ 			if ( itemList[ i ].term.toLowerCase().contains( searchFor ) ||
+ 				itemList[ i ].definition.toLowerCase().contains( searchFor ) ||
+ 				itemList[ i ].cat.toLowerCase().contains( searchFor ) )
  				appendTerm( itemList[ i ] );
  		}
 	}

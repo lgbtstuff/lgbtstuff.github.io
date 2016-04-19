@@ -1,8 +1,18 @@
 p.content
     nav.dict
+        "This is the dictionary!"
         ul#dictnavalpha( style: "list-style-type: none" )
         ul#dictnavcat( style: "list-style-type: none" )
-        "This is the dictionary!"
+        form
+            onsubmit: "searchDict( \"searchbar\", \"\" )"
+            br < input#searchText
+                type: "text"
+                name: "searchbar"
+                value: "Search for anything here!"
+            br < input
+                type: "submit"
+                value: "Submit"
+
     table.termTable
         id: "termTable"
         tr < th
