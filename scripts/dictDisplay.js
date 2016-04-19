@@ -56,7 +56,7 @@ function searchDict( catType, searchFor )
 		return;
 	}
 
-	document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are the terms under the category \"" + searchFor + "\"";
+	document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Terms under the category \"" + searchFor + "\"";
 
 	// Clear all the previously added terms
 	// Avoid the first row - this is the header

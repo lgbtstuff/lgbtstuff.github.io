@@ -3,9 +3,9 @@ p.content
         h1 < "The Dictionary"
 
         button
-            onclick: searchDict( "printAll", "" );
+            onclick: "searchDict( "printAll", "" )"
             "All Terms"
-            
+
         button#alphaCat
             onclick: "genButtonList( "dictnav", "dictionary", "", "alpha" )"
             "Search by First Letter"
