@@ -27,7 +27,7 @@ table.termTable th
 }
 
 /* Terms have a specific width they cannot exceed */
-table.termTable td
+td.termSexuality
 {
 	width: 6em;
 }
