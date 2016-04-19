@@ -207,21 +207,21 @@
                     <h1>
                         The Dictionary
                     </h1>
-                    <button onclick="searchDict( 'printAll', '' )">
-                        All Terms
-                    </button>
-                    <button id="alphaCat" onclick="genButtonList( 'dictnav', 'dictionary', '', 'alpha' )">
-                        Search by First Letter
-                    </button>
-                    <button id="categoryCat" onclick="genButtonList( 'dictnav', 'dictionary', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' )">
-                        Search by Category
-                    </button>
-                    <input id="searchText" name="searchbar" type="text" value="Search Bar">
-                    </input>
-                    <button onclick="searchDict( 'searchbar', '' )">
-                        Search
-                    </button>
                     <div id="dictcatbar">
+                        <button onclick="searchDict( 'printAll', '' )">
+                            All Terms
+                        </button>
+                        <button id="alphaCat" onclick="genButtonList( 'dictnav', 'dictionary', '', 'alpha' )">
+                            Search by First Letter
+                        </button>
+                        <button id="categoryCat" onclick="genButtonList( 'dictnav', 'dictionary', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' )">
+                            Search by Category
+                        </button>
+                        <input id="searchText" name="searchbar" type="text" value="Search Bar">
+                        </input>
+                        <button onclick="searchDict( 'searchbar', '' )">
+                            Search
+                        </button>
                         <ul id="dictnav">
                         </ul>
                     </div>
