@@ -4,7 +4,7 @@ p.content
         ul#dictnavalpha( style: "list-style-type: none" )
         ul#dictnavcat( style: "list-style-type: none" )
         form
-            onsubmit: "searchDict( "searchbar", "" )"
+            onsubmit: "return searchDict( "searchbar", "" );"
             input#searchText
                 type: "text"
                 name: "searchbar"

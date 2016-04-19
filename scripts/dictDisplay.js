@@ -96,6 +96,9 @@ function searchDict( catType, searchFor )
 	{
 		// Finds search field input
 		searchFor = document.getElementById( "searchText" ).value.toLowerCase();
+
+		document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
+		
 		// Go backwards so that final term list is alphabetical
  		for (var i = itemList.length - 1; i >= 0; i--)
  		{
