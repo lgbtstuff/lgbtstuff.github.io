@@ -23,8 +23,6 @@ function item( term, definition, cat, cat2 )
  *		The type of categorization method
  * @param #searchFor
  *		What we're searching for!
- * @param #divID
- *		The ID of the div to append the terms to
  */
 function searchDict( catType, searchFor )
 {
@@ -58,7 +56,7 @@ function searchDict( catType, searchFor )
 		return;
 	}
 
-	document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are the terms under the category \"" + searchFor + "\"\:";
+	document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are the terms under the category \"" + searchFor + "\"";
 
 	// Clear all the previously added terms
 	// Avoid the first row - this is the header
@@ -97,15 +95,13 @@ function searchDict( catType, searchFor )
 		// Finds search field input
 		searchFor = document.getElementById( "searchText" ).value.toLowerCase();
 
-		document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Search results for: \"" + searchFor + "\"\:";
+		document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Search results for \"" + searchFor + "\"";
 
 		// Go backwards so that final term list is alphabetical
  		for ( var i = itemList.length - 1; i >= 0; i-- )
  		{
  			if ( itemList[ i ].term.toLowerCase().indexOf( searchFor ) > -1 ||
- 				itemList[ i ].definition.toLowerCase().indexOf( searchFor ) > -1 ||
- 				itemList[ i ].cat.toLowerCase().indexOf( searchFor ) > -1 ||
- 				itemList[ i ].cat2.toLowerCase().indexOf( searchFor ) > -1 )
+ 				itemList[ i ].definition.toLowerCase().indexOf( searchFor ) > -1 )
  				appendTerm( itemList[ i ] );
  		}
 	}

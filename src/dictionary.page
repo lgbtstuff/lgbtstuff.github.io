@@ -1,6 +1,11 @@
 p.content
     nav.dict
-        h1 < "Dictionary"
+        h1 < "The Dictionary"
+
+        button
+            onclick: searchDict( "printAll", "" );
+            "All Terms"
+            
         button#alphaCat
             onclick: "genButtonList( "dictnav", "dictionary", "", "alpha" )"
             "Search by First Letter"
@@ -16,7 +21,7 @@ p.content
         button
             onclick: "searchDict( "searchbar", "" )"
             "Search"
-            
+
         ul#dictnav
 
     table.termTable
