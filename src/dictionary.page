@@ -21,8 +21,8 @@ p.content
         button
             onclick: "searchDict( "searchbar", "" )"
             "Search"
-
-        ul#dictnav
+        div#dictcatbar
+            ul#dictnav
 
     table.termTable
         id: "termTable"

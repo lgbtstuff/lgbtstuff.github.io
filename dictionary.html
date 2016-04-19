@@ -39,6 +39,17 @@
             	border-top
             }
             
+            /* If the screen is too small for the alphabetical buttons */
+            @media only screen and ( max-width: 935px )
+            {
+            	div#dictcatbar
+            	{
+            		overflow-x: scroll;
+            		overflow-y: hidden;
+            		white-space: nowrap;
+            	}
+            }
+            
             /*
              * Color terms based off of category
              * Terms have a specific width they cannot exceed
@@ -210,8 +221,10 @@
                     <button onclick="searchDict( 'searchbar', '' )">
                         Search
                     </button>
-                    <ul id="dictnav">
-                    </ul>
+                    <div id="dictcatbar">
+                        <ul id="dictnav">
+                        </ul>
+                    </div>
                 </nav>
                 <table class="termTable" id="termTable">
                     <tr>
