@@ -19,17 +19,15 @@ table.termTable
 	white-space: pre-wrap;
 	margin-left: 1em;
 	width: 90%;
-}
-
-table.termTable th
-{
-	text-align: left;
+	border-top
 }
 
 /* Terms have a specific width they cannot exceed */
 td.termSexuality
 {
-	width: 10em;
+	max-width: 10em;
+	border: 2px solid white;
+	border-collapse: collapse;
 }
 
 /* Color terms based off of category */
