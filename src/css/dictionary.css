@@ -27,10 +27,11 @@ table.termTable
 }
 
 /* If the screen is too small for the alphabetical buttons */
-@media only screen and ( max-width: 960px )
+@media only screen and ( max-width: 980px )
 {
 	div#dictcatbar
 	{
+		width: 90%;
 		overflow-x: scroll;
 		overflow-y: hidden;
 		white-space: nowrap;
