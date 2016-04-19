@@ -7,8 +7,6 @@ p.content
                 name: "Alphabetically"
                 value: "Alphabetically"
                 onclick: "genButtonList( "dictnav", "dictionary", "", "alpha" )"
-            label
-                for: "alphaCat"
                 "Search by First Letter"
 
             input#categoryCat
@@ -16,8 +14,6 @@ p.content
                 name: "Category"
                 value: "Category"
                 onclick: "genButtonList( "dictnav", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" )"
-            label
-                for: "categoryCat"
                 "Search by Category"
 
             input#searchText
