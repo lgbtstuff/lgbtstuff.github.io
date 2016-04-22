@@ -46,7 +46,7 @@ td.termSexuality
 {
 	background-color: rgb( 255, 178, 102 );	/* Orange */
 	width: 12em;
-	border-bottom: 16px solid lightblue;
+	border-bottom: 24px solid lightblue;
 	border-collapse: collapse;
 }
 
@@ -54,7 +54,7 @@ td.termGender
 {
 	background-color: rgb( 55, 255, 153 );	 /* Green */
 	width: 12em;
-	border-bottom: 16px solid lightblue;
+	border-bottom: 24px solid lightblue;
 	border-collapse: collapse;
 }
 
@@ -62,7 +62,7 @@ td.termTrans
 {
 	background-color: rgb( 255, 153, 255 );	/* Pink */
 	width: 12em;
-	border-bottom: 16px solid lightblue;
+	border-bottom: 24px solid lightblue;
 	border-collapse: collapse;
 }
 
@@ -70,6 +70,6 @@ td.termMisc
 {
 	background-color: rgb( 102, 102, 255 );	/* Blue */
 	width: 12em;
-	border-bottom: 16px solid lightblue;
+	border-bottom: 24px solid lightblue;
 	border-collapse: collapse;
 }
