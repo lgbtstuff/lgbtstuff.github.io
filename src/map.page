@@ -18,5 +18,5 @@ p.content
                 onmouseover: "tooltipInfo( "Texas" )"
 
         span
-            div.tooltipHeader < "Texas"
-            div.tooltip < "is real rude to all the gays."
+            div#tooltipHeader < "Texas"
+            div#tooltip < "is real rude to all the gays."
