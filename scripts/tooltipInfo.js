@@ -21,7 +21,7 @@ var text = [];
 	}
 
  	document.getElementById( "tooltipHeader" ).innerHTML = state;
- 	document.getElementById( "tooltip" ).innerHTML = "\t" + info;
+ 	document.getElementById( "tooltip" ).innerHTML = "    " + info;
  }
 
 // Initial reading in of the text file
