@@ -19,6 +19,6 @@
 			info = text[ i - 1 ];
 	}
 
- 	document.getElementByID( "tooltipHeader" ).innerHTML = state;
- 	document.getElementByID( "tooltip" ).innerHTML = info;
+ 	document.getElementById( "tooltipHeader" ).innerHTML = state;
+ 	document.getElementById( "tooltip" ).innerHTML = info;
  }
