@@ -19,9 +19,36 @@ ul#dictnav li
 }
 
 /* Color the category buttons to match their categories */
+button#Sexuality:hover, button#Sexuality:focus, button#Gender:hover, button#Gender:focus, button#Trans:hover, button#Trans:focus, button#Misc:hover, button#Misc:focus
+{
+	border-width: 4px;
+}
+
 button#Sexuality
 {
 	background-color: rgb( 255, 178, 102 );	/* Orange */
+	border-width: 3px;
+	border-color: #009ACD;
+}
+
+button#Gender
+{
+	background-color: rgb( 55, 255, 153 );	 /* Green */
+	border-width: 3px;
+	border-color: #009ACD;
+}
+
+button#Trans
+{
+	background-color: rgb( 255, 153, 255 );	/* Pink */
+	border-width: 3px;
+	border-color: #009ACD;
+	border-radius: 12px;
+}
+
+button#Misc
+{
+	background-color: rgb( 102, 102, 255 );	/* Blue */
 	border-width: 3px;
 	border-color: #009ACD;
 	border-radius: 12px;
@@ -31,6 +58,7 @@ button#Sexuality:hover, button#Sexuality:focus
 {
 	background-color: rgba( 255, 178, 102, 0.7 );
 }
+
 
 table.termTable
 {
