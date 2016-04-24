@@ -1,4 +1,4 @@
-h1.map, div.introMap
+div.introMap
 {
 	margin-left: 1em;
 }
@@ -20,7 +20,8 @@ div#tooltipHeader
 /* Style the tooltip! */
 span
 {
-	width: 300px;
+	width: 500px;
+	height: 644px;
 	background-color: darkgray;
 	color: #fff;
 
@@ -29,7 +30,7 @@ span
 	padding: 10px 10px;
 
 	border: 4px solid black;
-	border-radius: 6px;
+	border-radius: 20px;
 
 	position: absolute;
 }
