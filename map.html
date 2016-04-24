@@ -220,15 +220,6 @@
             	background-color: lightgray;
             }
             
-            /* Style all of the circles to hover over */
-            map.legislation area#TX
-            {
-            	visibility: visible;
-            	background-color: darkred;
-            	border-width: 2px;
-            	border-color: black;
-            }
-            
             /* Style the tooltips! */
             span.TX
             {
@@ -287,6 +278,7 @@
         </nav>
         <script src="scripts\dictDisplay.js"></script>
         <script src="scripts\genButtonList.js"></script>
+        <script src="scripts\circleDrawing.js"></script>
         <section>
             <p class="content">
                 <h1 class="map">
@@ -295,12 +287,17 @@
                 <img class="map" src="images\map.gif" alt="Legislation Map" width="559px" usemap="#legislation" height="322px">
                 </img>
                 <map class="legislation" name="legislation">
-                    <area id="TX" shape="circle" alt="Texas" coords="20, 30, 500">
+                    <area id="TX" shape="circle" alt="Texas" coords="20, 30, 20">
                     </area>
                     <span class="TX">
                         Texas is real rude to all the gays
                     </span>
+                    <canvas class="circle" width="100" height="100">
+                    </canvas>
                 </map>
+                <script>
+                    draw( "circle", false, true, 20, 0 );
+                </script>
             </p>
         </section>
     </body>
