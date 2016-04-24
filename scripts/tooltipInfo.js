@@ -13,10 +13,10 @@
 	// Will store the information about that particular state
 	var info = "";
 
-	for ( var i = 0; i < text.length - 1; i++ )
+	for ( var i = 2; i < text.length; i += 3 )
 	{
-		if ( text[ i ] == state )
-			info = text[ i + 1 ];
+		if ( text[ i - 2 ] == state )
+			info = text[ i - 1 ];
 	}
 
  	document.getElementByID( "tooltipHeader" ).innerHTML = state;
