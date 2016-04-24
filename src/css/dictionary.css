@@ -19,7 +19,7 @@ ul#dictnav li
 }
 
 /* Color the category buttons to match their categories */
-button.Sexuality
+button#Sexuality
 {
 	background-color: rgb( 255, 178, 102 );	/* Orange */
 }
