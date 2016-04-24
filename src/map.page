@@ -7,7 +7,7 @@ p.content
         height: "322px"
         usemap: "#legislation"
 
-    map
+    map.legislation
         name: "legislation"
         area#TX
             shape: "circle"

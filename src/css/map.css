@@ -1,4 +1,4 @@
-map
+img.map
 {
 	visibility: hidden;
 	border-width: 5px;
@@ -7,7 +7,7 @@ map
 }
 
 /* Style all of the circles to hover over */
-area#TX
+map.legislation area#TX
 {
 	background-color: darkred;
 	border-width: 2px;
@@ -28,7 +28,7 @@ span.TX
 	z-index: 1;
 }
 
-/*area#TX:hover + span.TX
+( map.legislation area#TX:hover ) + span.TX
 {
     visibility: visible;
-}*/
+}

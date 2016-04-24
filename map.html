@@ -207,7 +207,7 @@
             }
         </style>
         <style>
-            map
+            img.map
             {
             	visibility: hidden;
             	border-width: 5px;
@@ -216,7 +216,7 @@
             }
             
             /* Style all of the circles to hover over */
-            area#TX
+            map.legislation area#TX
             {
             	background-color: darkred;
             	border-width: 2px;
@@ -237,10 +237,10 @@
             	z-index: 1;
             }
             
-            /*area#TX:hover + span.TX
+            ( map.legislation area#TX:hover ) + span.TX
             {
                 visibility: visible;
-            }*/
+            }
         </style>
     </head>
     <body>
@@ -288,7 +288,7 @@
                 </h1>
                 <img class="map" src="images\map.gif" alt="Legislation Map" width="559px" usemap="#legislation" height="322px">
                 </img>
-                <map name="legislation">
+                <map class="legislation" name="legislation">
                     <area id="TX" shape="circle" alt="Texas" coords="20, 30, 500">
                     </area>
                     <span class="TX">
