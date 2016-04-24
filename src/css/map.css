@@ -1,8 +1,13 @@
+h1
+{
+	margin: 1em;
+}
+
 img.map
 {
 	border: 5px solid black;
-	border-radius: 10px;
-	background-color: gray;
+	border-radius: 20px;
+	background-color: lightgray;
 }
 
 /* Style all of the circles to hover over */
