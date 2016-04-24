@@ -1,3 +1,4 @@
+/** This file is used to edit the info on the legislation map page */
 
 // The text to be read in from a file, split by line
 var text = [];
@@ -20,7 +21,7 @@ var text = [];
 	}
 
  	document.getElementById( "tooltipHeader" ).innerHTML = state;
- 	document.getElementById( "tooltip" ).innerHTML = info;
+ 	document.getElementById( "tooltip" ).innerHTML = "\t" + info;
  }
 
 // Initial reading in of the text file
