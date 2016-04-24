@@ -1,21 +1,22 @@
 p.content
     h1.map < "The Map"
     "Mouse over the abbreviation for any state to get more information."
-    img.map
-        src: "images\map.gif"
-        alt: "Legislation Map"
-        width: "1118px"
-        height: "644px"
-        usemap: "#legislation"
+    div
+        img.map
+            src: "images\map.gif"
+            alt: "Legislation Map"
+            width: "1118px"
+            height: "644px"
+            usemap: "#legislation"
 
-    map.legislation
-        name: "legislation"
-        area#TX
-            shape: "rect"
-            coords: "0, 0, 20, 20"
-            alt: "Texas"
-            onmouseover: "tooltipInfo( "Texas" )"
+        map.legislation
+            name: "legislation"
+            area#TX
+                shape: "rect"
+                coords: "0, 0, 60, 60"
+                alt: "Texas"
+                onmouseover: "tooltipInfo( "Texas" )"
 
-    span
-        div.tooltipHeader < "Texas"
-        div.tooltip < "is real rude to all the gays."
+        span
+            div.tooltipHeader < "Texas"
+            div.tooltip < "is real rude to all the gays."

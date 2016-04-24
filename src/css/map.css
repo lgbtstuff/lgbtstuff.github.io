@@ -28,8 +28,7 @@ span
 	border-color: black;
 	border-radius: 6px;
 
-	position: absolute;
-	z-index: 1;
+	transition: visibility 1s ease;
 }
 
 area:hover + span, area:focus + span

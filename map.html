@@ -237,8 +237,7 @@
             	border-color: black;
             	border-radius: 6px;
             
-            	position: absolute;
-            	z-index: 1;
+            	transition: visibility 1s ease;
             }
             
             area:hover + span, area:focus + span
@@ -293,20 +292,22 @@
                     The Map
                 </h1>
                 Mouse over the abbreviation for any state to get more information.
-                <img class="map" src="images\map.gif" alt="Legislation Map" width="1118px" usemap="#legislation" height="644px">
-                </img>
-                <map class="legislation" name="legislation">
-                    <area id="TX" shape="rect" alt="Texas" onmouseover="tooltipInfo( 'Texas' )" coords="0, 0, 20, 20">
-                    </area>
-                </map>
-                <span>
-                    <div class="tooltipHeader">
-                        Texas
-                    </div>
-                    <div class="tooltip">
-                        is real rude to all the gays.
-                    </div>
-                </span>
+                <div>
+                    <img class="map" src="images\map.gif" alt="Legislation Map" width="1118px" usemap="#legislation" height="644px">
+                    </img>
+                    <map class="legislation" name="legislation">
+                        <area id="TX" shape="rect" alt="Texas" onmouseover="tooltipInfo( 'Texas' )" coords="0, 0, 60, 60">
+                        </area>
+                    </map>
+                    <span>
+                        <div class="tooltipHeader">
+                            Texas
+                        </div>
+                        <div class="tooltip">
+                            is real rude to all the gays.
+                        </div>
+                    </span>
+                </div>
             </p>
         </section>
     </body>
