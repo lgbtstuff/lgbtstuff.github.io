@@ -3,8 +3,8 @@ p.content
     img.map
         src: "images\map.gif"
         alt: "Legislation Map"
-        width: "559px"
-        height: "322px"
+        width: "1118px"
+        height: "644px"
         usemap: "#legislation"
 
     map.legislation
@@ -17,6 +17,6 @@ p.content
     canvas#circle.TX
         width: "30"
         height: "30"
-    
+
     script
         draw( "circle", false, true, 15, 0 );
