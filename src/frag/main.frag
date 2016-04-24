@@ -7,9 +7,6 @@ head
     link
         rel: "icon"
         href: "images\logo.png"
-    link
-        rel: "stylesheet"
-        href: "http://www.w3schools.com/lib/w3.css"
 
 body
     nav.main

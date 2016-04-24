@@ -18,6 +18,12 @@ ul#dictnav li
 	list-style-type: none;
 }
 
+/* Color the category buttons to match their categories */
+ul#dictnav li button.Sexuality
+{
+	background-color: rgb( 255, 178, 102 );	/* Orange */
+}
+
 table.termTable
 {
 	white-space: pre-wrap;

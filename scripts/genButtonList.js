@@ -36,9 +36,10 @@
  		// The method invocation to be run onclick as represented by a string
  		var toCall = "chooseList( \"" + listType + "\", \"" + buttonValues[ i ] + "\", \"" + catType + "\" )";
 
- 		// Modify the button to contain the letter and the correct term linkage
+ 		// Modify the button to contain the category and the correct term linkage
  		newButton.setAttribute( "onclick", toCall );
         newButton.appendChild( document.createTextNode( buttonValues[ i ] ) );
+        newButton.setAttribute( "ID", buttonValues[ i ] );
 
  		// Add the button to the list item
  		entry.appendChild( newButton );
