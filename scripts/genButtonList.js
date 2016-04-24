@@ -39,7 +39,7 @@
  		// Modify the button to contain the category and the correct term linkage
  		newButton.setAttribute( "onclick", toCall );
         newButton.appendChild( document.createTextNode( buttonValues[ i ] ) );
-        newButton.setAttribute( "ID", buttonValues[ i ] );
+        newButton.setAttribute( "id", buttonValues[ i ] );
 
  		// Add the button to the list item
  		entry.appendChild( newButton );
