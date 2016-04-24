@@ -221,15 +221,22 @@
             }
             
             /* Style the tooltips! */
-            span.TX
+            span
             {
             	visibility: hidden;
-            	width: 120px;
-            	background-color: black;
+            
+            	width: 300px;
+            	background-color: darkgray;
             	color: #fff;
+            
             	text-align: center;
-            	padding: 5px 0;
+            
+            	padding: 10px 10px;
+            
+            	border-width: 4px;
+            	border-color: black;
             	border-radius: 6px;
+            	
             	position: absolute;
             	z-index: 1;
             }
@@ -286,7 +293,7 @@
                 <img class="map" src="images\map.gif" alt="Legislation Map" width="1118px" usemap="#legislation" height="644px">
                 </img>
                 <map class="legislation" name="legislation">
-                    <area id="TX" shape="circle" alt="Texas" coords="20, 30, 20">
+                    <area id="TX" shape="rect" alt="Texas" coords="0, 0, 20, 20">
                     </area>
                     <span class="TX">
                         Texas is real rude to all the gays
