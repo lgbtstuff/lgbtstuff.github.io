@@ -236,12 +236,12 @@
             	border-width: 4px;
             	border-color: black;
             	border-radius: 6px;
-            	
+            
             	position: absolute;
             	z-index: 1;
             }
             
-            area#TX:hover + span.TX, area#TX:focus + span.TX
+            area:hover + span, area:focus + span
             {
                 visibility: visible;
             }
@@ -283,22 +283,30 @@
                 </li>
             </ul>
         </nav>
+        <script src="scripts\readTextFile.js"></script>
         <script src="scripts\dictDisplay.js"></script>
         <script src="scripts\genButtonList.js"></script>
+        <script src="scripts\tooltipInfo.js"></script>
         <section>
             <p class="content">
                 <h1 class="map">
                     The Map
                 </h1>
+                Mouse over the abbreviation for any state to get more information.
                 <img class="map" src="images\map.gif" alt="Legislation Map" width="1118px" usemap="#legislation" height="644px">
                 </img>
                 <map class="legislation" name="legislation">
-                    <area id="TX" shape="rect" alt="Texas" coords="0, 0, 20, 20">
+                    <area id="TX" shape="rect" alt="Texas" onmouseover="tooltipInfo( 'Texas' )" coords="0, 0, 20, 20">
                     </area>
-                    <span class="TX">
-                        Texas is real rude to all the gays
-                    </span>
                 </map>
+                <span>
+                    <div class="tooltipHeader">
+                        Texas
+                    </div>
+                    <div class="tooltip">
+                        is real rude to all the gays.
+                    </div>
+                </span>
             </p>
         </section>
     </body>

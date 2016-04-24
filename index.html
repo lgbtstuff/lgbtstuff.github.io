@@ -236,12 +236,12 @@
             	border-width: 4px;
             	border-color: black;
             	border-radius: 6px;
-            	
+            
             	position: absolute;
             	z-index: 1;
             }
             
-            area#TX:hover + span.TX, area#TX:focus + span.TX
+            area:hover + span, area:focus + span
             {
                 visibility: visible;
             }
@@ -283,8 +283,10 @@
                 </li>
             </ul>
         </nav>
+        <script src="scripts\readTextFile.js"></script>
         <script src="scripts\dictDisplay.js"></script>
         <script src="scripts\genButtonList.js"></script>
+        <script src="scripts\tooltipInfo.js"></script>
         <section>
             <p class="content">
                 This is the home page! Yay!

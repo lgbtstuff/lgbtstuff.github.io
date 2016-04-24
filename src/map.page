@@ -1,5 +1,6 @@
 p.content
     h1.map < "The Map"
+    "Mouse over the abbreviation for any state to get more information."
     img.map
         src: "images\map.gif"
         alt: "Legislation Map"
@@ -13,4 +14,8 @@ p.content
             shape: "rect"
             coords: "0, 0, 20, 20"
             alt: "Texas"
-        span.TX < "Texas is real rude to all the gays"
+            onmouseover: "tooltipInfo( "Texas" )"
+
+    span
+        div.tooltipHeader < "Texas"
+        div.tooltip < "is real rude to all the gays."
