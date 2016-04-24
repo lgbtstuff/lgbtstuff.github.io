@@ -222,6 +222,7 @@
             /* Style all of the circles to hover over */
             map.legislation area#TX
             {
+            	display: inline;
             	background-color: darkred;
             	border-width: 2px;
             	border-color: black;
@@ -241,7 +242,7 @@
             	z-index: 1;
             }
             
-            ( map.legislation area#TX:hover ) + span.TX
+            area#TX:hover + span.TX
             {
                 visibility: visible;
             }
