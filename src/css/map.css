@@ -1,4 +1,4 @@
-h1.map
+p.content
 {
 	margin-left: 1em;
 }
@@ -28,7 +28,7 @@ span
 	border-color: black;
 	border-radius: 6px;
 
-	transition: visibility 1s ease;
+	/* transition: visibility 1s ease; */
 }
 
 area:hover + span, area:focus + span

@@ -20,3 +20,4 @@ p.content
         span
             div#tooltipHeader < "Texas"
             div#tooltip < "is real rude to all the gays."
+    script < stateSetUp();
