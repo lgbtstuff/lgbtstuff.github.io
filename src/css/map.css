@@ -34,4 +34,5 @@ area#TX:hover + span.TX, area#TX:focus + span.TX
 canvas.TX
 {
 	position: absolute;
+	left: -200px;
 }
