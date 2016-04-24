@@ -19,6 +19,6 @@ p.content
 
         span
             div#tooltipHeader < "State Name"
-            div#tooltip < "\tFurther information on the legislation of that state."
+            div#tooltip < "Further information on the legislation of that state."
 
     script < stateSetUp();

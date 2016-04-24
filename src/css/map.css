@@ -20,6 +20,7 @@ div#tooltipHeader
 div#tooltip
 {
 	text-align: left;
+	text-indent: 10px;
 }
 
 /* Style the tooltip! */
