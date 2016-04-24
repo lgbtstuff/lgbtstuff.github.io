@@ -8,7 +8,7 @@
  {
  	// Splits the text file into individual lines, storing
 	// these values in an array
-	var text = readTextFile( "scripts/Legislation_Info" ).split( "\n" );
+	var text = readTextFile( "scripts/Legislation_Info.txt" ).split( "\n" );
 
 	// Will store the information about that particular state
 	var info = "";
