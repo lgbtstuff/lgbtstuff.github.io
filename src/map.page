@@ -13,4 +13,4 @@ p.content
             shape: "circle"
             coords: "20, 30, 16"
             alt: "Texas"
-            span.TX < "Texas is real rude to all the gays"
+        span.TX < "Texas is real rude to all the gays"

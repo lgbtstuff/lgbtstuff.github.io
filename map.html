@@ -223,7 +223,7 @@
             }
             
             /* Style the tooltips! */
-            area#TX span.TX
+            span.TX
             {
             	visibility: hidden;
             	width: 120px;
@@ -236,7 +236,7 @@
             	z-index: 1;
             }
             
-            area#TX:hover span.TX
+            area#TX:hover + span.TX
             {
                 visibility: visible;
             }
@@ -289,10 +289,10 @@
                 </image>
                 <map name="map">
                     <area id="TX" shape="circle" alt="Texas" coords="20, 30, 16">
-                        <span class="TX">
-                            Texas is real rude to all the gays
-                        </span>
                     </area>
+                    <span class="TX">
+                        Texas is real rude to all the gays
+                    </span>
                 </map>
             </p>
         </section>
