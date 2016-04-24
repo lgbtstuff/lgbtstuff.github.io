@@ -1,6 +1,6 @@
 p.content
     h1.map < "The Map"
-    div.introMap < "Mouse over the abbreviation for any state to get more information."
+    div.introMap < "Mouse over the abbreviation of any state to get more information."
     div.map
         img.map
             src: "images\map.gif"
