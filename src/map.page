@@ -1,14 +1,14 @@
 p.content
     h1 < "The Map"
-    image.map
+    img.map
         src: "images\map.gif"
         alt: "Legislation Map"
         width: "559px"
         height: "322px"
-        usemap: "#map"
+        usemap: "#legislation"
 
     map
-        name: "map"
+        name: "legislation"
         area#TX
             shape: "circle"
             coords: "20, 30, 500"

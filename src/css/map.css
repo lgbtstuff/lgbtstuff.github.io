@@ -8,7 +8,7 @@ map
 /* Style all of the circles to hover over */
 area#TX
 {
-	color: darkred;
+	background-color: darkred;
 	border-width: 2px;
 	border-color: black;
 }
