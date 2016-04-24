@@ -11,6 +11,6 @@ p.content
         name: "map"
         area#TX
             shape: "circle"
-            coords: "20, 30, 16"
+            coords: "20, 30, 500"
             alt: "Texas"
         span.TX < "Texas is real rude to all the gays"
