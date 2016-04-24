@@ -1,5 +1,5 @@
 p.content
-    h1 < "The Map"
+    h1.map < "The Map"
     img.map
         src: "images\map.gif"
         alt: "Legislation Map"
