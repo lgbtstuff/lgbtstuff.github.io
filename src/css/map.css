@@ -28,7 +28,7 @@ span.TX
 	z-index: 1;
 }
 
-area#TX:hover + span.TX
+/*area#TX:hover + span.TX
 {
     visibility: visible;
-}
+}*/
