@@ -206,6 +206,41 @@
             	margin: 1em;
             }
         </style>
+        <style>
+            map
+            {
+            	border-width: 5px;
+            	border-color: black;
+            	border-radius: 10px;
+            }
+            
+            /* Style all of the circles to hover over */
+            area
+            {
+            	background-color: darkred;
+            	border-width: 2px;
+            	border-color: black;
+            }
+            
+            /* Style the tooltips! */
+            area .TX
+            {
+            	visibility: hidden;
+            	width: 120px;
+            	background-color: black;
+            	color: #fff;
+            	text-align: center;
+            	padding: 5px 0;
+            	border-radius: 6px;
+            	position: absolute;
+            	z-index: 1;
+            }
+            
+            area:hover .TX
+            {
+                visibility: visible;
+            }
+        </style>
     </head>
     <body>
         <nav class="main">

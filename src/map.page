@@ -1,2 +1,17 @@
 p.content
-    "This is the map!"
+    h1 < "The Map"
+    image.map
+        src: "images\map.gif"
+        alt: "Legislation Map"
+        style: "height: 150px; width: 150px;"
+        usemap: "#map"
+
+    map
+        name: "map"
+        area
+            shape: "circle"
+            coords: "20, 30, 16"
+            alt: "Texas"
+            span.TX < "Texas is real rude to all the gays"
+
+
