@@ -217,13 +217,13 @@
             /* Style all of the circles to hover over */
             area
             {
-            	background-color: darkred;
+            	color: darkred;
             	border-width: 2px;
             	border-color: black;
             }
             
             /* Style the tooltips! */
-            area .TX
+            area#TX .TX
             {
             	visibility: hidden;
             	width: 120px;
@@ -236,7 +236,7 @@
             	z-index: 1;
             }
             
-            area:hover .TX
+            area#TX:hover .TX
             {
                 visibility: visible;
             }

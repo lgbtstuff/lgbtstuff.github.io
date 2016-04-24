@@ -3,15 +3,14 @@ p.content
     image.map
         src: "images\map.gif"
         alt: "Legislation Map"
-        style: "height: 150px; width: 150px;"
+        width: "559px"
+        height: "322px"
         usemap: "#map"
 
     map
         name: "map"
-        area
+        area#TX
             shape: "circle"
             coords: "20, 30, 16"
             alt: "Texas"
             span.TX < "Texas is real rude to all the gays"
-
-

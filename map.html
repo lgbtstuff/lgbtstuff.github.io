@@ -217,13 +217,13 @@
             /* Style all of the circles to hover over */
             area
             {
-            	background-color: darkred;
+            	color: darkred;
             	border-width: 2px;
             	border-color: black;
             }
             
             /* Style the tooltips! */
-            area .TX
+            area#TX .TX
             {
             	visibility: hidden;
             	width: 120px;
@@ -236,7 +236,7 @@
             	z-index: 1;
             }
             
-            area:hover .TX
+            area#TX:hover .TX
             {
                 visibility: visible;
             }
@@ -285,10 +285,10 @@
                 <h1>
                     The Map
                 </h1>
-                <image class="map" src="images\map.gif" alt="Legislation Map" style="height: 150px; width: 150px;" usemap="#map">
+                <image class="map" src="images\map.gif" alt="Legislation Map" width="559px" usemap="#map" height="322px">
                 </image>
                 <map name="map">
-                    <area shape="circle" alt="Texas" coords="20, 30, 16">
+                    <area id="TX" shape="circle" alt="Texas" coords="20, 30, 16">
                         <span class="TX">
                             Texas is real rude to all the gays
                         </span>
