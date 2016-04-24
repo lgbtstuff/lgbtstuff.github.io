@@ -29,3 +29,9 @@ area#TX:hover + span.TX, area#TX:focus + span.TX
 {
     visibility: visible;
 }
+
+/** Overlap the canvases with the map and position them accordingly */
+canvas.TX
+{
+	position: absolute;
+}
