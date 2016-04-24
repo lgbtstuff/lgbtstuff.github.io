@@ -207,7 +207,7 @@
             }
         </style>
         <style>
-            p.content
+            h1.map, div.introMap
             {
             	margin-left: 1em;
             }
@@ -220,11 +220,9 @@
             	background-color: lightgray;
             }
             
-            /* Style the tooltips! */
+            /* Style the tooltip! */
             span
             {
-            	visibility: hidden;
-            
             	width: 300px;
             	background-color: darkgray;
             	color: #fff;
@@ -236,13 +234,18 @@
             	border-width: 4px;
             	border-color: black;
             	border-radius: 6px;
-            
-            	/* transition: visibility 1s ease; */
             }
             
-            area:hover + span, area:focus + span
+            /* If the screen is too small for the map and the labeling */
+            @media only screen and ( max-width: 1300px )
             {
-                visibility: visible;
+            	div.map
+            	{
+            		margin-right: 14px;
+            		overflow-x: scroll;
+            		overflow-y: hidden;
+            		white-space: nowrap;
+            	}
             }
         </style>
     </head>
@@ -291,8 +294,10 @@
                 <h1 class="map">
                     The Map
                 </h1>
-                Mouse over the abbreviation for any state to get more information.
-                <div>
+                <div class="introMap">
+                    Mouse over the abbreviation for any state to get more information.
+                </div>
+                <div class="map">
                     <img class="map" src="images\map.gif" alt="Legislation Map" width="1118px" usemap="#legislation" height="644px">
                     </img>
                     <map class="legislation" name="legislation">
@@ -301,10 +306,10 @@
                     </map>
                     <span>
                         <div id="tooltipHeader">
-                            Texas
+                            State Name
                         </div>
                         <div id="tooltip">
-                            is real rude to all the gays.
+                            Further information on the legislation of that state.
                         </div>
                     </span>
                 </div>
