@@ -14,9 +14,3 @@ p.content
             coords: "20, 30, 20"
             alt: "Texas"
         span.TX < "Texas is real rude to all the gays"
-    canvas#circle.TX
-        width: "30"
-        height: "30"
-
-    script
-        draw( "circle", false, true, 15, 0 );

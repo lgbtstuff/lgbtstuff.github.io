@@ -26,7 +26,6 @@ body
 
     script < src: "scripts\dictDisplay.js"
     script < src: "scripts\genButtonList.js"
-    script < src: "scripts\circleDrawing.js"
     
     section
         #[content]

@@ -234,17 +234,9 @@
             	z-index: 1;
             }
             
-            area#TX:hover + span.TX
+            area#TX:hover + span.TX, area#TX:focus + span.TX
             {
                 visibility: visible;
-            }
-            
-            /** Overlap the canvases with the map and position them accordingly */
-            canvas.TX
-            {
-            	position: absolute;
-            	left: -200px;
-            	top: -20px;
             }
         </style>
     </head>
@@ -286,7 +278,6 @@
         </nav>
         <script src="scripts\dictDisplay.js"></script>
         <script src="scripts\genButtonList.js"></script>
-        <script src="scripts\circleDrawing.js"></script>
         <section>
             <p class="content">
                 <nav class="dict">
