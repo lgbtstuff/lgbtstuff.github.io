@@ -32,11 +32,11 @@ body
     section
         #[content]
 
-    footer
-        ul#footer(style: "list-style-type:none")
-            li < a(href: "#") < "Top"
-            li < a(href: "index.html") < "Home"
-            li < a(href: "dictionary.html") < "Dictionary"
-            li < a(href: "history.html") < "LGBT History"
-            li < a(href: "help.html") < "Help Resources"
-            li < a(href: "map.html") < "Legislation Map"
+footer
+    ul#footer(style: "list-style-type:none")
+        li < a(href: "#") < "Top"
+        li < a(href: "index.html") < "Home"
+        li < a(href: "dictionary.html") < "Dictionary"
+        li < a(href: "history.html") < "LGBT History"
+        li < a(href: "help.html") < "Help Resources"
+        li < a(href: "map.html") < "Legislation Map"

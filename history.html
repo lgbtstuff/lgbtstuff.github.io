@@ -203,7 +203,7 @@
             	font-family: Quicksand, sans-serif;
             	text-decoration: none;
             	padding: 0.25em 1.25em;
-            	transition: color 2s ease;
+            	transition: color 0.75s ease;
             }
             
             ul#footer li a:hover
@@ -212,7 +212,7 @@
             }
             
             
-            /* If the browser width is real small, add a scroll bar to the nav and the footer */
+            /* If the browser width is real small, add a scroll bar to the nav */
             @media only screen and ( max-width: 910px )
             {
             	nav.main
@@ -222,7 +222,11 @@
             		overflow-y: hidden;
             		white-space: nowrap;
             	}
+            }
             
+            /* Add a scroll bar to the footer */
+            @media only screen and ( max-width: 830px )
+            {
             	footer
             	{
             		overflow-x: scroll;
@@ -340,39 +344,39 @@
                 This is the history!
             </p>
         </section>
-        <footer>
-            <ul id="footer" style="list-style-type:none">
-                <li>
-                    <a href="#">
-                        Top
-                   </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        Home
-                   </a>
-                </li>
-                <li>
-                    <a href="dictionary.html">
-                        Dictionary
-                   </a>
-                </li>
-                <li>
-                    <a href="history.html">
-                        LGBT History
-                   </a>
-                </li>
-                <li>
-                    <a href="help.html">
-                        Help Resources
-                   </a>
-                </li>
-                <li>
-                    <a href="map.html">
-                        Legislation Map
-                   </a>
-                </li>
-            </ul>
-        </footer>
     </body>
+    <footer>
+        <ul id="footer" style="list-style-type:none">
+            <li>
+                <a href="#">
+                    Top
+               </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    Home
+               </a>
+            </li>
+            <li>
+                <a href="dictionary.html">
+                    Dictionary
+               </a>
+            </li>
+            <li>
+                <a href="history.html">
+                    LGBT History
+               </a>
+            </li>
+            <li>
+                <a href="help.html">
+                    Help Resources
+               </a>
+            </li>
+            <li>
+                <a href="map.html">
+                    Legislation Map
+               </a>
+            </li>
+        </ul>
+    </footer>
 </html>

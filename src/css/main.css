@@ -70,7 +70,7 @@ ul#footer li a
 	font-family: Quicksand, sans-serif;
 	text-decoration: none;
 	padding: 0.25em 1.25em;
-	transition: color 2s ease;
+	transition: color 0.75s ease;
 }
 
 ul#footer li a:hover
@@ -79,7 +79,7 @@ ul#footer li a:hover
 }
 
 
-/* If the browser width is real small, add a scroll bar to the nav and the footer */
+/* If the browser width is real small, add a scroll bar to the nav */
 @media only screen and ( max-width: 910px )
 {
 	nav.main
@@ -89,7 +89,11 @@ ul#footer li a:hover
 		overflow-y: hidden;
 		white-space: nowrap;
 	}
+}
 
+/* Add a scroll bar to the footer */
+@media only screen and ( max-width: 830px )
+{
 	footer
 	{
 		overflow-x: scroll;
