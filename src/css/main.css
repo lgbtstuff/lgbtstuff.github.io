@@ -8,6 +8,7 @@ body
 	background-attachment: scroll, scroll;
 	background-position: top right, bottom left;
 	font-size: 16px;
+	padding-bottom: 20px;
 }
 
 nav.main
@@ -75,7 +76,7 @@ ul#footer li a
 
 ul#footer li a:hover
 {
-	text-shadow: 2px 4px 1px black;
+	text-shadow: 2px 4px 1px rgba( 0, 0, 0, 0.6 );
 }
 
 
