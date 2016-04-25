@@ -56,7 +56,6 @@ ul#nav li:not(.logo) a:hover
 
 footer
 {
-	position: absolute;
 	bottom: 0;
 	width: 100%;
 	background-color: white;
@@ -76,7 +75,7 @@ ul#footer li a
 
 ul#footer li a:hover
 {
-	text-shadow: 3px 8px 2px black;
+	text-shadow: 2px 4px 1px black;
 }
 
 
