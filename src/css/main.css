@@ -32,7 +32,7 @@ ul#nav
 }
 
 /* Make nav a horizontal list */
-ul#nav li
+ul#nav li, ul#footer li
 {
 	display: inline;
 }
@@ -54,12 +54,44 @@ ul#nav li:not(.logo) a:hover
 	padding: -1em 1.25em;
 }
 
-/* If the browser width is real small, add a scroll bar to the nav */
+footer
+{
+	margin: 0;
+	width: 100%;
+	background-color: white;
+	font-size: 16px;
+	box-shadow: 0em -0.3em 0.3em rgba( 0, 0, 0, 0.2 );
+}
+
+ul#footer li a
+{
+	color: black;
+	font-size: 1em;
+	font-family: Quicksand, sans-serif;
+	text-decoration: none;
+	padding: 0.25em 1.25em;
+	transition: color 2s ease;
+}
+
+ul#footer li a:hover
+{
+	color: darkgray;
+}
+
+
+/* If the browser width is real small, add a scroll bar to the nav and the footer */
 @media only screen and ( max-width: 910px )
 {
 	nav.main
 	{
 		max-height: 11.3em;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+
+	footer
+	{
 		overflow-x: scroll;
 		overflow-y: hidden;
 		white-space: nowrap;
