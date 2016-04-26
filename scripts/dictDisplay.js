@@ -16,6 +16,24 @@ function item( term, definition, cat, cat2 )
 	}
 }
 
+// An initially empty array to store dictionary terms
+// as read in later
+var textByLine = [];
+
+/**
+ * Reads in all of the terms from the file to be used
+ * in future searching
+ */
+function loadTerms()
+{
+	// Prepares a variable to store the text from the file
+	var text = readTextFile( "scripts/Dictionary_Terms.txt" );
+	
+	// Splits the text file into individual lines, storing
+	// these values in an array
+	textByLine = text.split( "\n" );
+}
+
 /** Returns a String with the terms being searched for 
  * each on separate lines
  * To be added to a div on the dictionary page
@@ -26,13 +44,6 @@ function item( term, definition, cat, cat2 )
  */
 function searchDict( catType, searchFor )
 {
-	// Prepares a variable to store the text from the file
-	var text = readTextFile( "scripts/Dictionary_Terms.txt" );
-	
-	// Splits the text file into individual lines, storing
-	// these values in an array
-	var textByLine = text.split( "\n" );
-
 	// Create an array of all the terms
 	var itemList = [];
 	

@@ -32,5 +32,6 @@ p.content
             "Here are all the terms alphabetically. Select a categorization method to narrow your search down further."
 
     script
+        loadTerms();
         genButtonList( "dictnav", "dictionary", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" );
         searchDict( "printAll", "" );
