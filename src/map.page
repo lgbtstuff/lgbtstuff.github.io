@@ -1,6 +1,11 @@
 p.content
     h1.map < "The Map"
-    div.introMap < "Mouse over the abbreviation of any state to get more information."
+    div.equaldex
+        "Click "
+        a(href: "www.equaldex.com") < "here"
+        "for the equaldex."
+    div.introMap
+        "Mouse over the abbreviation of any state to get more information."
     div.map
         img.map
             src: "images\map.gif"
