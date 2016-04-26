@@ -2,8 +2,8 @@ p.content
     h1.map < "The Map"
     div.equaldex
         "Click "
-        a(href: "www.equaldex.com") < "here"
-        "for the equaldex."
+        a(href: "http://equaldex.com") < "here"
+        " for the equaldex."
     div.introMap
         "Mouse over the abbreviation of any state to get more information."
     div.map
