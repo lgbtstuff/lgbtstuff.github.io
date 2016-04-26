@@ -1,2 +1,15 @@
 p.content
-    "This is the history!"
+    nav.tabNav
+        ul.w3-navbar
+            li < a
+                href: "#"
+                onclick: "openTab( "Timeline" )"
+                "Timeline"
+    div.tab
+        id: "Timeline"
+    div.tab
+        id: "Events"
+    div.tab
+        id: "Organization"
+    div.tab
+        id: "People"
