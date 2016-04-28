@@ -1,7 +1,7 @@
 p.content
     nav.tabNav
-        ul.w3-navbar
-            li < a
+        ul
+            li < button < a
                 href: "#"
                 onclick: "openTab( "Timeline" )"
                 "Timeline"
