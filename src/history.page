@@ -32,3 +32,6 @@ p.content
     div.tab
         id: "People"
         "These are the people."
+
+    script
+        clearTabs();

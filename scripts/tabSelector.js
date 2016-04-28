@@ -6,13 +6,22 @@
  */
 function openTab( ID )
 {
-	// An array of all the potential tabs
-    var tabs = document.getElementsByClassName( "tab" );
-
-    // Hide information from other tabs
-    for ( var i = 0; i < x.length; i++ )
-        tabs[ i ].style.display = "none"; 
+	// Clear any tabs already being displayed
+	clearTabs();
 
     // Display the selected tab
     document.getElementById( ID ).style.display = "block"; 
 }
+
+/**
+ * Clears any displayed tabs from the screen
+ */
+ function clearTabs()
+ {
+    // An array of all the potential tabs
+    var tabs = document.getElementsByClassName( "tab" );
+
+    // Hide information from other tabs
+    for ( var i = 0; i < x.length; i++ )
+        tabs[ i ].style.display = "none";
+ }

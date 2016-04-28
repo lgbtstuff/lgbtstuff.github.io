@@ -7,6 +7,7 @@ defaults
     css(name: "main") < "css/main.css"
     css(name: "dictionary") < "css/dictionary.css"
     css(name: "map") < "css/map.css"
+    css(name: "history") < "css/history.css"
 
     alias(name: "title") < "Replace me!"
 
