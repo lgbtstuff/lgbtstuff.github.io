@@ -22,6 +22,6 @@ function openTab( ID )
     var tabs = document.getElementsByClassName( "tab" );
 
     // Hide information from other tabs
-    for ( var i = 0; i < x.length; i++ )
+    for ( var i = 0; i < tabs.length; i++ )
         tabs[ i ].style.display = "none";
  }
