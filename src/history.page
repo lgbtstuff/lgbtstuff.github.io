@@ -4,14 +4,23 @@ p.content
             href: "#"
             onclick: "openTab( "Timeline" )"
             "Timeline"
+        li
+            class: "divider"
+            "|"
         li < button < a
             href: "#"
             onclick: "openTab( "Events" )"
             "Events"
+        li
+            class: "divider"
+            "|"
         li < button < a
             href: "#"
             onclick: "openTab( "Organizations" )"
             "Organizations"
+        li
+            class: "divider"
+            "|"
         li < button < a
             href: "#"
             onclick: "openTab( "People" )"
@@ -33,5 +42,4 @@ p.content
         id: "People"
         "These are the people."
 
-    script
-        clearTabs();
+    script < clearTabs();

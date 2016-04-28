@@ -249,11 +249,13 @@
             ul#tabnav
             {
             	list-style-type: none;
+            	background-color: lightgray;
             }
             
             ul#tabnav li
             {
             	display: inline;
+            	padding: 0 0;
             }
             
             ul#tabnav li a
@@ -263,6 +265,17 @@
             	font-size: 1em;
             	font-family: Quicksand, sans-serif;
             	padding: 0.25em 1.25em;
+            	transition: background-color 2s ease;
+            }
+            
+            ul#tabnav li a:hover
+            {
+            	background-color: darkgray;
+            }
+            
+            div.tab
+            {
+            	margin-left: 16px;
             }
         </style>
         <style>
