@@ -1,15 +1,34 @@
 p.content
-    nav.tabNav
-        ul
-            li < button < a
-                href: "#"
-                onclick: "openTab( "Timeline" )"
-                "Timeline"
+    ul#tabnav
+        li < button < a
+            href: "#"
+            onclick: "openTab( "Timeline" )"
+            "Timeline"
+        li < button < a
+            href: "#"
+            onclick: "openTab( "Events" )"
+            "Events"
+        li < button < a
+            href: "#"
+            onclick: "openTab( "Organizations" )"
+            "Organizations"
+        li < button < a
+            href: "#"
+            onclick: "openTab( "People" )"
+            "People"
+
     div.tab
         id: "Timeline"
+        "This is the timeline."
+
     div.tab
         id: "Events"
+        "This is the events tab."
+
     div.tab
-        id: "Organization"
+        id: "Organizations"
+        "These are the organizations."
+
     div.tab
         id: "People"
+        "These are the people."

@@ -30,6 +30,7 @@ ul#nav
 {
 	padding-left: 3%;
 	margin: auto;
+	list-style-type: none;
 }
 
 /* Make nav a horizontal list */
@@ -64,6 +65,11 @@ footer
 	font-size: 16px;
 	box-shadow: 0em -0.3em 0.3em rgba( 0, 0, 0, 0.2 );
 	text-decoration: underline;
+}
+
+ul#footer
+{
+	list-style-type: none;
 }
 
 ul#footer li a

@@ -13,7 +13,7 @@ head
 
 body
     nav.main
-        ul#nav(style: "list-style-type:none")
+        ul#nav
             li.logo < a(href: "index.html") < img
                 src: "images\logo.png"
                 alt: "Logo"

@@ -163,6 +163,7 @@
             {
             	padding-left: 3%;
             	margin: auto;
+            	list-style-type: none;
             }
             
             /* Make nav a horizontal list */
@@ -197,6 +198,11 @@
             	font-size: 16px;
             	box-shadow: 0em -0.3em 0.3em rgba( 0, 0, 0, 0.2 );
             	text-decoration: underline;
+            }
+            
+            ul#footer
+            {
+            	list-style-type: none;
             }
             
             ul#footer li a
@@ -305,7 +311,7 @@
     </head>
     <body>
         <nav class="main">
-            <ul id="nav" style="list-style-type:none">
+            <ul id="nav">
                 <li class="logo">
                     <a href="index.html">
                         <img src="images\logo.png" alt="Logo" style="height: 150px; width: 150px;">
@@ -345,24 +351,47 @@
         <script src="scripts\tooltipInfo.js"></script>
         <section>
             <p class="content">
-                <nav class="tabNav">
-                    <ul>
-                        <li>
-                            <button>
-                                <a onclick="openTab( 'Timeline' )" href="#">
-                                    Timeline
-                               </a>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
+                <ul id="tabnav">
+                    <li>
+                        <button>
+                            <a onclick="openTab( 'Timeline' )" href="#">
+                                Timeline
+                           </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <a onclick="openTab( 'Events' )" href="#">
+                                Events
+                           </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <a onclick="openTab( 'Organizations' )" href="#">
+                                Organizations
+                           </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <a onclick="openTab( 'People' )" href="#">
+                                People
+                           </a>
+                        </button>
+                    </li>
+                </ul>
                 <div class="tab" id="Timeline">
+                    This is the timeline.
                 </div>
                 <div class="tab" id="Events">
+                    This is the events tab.
                 </div>
-                <div class="tab" id="Organization">
+                <div class="tab" id="Organizations">
+                    These are the organizations.
                 </div>
                 <div class="tab" id="People">
+                    These are the people.
                 </div>
             </p>
         </section>

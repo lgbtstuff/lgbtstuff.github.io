@@ -1,0 +1,18 @@
+ul#tabnav
+{
+	list-style-type: none;
+}
+
+ul#tabnav li
+{
+	display: inline;
+}
+
+ul#tabnav li a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 1em;
+	font-family: Quicksand, sans-serif;
+	padding: 0.25em 1.25em;
+}
