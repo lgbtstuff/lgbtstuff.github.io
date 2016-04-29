@@ -25,9 +25,9 @@ ul#tabnav li a:hover
 	background-color: #BDBDBD;
 }
 
-ul#tabnav li a:focus
+ul#tabnav li a.active
 {
-	background-color: #696969;
+	background-color: gray;
 }
 
 div.tab

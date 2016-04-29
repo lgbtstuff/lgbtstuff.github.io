@@ -219,6 +219,12 @@
             	font-weight: bold;
             }
             
+            div.credit
+            {
+            	font-size: 8px;
+            	color: gray;
+            }
+            
             
             /* If the browser width is real small, add a scroll bar to the nav */
             @media only screen and ( max-width: 910px )
@@ -278,9 +284,9 @@
             	background-color: #BDBDBD;
             }
             
-            ul#tabnav li a:focus
+            ul#tabnav li a.active
             {
-            	background-color: #696969;
+            	background-color: gray;
             }
             
             div.tab
@@ -477,5 +483,8 @@
                </a>
             </li>
         </ul>
+        <div class="credit">
+            Many thanks to stack overflow and w3 Schools!
+        </div>
     </footer>
 </html>

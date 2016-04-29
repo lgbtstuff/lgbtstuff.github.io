@@ -41,3 +41,4 @@ footer
         li < a(href: "history.html") < "LGBT History"
         li < a(href: "help.html") < "Help Resources"
         li < a(href: "map.html") < "Legislation Map"
+    div.credit < "Many thanks to stack overflow and w3 Schools!"
