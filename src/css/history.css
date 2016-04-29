@@ -6,7 +6,6 @@ ul#tabnav
 ul#tabnav li
 {
 	display: inline;
-	padding: 0 0;
 }
 
 ul#tabnav li a
@@ -25,7 +24,7 @@ ul#tabnav li a:hover
 	background-color: #BDBDBD;
 }
 
-ul#tabnav li a.active
+ul#tabnav li a:focus
 {
 	background-color: gray;
 }
