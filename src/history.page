@@ -1,27 +1,27 @@
 p.content
     ul#tabnav
-        li < button < a
+        li < a
             href: "#"
             onclick: "openTab( "Timeline" )"
             "Timeline"
         li
             class: "divider"
             "|"
-        li < button < a
+        li < a
             href: "#"
             onclick: "openTab( "Events" )"
             "Events"
         li
             class: "divider"
             "|"
-        li < button < a
+        li < a
             href: "#"
             onclick: "openTab( "Organizations" )"
             "Organizations"
         li
             class: "divider"
             "|"
-        li < button < a
+        li < a
             href: "#"
             onclick: "openTab( "People" )"
             "People"
