@@ -2,7 +2,7 @@ ul#tabnav
 {
 	list-style-type: none;
 	background-color: #D7D7D7;
-	position: absolute;
+	position: fixed;
 	top: 0;
 }
 
