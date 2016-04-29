@@ -1,9 +1,6 @@
 ul#tabnav
 {
 	list-style-type: none;
-	background-color: #D7D7D7;
-	position: fixed;
-	top: 0;
 }
 
 ul#tabnav li
@@ -14,6 +11,7 @@ ul#tabnav li
 
 ul#tabnav li a
 {
+	display: block;
 	text-decoration: none;
 	color: black;
 	font-size: 1em;
@@ -25,6 +23,11 @@ ul#tabnav li a
 ul#tabnav li a:hover
 {
 	background-color: #BDBDBD;
+}
+
+ul#tabnav li a:focus
+{
+	background-color: #696969;
 }
 
 div.tab
