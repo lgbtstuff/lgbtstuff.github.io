@@ -83,7 +83,7 @@ ul#footer li a
 
 ul#nav li a.active, ul#footer li a.active
 {
-	text-decoration: bold;
+	font-weight: bold;
 }
 
 
