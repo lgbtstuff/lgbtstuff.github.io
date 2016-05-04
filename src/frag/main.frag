@@ -24,12 +24,10 @@ body
             li < a(href: "help.html") < "Help Resources"
             li < a(href: "map.html") < "Legislation Map"
 
-    script < src: "scripts\readTextFile.js"
+    script < src: "scripts\misc.js"
     script < src: "scripts\dictDisplay.js"
     script < src: "scripts\genButtonList.js"
     script < src: "scripts\tooltipInfo.js"
-    script < src: "scripts\tabSelector.js"
-    script < src: "scripts\checkForEnter.js"
 
     section
         #[content]

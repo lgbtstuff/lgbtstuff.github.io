@@ -9,8 +9,8 @@ var text = [];
  * @param #state
  *		The state whose information needs to be found
  */
- function tooltipInfo( state )
- {
+function tooltipInfo( state )
+{
 	// Will store the information about that particular state
 	var info = "";
 
@@ -22,7 +22,7 @@ var text = [];
 
  	document.getElementById( "tooltipHeader" ).innerHTML = state;
  	document.getElementById( "tooltip" ).innerHTML = info;
- }
+}
 
 // Initial reading in of the text file
 function stateSetUp()
