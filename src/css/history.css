@@ -18,6 +18,7 @@ ul#tabnav li:before
 {
 	content: " | ";
 	display: inline;
+	float: left;
 }
 
 ul#tabnav li:first-child:before
