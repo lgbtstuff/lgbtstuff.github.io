@@ -1,6 +1,7 @@
 ul#tabnav
 {
 	list-style-type: none;
+	margin-left: -24px;
 }
 
 ul#tabnav li
@@ -50,5 +51,5 @@ ul#tabnav li a:focus
 div.tab
 {
 	clear: left;
-	margin-left: 16px;
+	margin-left: 24px;
 }
