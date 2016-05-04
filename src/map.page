@@ -28,4 +28,4 @@ p.content
 
     script
         stateSetUp();
-        getElementbyId( "map" ).scrollLeft = 1065;
+        document.getElementbyId( "map" ).scrollLeft = 1065;
