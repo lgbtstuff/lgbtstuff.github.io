@@ -320,7 +320,7 @@
             }
             
             /* Style the tooltip! */
-            div.info
+            span
             {
             	width: 300px;
             	height: 429px;
@@ -333,11 +333,6 @@
             
             	border: 4px solid black;
             	border-radius: 20px;
-            }
-            
-            div.map
-            {
-            	white-space: nowrap;
             }
             
             /* If the screen is too small for the map and the labeling */
@@ -415,18 +410,17 @@
                         <area id="TX" shape="rect" alt="Texas" onmouseover="tooltipInfo( 'Texas' )" coords="0, 0, 60, 60">
                         </area>
                     </map>
-                    <div class="info">
+                    <span>
                         <div id="tooltipHeader">
                             State Name
                         </div>
                         <div id="tooltip">
                             Further information on the legislation of that state.
                         </div>
-                    </div>
+                    </span>
                 </div>
                 <script>
                     stateSetUp();
-                    document.getElementById( "map" ).scrollLeft = 1065;
                 </script>
             </p>
         </section>

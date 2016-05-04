@@ -22,10 +22,9 @@ p.content
                 alt: "Texas"
                 onmouseover: "tooltipInfo( "Texas" )"
 
-        div.info
+        span
             div#tooltipHeader < "State Name"
             div#tooltip < "Further information on the legislation of that state."
 
     script
         stateSetUp();
-        document.getElementById( "map" ).scrollLeft = 1065;
