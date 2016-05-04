@@ -6,8 +6,7 @@
  */
 function checkForEnter( fun, id )
 {
-	document.getElementById( id ).addEventListener( "keypress",
-    function ( event )
+	document.getElementById( id ).addEventListener( "keypress", function ( event )
     {
     	// Determine the key that was pressed
         var key = event.which || event.keyCode;
