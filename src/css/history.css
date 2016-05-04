@@ -10,7 +10,7 @@ ul#tabnav li
 
 ul#tabnav li a
 {
-	display: inline-block;
+	display: inline;
 }
 
 /* Add list dividers before each element, excluding the first */
