@@ -22,7 +22,7 @@ p.content
                 alt: "Texas"
                 onmouseover: "tooltipInfo( "Texas" )"
 
-        span
+        div.info
             div#tooltipHeader < "State Name"
             div#tooltip < "Further information on the legislation of that state."
 

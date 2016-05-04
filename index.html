@@ -297,7 +297,6 @@
             {
             	margin-left: 24px;
             	white-space: nowrap;
-            	overflow: hidden;
             }
             
             img.map
@@ -321,7 +320,7 @@
             }
             
             /* Style the tooltip! */
-            span
+            div.info
             {
             	width: 300px;
             	height: 429px;
@@ -338,6 +337,11 @@
             	position: absolute;
             }
             
+            div.map
+            {
+            	white-space: nowrap;
+            }
+            
             /* If the screen is too small for the map and the labeling */
             @media only screen and ( max-width: 1065px )
             {
@@ -346,7 +350,6 @@
             		margin-right: 14px;
             		overflow-x: scroll;
             		overflow-y: hidden;
-            		white-space: nowrap;
             	}
             }
         </style>
