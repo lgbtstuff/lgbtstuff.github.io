@@ -52,7 +52,6 @@ span
 /* If the screen is too small for the labeling */
 @media only screen and ( max-width: 1065px )
 {
-
 	span
 	{
 		display: block;
