@@ -251,15 +251,21 @@
             }
         </style>
         <style>
-            ul#tabnav
+            ul#tabnav li
             {
             	list-style-type: none;
+            	display: inline;
             }
             
-            ul#tabnav li, ul#tabnav li.divider
+            /* Add list dividers before each element, excluding the first */
+            ul#tabnav li:before
             {
-            	display: inline;
-            	list-style-type: none;
+            	content: " | ";
+            }
+            
+            ul#tabnav li:first-child:before
+            {
+            	content: none;
             }
             
             ul#tabnav li a
