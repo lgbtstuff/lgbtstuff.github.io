@@ -45,6 +45,8 @@ span
 	border-radius: 20px;
 
 	position: absolute;
+
+	margin-bottom: 32px;
 }
 
 /* If the screen is too small for the labeling */
@@ -55,6 +57,7 @@ span
 	{
 		display: block;
 		margin-left: 24px;
+		margin-top: 10px;
 	}
 }
 
