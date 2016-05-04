@@ -29,6 +29,7 @@ body
     script < src: "scripts\genButtonList.js"
     script < src: "scripts\tooltipInfo.js"
     script < src: "scripts\tabSelector.js"
+    script < src: "scripts\checkForEnter.js"
 
     section
         #[content]
