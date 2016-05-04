@@ -4,23 +4,17 @@ p.content
             href: "#"
             onclick: "openTab( "Timeline" )"
             "Timeline"
-        li
-            class: "divider"
-            "|"
+        li.divider < "|"
         li < a
             href: "#"
             onclick: "openTab( "Events" )"
             "Events"
-        li
-            class: "divider"
-            "|"
+        li.divider < "|"
         li < a
             href: "#"
             onclick: "openTab( "Organizations" )"
             "Organizations"
-        li
-            class: "divider"
-            "|"
+        li.divider < "|"
         li < a
             href: "#"
             onclick: "openTab( "People" )"
