@@ -46,7 +46,7 @@ span
 
 	position: absolute;
 
-	margin-bottom: 32px;
+	margin-bottom: 64px;
 }
 
 /* If the screen is too small for the labeling */
@@ -57,7 +57,7 @@ span
 	{
 		display: block;
 		margin-left: 24px;
-		margin-top: 10px;
+		margin-top: 16px;
 	}
 }
 
@@ -68,5 +68,6 @@ span
 	{
 		overflow-x: scroll;
 		overflow-y: hidden;
+		margin-left: 24px;
 	}
 }
