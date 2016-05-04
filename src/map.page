@@ -3,11 +3,11 @@ p.content
     div.equaldex
         "Click "
         a(href: "http://equaldex.com") < "here"
-        " for the equaldex."
+        " for a link to the equaldex. (External Page)"
     div.introMap
         "Mouse over the abbreviation of any state to get more information."
     div.map
-        img.map
+        img.map#map
             src: "images\map.gif"
             alt: "Legislation Map"
             width: "745px"
@@ -26,4 +26,6 @@ p.content
             div#tooltipHeader < "State Name"
             div#tooltip < "Further information on the legislation of that state."
 
-    script < stateSetUp();
+    script
+        stateSetUp();
+        getElementbyId( "map" ).scrollLeft = 1065;

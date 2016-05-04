@@ -339,7 +339,7 @@
             }
             
             /* If the screen is too small for the map and the labeling */
-            @media only screen and ( max-width: 1630px )
+            @media only screen and ( max-width: 1065px )
             {
             	div.map
             	{
@@ -402,13 +402,13 @@
                     <a href="http://equaldex.com">
                         here
                    </a>
-                     for the equaldex.
+                     for a link to the equaldex. (External Page)
                 </div>
                 <div class="introMap">
                     Mouse over the abbreviation of any state to get more information.
                 </div>
                 <div class="map">
-                    <img class="map" src="images\map.gif" alt="Legislation Map" width="745px" usemap="#legislation" height="429px">
+                    <img class="map" id="map" src="images\map.gif" alt="Legislation Map" width="745px" usemap="#legislation" height="429px">
                     </img>
                     <map class="legislation" name="legislation">
                         <area id="TX" shape="rect" alt="Texas" onmouseover="tooltipInfo( 'Texas' )" coords="0, 0, 60, 60">
@@ -425,6 +425,7 @@
                 </div>
                 <script>
                     stateSetUp();
+                    getElementbyId( "map" ).scrollLeft = 1065;
                 </script>
             </p>
         </section>
