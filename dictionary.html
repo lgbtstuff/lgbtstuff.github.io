@@ -337,19 +337,24 @@
             	position: absolute;
             }
             
-            /* If the screen is too small for the map and the labeling */
+            /* If the screen is too small for the labeling */
             @media only screen and ( max-width: 1065px )
             {
-            	div.map
-            	{
-            		overflow-x: scroll;
-            		overflow-y: hidden;
-            	}
             
             	span
             	{
             		display: block;
             		margin-left: 24px;
+            	}
+            }
+            
+            /* If the screen is too small for the map as well*/
+            @media only screen and ( max-width: 785px )
+            {
+            	div.map
+            	{
+            		overflow-x: scroll;
+            		overflow-y: hidden;
             	}
             }
         </style>
