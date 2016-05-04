@@ -46,9 +46,9 @@ function checkForEnter( fun, id )
        		 			break;
        		 		case 3: func( args[ 0 ], args[ 1 ], args[ 2 ] );
         				break;
-        			case 4: func( args[ 0 ], args[ 1 ], , args[ 2 ], , args[ 3 ] );
+        			case 4: func( args[ 0 ], args[ 1 ], args[ 2 ], args[ 3 ] );
         				break;
-        			case 5: func( args[ 0 ], args[ 1 ], , args[ 2 ], , args[ 3 ], args[ 4 ] );
+        			case 5: func( args[ 0 ], args[ 1 ], args[ 2 ], args[ 3 ], args[ 4 ] );
         				break;
         			default: func();
         		}
