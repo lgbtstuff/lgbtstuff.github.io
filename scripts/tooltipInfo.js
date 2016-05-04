@@ -30,5 +30,4 @@ function stateSetUp()
 	// Splits the text file into individual lines, storing
 	// these values in an array
 	text = readTextFile( "scripts/Legislation_Info.txt" ).split( "\n" );
-	document.getElementbyId( "map" ).scrollLeft = 1065;
 }
