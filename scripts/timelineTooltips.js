@@ -35,7 +35,7 @@ var current = document.createElement( "span" );
 current.setAttribute( "class", "tooltip" );
 
 // The tooltip initializes as invisible
-current.style.display = "hidden";
+current.style.visibility = "hidden";
 
 // Add the tooltip to the body of the page
 document.body.appendChild( current );
@@ -66,7 +66,7 @@ function displayTooltip( tooltipNum )
     }
 
     // Display the tooltip
-    current.style.display = "block";
+    current.style.visibility = "visible";
 }
 
 /**
@@ -74,7 +74,7 @@ function displayTooltip( tooltipNum )
  */
 function hideTooltip()
 {
-    current.style.display = "hidden";
+    current.style.visibility = "hidden";
 }
 
 
