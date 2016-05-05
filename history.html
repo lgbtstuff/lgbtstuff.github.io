@@ -306,6 +306,15 @@
             	clear: left;
             	margin-left: 24px;
             }
+            
+            
+            /* The timeline! */
+            
+            span.tooltip
+            {
+                display: block;
+                position: fixed;
+            }
         </style>
         <style>
             h1.map, div.introMap
@@ -432,6 +441,7 @@
         <script src="scripts\dictDisplay.js"></script>
         <script src="scripts\genButtonList.js"></script>
         <script src="scripts\tooltipInfo.js"></script>
+        <script src="scripts\timelineTooltips.js"></script>
         <section>
             <p class="content">
                 <ul id="tabnav">
@@ -458,6 +468,12 @@
                 </ul>
                 <div class="tab" id="Timeline">
                     This is the timeline.
+                    <img class="timeline" id="timeline" src="images\timeline.png" alt="Timeline" width="745px" usemap="#timeline" height="429px">
+                    </img>
+                    <map class="timeline" name="timeline">
+                        <area id="first" shape="rect" onmouseout="clear( 'tooltip' )" alt="1960" onmouseover="displayTooltip( 1 )" coords="0, 0, 60, 60">
+                        </area>
+                    </map>
                 </div>
                 <div class="tab" id="Events">
                     This is the events tab.
@@ -469,7 +485,7 @@
                     These are the people.
                 </div>
                 <script>
-                    clearTabs();
+                    clear( "tab" );
                 </script>
             </p>
         </section>
