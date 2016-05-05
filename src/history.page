@@ -35,6 +35,7 @@ p.content
                 coords: "0, 0, 60, 60"
                 alt: "1960"
                 onmouseover: "displayTooltip( 1 )"
+                onmouseout: "hideTooltip()"
 
     div.tab
         id: "Events"

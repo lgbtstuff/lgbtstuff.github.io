@@ -5,7 +5,7 @@
 // All of the tooltips
 var tooltips = [];
 
-// Each tooltip has a heading and it's content
+// Each tooltip has a heading (date) and it's content
 function tooltip( heading, content )
 {
     this.heading = heading;
@@ -36,6 +36,9 @@ var current = document.createElement( "span" );
 // Set the class of the tooltip (for styling to take effect)
 current.setAttribute( "class", "tooltip" );
 
+// The tooltip initializes as invisible
+current.style.display = "hidden";
+
 // Add the tooltip to the body of the page
 document.body.appendChild( current );
 
@@ -59,10 +62,21 @@ function displayTooltip( tooltipNum )
     {
         if ( i + 1 == tooltipNum )
         {
-            current.appendChild( document.createElement( "h1" ).appendChild( document.createTextNode( tooltips[ i ].heading ) ) );
+            current.appendChild( document.createElement( "div" ).appendChild( document.createTextNode( tooltips[ i ].heading ) ) );
             current.appendChild( document.createTextNode( tooltips[ i ].content ) );
         }
     }
+
+    // Display the tooltip
+    current.style.display = "block";
+}
+
+/**
+ * Hides the tooltip (display: hidden)
+ */
+function hideTooltip()
+{
+    current.style.display = "hidden";
 }
 
 
