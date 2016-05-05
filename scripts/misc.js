@@ -35,7 +35,7 @@ function checkForEnter()
         var key = e.which || e.keyCode;
 
         // 13 is Enter
-        if (key === 13)
+        if ( key === 13 )
             searchDict( "searchbar", "" );
     } );
 }
