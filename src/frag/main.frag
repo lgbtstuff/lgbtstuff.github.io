@@ -28,6 +28,7 @@ body
     script < src: "scripts\dictDisplay.js"
     script < src: "scripts\genButtonList.js"
     script < src: "scripts\tooltipInfo.js"
+    script < src: "scripts\timelineTooltips.js"
 
     section
         #[content]

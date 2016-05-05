@@ -21,6 +21,22 @@ p.content
         id: "Timeline"
         "This is the timeline."
 
+        img.timeline#timeline
+            src: "images\timeline.png"
+            alt: "Timeline"
+            width: "745px"
+            height: "429px"
+            usemap: "#timeline"
+
+        map.timeline
+            name: "timeline"
+            area#first
+                shape: "rect"
+                coords: "0, 0, 60, 60"
+                alt: "1960"
+                onmouseover: "displayTooltip( 1 )"
+                onmouseout: "clear( "tooltip" )"
+
     div.tab
         id: "Events"
         "This is the events tab."
@@ -33,4 +49,4 @@ p.content
         id: "People"
         "These are the people."
 
-    script < clearTabs();
+    script < clear( "tab" );

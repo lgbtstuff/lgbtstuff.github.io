@@ -53,3 +53,12 @@ div.tab
 	clear: left;
 	margin-left: 24px;
 }
+
+
+/* The timeline! */
+
+span.tooltip
+{
+    display: block;
+    position: fixed;
+}

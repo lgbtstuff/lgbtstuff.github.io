@@ -26,8 +26,6 @@ function readTextFile( file )
 /**
  * Executes "searchDict( "searchbar", "" )" if the user presses enter
  * while selecting the element with id "searchText"
- * Will correctly pass function arguments only if there
- * are between 0 and 5 of them, inclusive
  */
 function checkForEnter()
 {
@@ -55,21 +53,24 @@ function checkForEnter()
 function openTab( ID )
 {
     // Clear any tabs already being displayed
-    clearTabs();
+    clear( "tab" );
 
     // Display the selected tab
     document.getElementById( ID ).style.display = "block"; 
 }
 
 /**
- * Clears any displayed tabs from the screen
+ * Clears any of the item with the class @param #clss
+ * @param #clss
+ *      The class of the items being "cleared"
+ *      (set to display: none)
  */
- function clearTabs()
- {
+function clear( clss )
+{
     // An array of all the potential tabs
-    var tabs = document.getElementsByClassName( "tab" );
+    var tabs = document.getElementsByClassName( clss );
 
     // Hide information from other tabs
     for ( var i = 0; i < tabs.length; i++ )
         tabs[ i ].style.display = "none";
- }
+}
