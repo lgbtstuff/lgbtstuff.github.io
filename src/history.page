@@ -35,7 +35,6 @@ p.content
                 coords: "0, 0, 60, 60"
                 alt: "1960"
                 onmouseover: "displayTooltip( 1 )"
-                onmouseout: "clear( "tooltip" )"
 
     div.tab
         id: "Events"
@@ -49,4 +48,6 @@ p.content
         id: "People"
         "These are the people."
 
-    script < clear( "tab" );
+    script
+        clear( "tab" );
+        loadTooltips();

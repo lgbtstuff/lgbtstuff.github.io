@@ -471,7 +471,7 @@
                     <img class="timeline" id="timeline" src="images\timeline.png" alt="Timeline" width="745px" usemap="#timeline" height="429px">
                     </img>
                     <map class="timeline" name="timeline">
-                        <area id="first" shape="rect" onmouseout="clear( 'tooltip' )" alt="1960" onmouseover="displayTooltip( 1 )" coords="0, 0, 60, 60">
+                        <area id="first" shape="rect" alt="1960" onmouseover="displayTooltip( 1 )" coords="0, 0, 60, 60">
                         </area>
                     </map>
                 </div>
@@ -486,6 +486,7 @@
                 </div>
                 <script>
                     clear( "tab" );
+                    loadTooltips();
                 </script>
             </p>
         </section>
