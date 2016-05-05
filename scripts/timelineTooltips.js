@@ -1,6 +1,4 @@
-//
-// History Page Timeline Hovering
-//
+/** History Page Timeline Hovering */
 
 // All of the tooltips
 var tooltips = [];
@@ -62,8 +60,8 @@ function displayTooltip( tooltipNum )
     {
         if ( i + 1 == tooltipNum )
         {
-            current.appendChild( document.createElement( "div" ).appendChild( document.createTextNode( tooltips[ i ].heading ) ) );
-            current.appendChild( document.createTextNode( tooltips[ i ].content ) );
+            current.appendChild( document.createElement( "span" ).appendChild( document.createTextNode( tooltips[ i ].heading ) ) );
+            current.appendChild( document.createElement( "div" ).appendChild( document.createTextNode( tooltips[ i ].content ) ) );
         }
     }
 
@@ -83,6 +81,6 @@ function hideTooltip()
 // Move the selected tooltip with the mouse
 window.onmousemove = function ( e )
 {
-    current.style.top = ( e.clientY + 20 ) + 'px';
-    current.style.left = ( e.clientX + 20 ) + 'px';
+    current.style.top = ( e.clientY + 5 ) + 'px';
+    current.style.left = ( e.clientX + 5 ) + 'px';
 };
