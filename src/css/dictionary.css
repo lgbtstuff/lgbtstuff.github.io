@@ -89,7 +89,8 @@ td.termSexuality
 {
 	background-color: rgb( 255, 178, 102 );	/* Orange */
 	width: 12em;
-	border-bottom: 24px solid lightblue;
+	/* border-bottom: 24px solid lightblue; */
+	padding-bottom: 24px;
 	border-collapse: collapse;
 }
 

@@ -71,9 +71,9 @@ function searchBios( catType, searchFor, sortType )
 	if ( catType == 'printAll' )
 	{
 		// Go backwards so that final bio list is alphabetical
-		for (var i = itemList.length - 1; i >= 0; i--)
+		for ( var i = itemList.length - 1; i >= 0; i-- )
 			appendTerm( itemList[ i ] );
-		document.getElementById( "bioinfo" ).innerHTML = "Here are all the terms alphabetically. Select a categorization method to narrow your search down further.";
+		document.getElementById( "bioinfo" ).innerHTML = "Here are all the people alphabetically. Select a categorization method to narrow your search down further.";
 		
 		// Jump out of the method
 		return;
@@ -89,9 +89,9 @@ function searchBios( catType, searchFor, sortType )
 	if ( catType == 'alpha1' )
 	{
 		document.getElementById( "bioinfo" ).innerHTML = "People with first names starting with \"" + searchFor + "\"";
-		
+
 		// Go backwards so that final bio list is alphabetical (terms are added to the top of the table)
-		for (var i = itemList.length - 1; i >= 0; i--)
+		for ( var i = itemList.length - 1; i >= 0; i-- )
 		{
 			// If sorting by last name, match the first letter of the last name; same thing if searching by first name
 			if ( searchFor == itemList[ i ].firstName.charAt( 0 ) )
@@ -107,7 +107,7 @@ function searchBios( catType, searchFor, sortType )
 		document.getElementById( "bioinfo" ).innerHTML = "People with last names starting with \"" + searchFor + "\"";
 
 		// Go backwards so that final bio list is alphabetical (terms are added to the top of the table)
-		for (var i = itemList.length - 1; i >= 0; i--)
+		for ( var i = itemList.length - 1; i >= 0; i-- )
 		{
 			// If sorting by last name, match the first letter of the last name; same thing if searching by first name
 			if ( searchFor == itemList[ i ].lastName.charAt( 0 ) )
@@ -123,7 +123,7 @@ function searchBios( catType, searchFor, sortType )
 		document.getElementById( "bioinfo" ).innerHTML = "People under the category \"" + searchFor + "\"";
 
 		// Go backwards so that final bio list is alphabetical
-		for (var i = itemList.length - 1; i >= 0; i--)
+		for ( var i = itemList.length - 1; i >= 0; i-- )
 		{
 			if ( searchFor == itemList[ i ].cat || searchFor == itemList[ i ].cat2 )
 			{

@@ -1,4 +1,5 @@
 p.content
+    h1 < "LGBT History"
     ul#tabnav
         li < a
             href: "#"
@@ -50,7 +51,7 @@ p.content
         div#biocatbar
             button
                 onclick: "searchBios( "printAll", "" )"
-                "All Bios"
+                "All People"
 
             button#alphaFirstCat
                 onclick: "genButtonList( "bionav", "biographies", "", "alpha1" )"

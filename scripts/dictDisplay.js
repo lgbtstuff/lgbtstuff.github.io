@@ -61,7 +61,7 @@ function searchDict( catType, searchFor )
 	if ( catType == 'printAll' )
 	{
 		// Go backwards so that final term list is alphabetical
-		for (var i = itemList.length - 1; i >= 0; i--)
+		for ( var i = itemList.length - 1; i >= 0; i-- )
 			appendTerm( itemList[ i ] );
 		document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are all the terms alphabetically. Select a categorization method to narrow your search down further.";
 		
@@ -80,7 +80,7 @@ function searchDict( catType, searchFor )
 	if ( catType == 'alpha' )
 	{
 		// Go backwards so that final term list is alphabetical
-		for (var i = itemList.length - 1; i >= 0; i--)
+		for ( var i = itemList.length - 1; i >= 0; i-- )
 		{
 			if ( searchFor == itemList[ i ].term.charAt( 0 ) )
 			{
@@ -93,7 +93,7 @@ function searchDict( catType, searchFor )
 	else if (catType == 'general' )
 	{
 		// Go backwards so that final term list is alphabetical
-		for (var i = itemList.length - 1; i >= 0; i--)
+		for ( var i = itemList.length - 1; i >= 0; i-- )
 		{
 			if ( searchFor == itemList[ i ].cat || searchFor == itemList[ i ].cat2 )
 			{

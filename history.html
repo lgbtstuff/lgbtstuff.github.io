@@ -102,7 +102,8 @@
             {
             	background-color: rgb( 255, 178, 102 );	/* Orange */
             	width: 12em;
-            	border-bottom: 24px solid lightblue;
+            	/* border-bottom: 24px solid lightblue; */
+            	padding-bottom: 24px;
             	border-collapse: collapse;
             }
             
@@ -255,7 +256,7 @@
             {
             	list-style-type: none;
             	margin-left: -16px;
-            	margin-bottom: 16px;
+            	padding-bottom: 18px;
             }
             
             ul#tabnav li
@@ -500,6 +501,9 @@
         <script src="scripts\bioDisplay.js"></script>
         <section>
             <p class="content">
+                <h1>
+                    LGBT History
+                </h1>
                 <ul id="tabnav">
                     <li>
                         <a onclick="openTab( 'Timeline' )" href="#">
@@ -540,7 +544,7 @@
                 <div class="tab" id="People">
                     <div id="biocatbar">
                         <button onclick="searchBios( 'printAll', '' )">
-                            All Bios
+                            All People
                         </button>
                         <button id="alphaFirstCat" onclick="genButtonList( 'bionav', 'biographies', '', 'alpha1' )">
                             Search by First Name
