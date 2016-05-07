@@ -14,7 +14,7 @@ p.content
             height: "429px"
             usemap: "#legislation"
 
-        map.legislation
+        map.legislation#legislationMap
             name: "legislation"
             area#TX
                 shape: "rect"

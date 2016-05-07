@@ -29,7 +29,7 @@ p.content
             height: "429px"
             usemap: "#timeline"
 
-        map.timeline
+        map.timeline#timelineMap
             name: "timeline"
             area#first
                 shape: "rect"
