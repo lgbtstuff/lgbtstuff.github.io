@@ -82,4 +82,5 @@ p.content
         loadTooltips();
         loadBios();
         genButtonList( "bionav", "biographies", "", "alpha2" );
+        searchBios( "printAll", "" );
         checkForEnter( "bio" );
