@@ -73,13 +73,14 @@ function searchBios( catType, searchFor, sortType )
 		// Go backwards so that final bio list is alphabetical
 		for (var i = itemList.length - 1; i >= 0; i--)
 			appendTerm( itemList[ i ] );
-		document.getElementById( "bioInfo" ).innerHTML = "Here are all the terms alphabetically. Select a categorization method to narrow your search down further.";
+		document.getElementById( "bioinfo" ).innerHTML = "Here are all the terms alphabetically. Select a categorization method to narrow your search down further.";
 		
 		// Jump out of the method
 		return;
 	}
 
-	document.getElementById( "bioInfo" ).innerHTML = "People under the category \"" + searchFor + "\"";
+	if ( catType != "searchbar" )
+		document.getElementById( "bioinfo" ).innerHTML = "People under the category \"" + searchFor + "\"";
 
 	//
 	// Clear all the previously added bios
@@ -134,7 +135,7 @@ function searchBios( catType, searchFor, sortType )
 		// Finds search field input
 		searchFor = document.getElementById( "searchText" ).value.toLowerCase();
 
-		document.getElementById( "bioInfo" ).innerHTML = "Search results for \"" + searchFor + "\"";
+		document.getElementById( "bioinfo" ).innerHTML = "Search results for \"" + searchFor + "\"";
 
 		// Go backwards so that final bio list is alphabetical
  		for ( var i = itemList.length - 1; i >= 0; i-- )
