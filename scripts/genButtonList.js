@@ -24,6 +24,13 @@
  		buttonValues = alphabet.split("");
  	}
 
+ 	// If generating buttons for first/last name sorting,
+ 	// add extra text to the list destination for clarification
+ 	if ( catType == "alpha1" )
+ 		document.getElementById( addList ).appendChild( document.createTextNode( "Search by first name:" ) );
+ 	else if ( catType == "alpha2" )
+ 		document.getElementById( addList ).appendChild( document.createTextNode( "Search by last name:" ) );
+
  	// Add all the letters as buttons to the list
  	for ( var i = 0; i < buttonValues.length; i++ )
  	{
@@ -53,14 +60,17 @@
  * Determines what set of terms this list will link to
  * @param #listType
  *		The list element onto which the list items will be added
- * @param #searchLetter
- *		The letter we're searching for
+ * @param #searchTerm
+ *		The letter/category we're searching for
+ * @param catType
+ *		The categorization method being utilized
  */
  function chooseList( listType, searchTerm, catType )
  {
  	if ( listType == "dictionary" )
  		return searchDict( catType, searchTerm );
- 	if ( listType == "biographies" );	// etc
+ 	if ( listType == "biographies" )
+ 		return searchBios( catType, searchTerm );
  }
 
  /**

@@ -29,6 +29,7 @@ body
     script < src: "scripts\genButtonList.js"
     script < src: "scripts\tooltipInfo.js"
     script < src: "scripts\timelineTooltips.js"
+    script < src: "scripts\bioDisplay.js"
 
     section
         #[content]

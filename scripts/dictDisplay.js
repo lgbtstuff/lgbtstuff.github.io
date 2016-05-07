@@ -34,9 +34,8 @@ function loadTerms()
 	textByLine = text.split( "\n" );
 }
 
-/** Returns a String with the terms being searched for 
- * each on separate lines
- * To be added to a div on the dictionary page
+/**
+ * Finds the appropriate, searched-for terms
  * @param #catType
  *		The type of categorization method
  * @param #searchFor
@@ -65,6 +64,8 @@ function searchDict( catType, searchFor )
 		for (var i = itemList.length - 1; i >= 0; i--)
 			appendTerm( itemList[ i ] );
 		document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Here are all the terms alphabetically. Select a categorization method to narrow your search down further.";
+		
+		// Jump out of the method
 		return;
 	}
 

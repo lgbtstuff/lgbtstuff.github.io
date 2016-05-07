@@ -80,7 +80,7 @@
             /* If the screen is too small for the alphabetical buttons */
             @media only screen and ( max-width: 980px )
             {
-            	div#dictcatbar
+            	div#catbar
             	{
             		margin-right: 14px;
             		overflow-x: scroll;
@@ -461,6 +461,7 @@
         <script src="scripts\genButtonList.js"></script>
         <script src="scripts\tooltipInfo.js"></script>
         <script src="scripts\timelineTooltips.js"></script>
+        <script src="scripts\bioDisplay.js"></script>
         <section>
             <p class="content">
                 <ul id="tabnav">
@@ -501,11 +502,35 @@
                     These are the organizations.
                 </div>
                 <div class="tab" id="People">
-                    These are the people.
+                    <div id="bioinfo">
+                        Here are all the people alphabetically by last name. Select a categorization method to narrow your search down further.
+                    </div>
+                    <div id="catbar">
+                        <button onclick="searchBios( 'printAll', '' )">
+                            All Bios
+                        </button>
+                        <button id="alphaFirstCat" onclick="genButtonList( 'bionav', 'biographies', '', 'alpha1' )">
+                            Search by First Name
+                        </button>
+                        <button id="alphaSecondCat" onclick="genButtonList( 'bionav', 'biographies', '', 'alpha2' )">
+                            Search by Last Name
+                        </button>
+                        <button id="categoryCat" onclick="genButtonList( 'bionav', 'biographies', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' )">
+                            Search by Category
+                        </button>
+                        <input id="searchText" name="searchbar" type="text" value="Search Bar">
+                        </input>
+                        <button onclick="searchBios( 'searchbar', '' )">
+                            Search
+                        </button>
+                        <ul id="bionav">
+                        </ul>
+                    </div>
                 </div>
                 <script>
                     clear( "tab" );
                     loadTooltips();
+                    loadBios();
                 </script>
             </p>
         </section>
