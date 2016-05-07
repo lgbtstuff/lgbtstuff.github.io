@@ -81,3 +81,27 @@ span.tooltip span
 	font-size: 24px;
 	font-weight: bold;
 }
+
+
+/** The bios! */
+
+div#catbar
+{
+	font-family: Quicksand, sans-serif;
+}
+
+ul#bionav li
+{
+	display: inline;
+	color: black;
+	font-size: 16px;
+	font-family: Quicksand, sans-serif;
+	text-decoration: none;
+	padding: 0.25em 0.25em;
+	list-style-type: none;
+}
+
+div#bioinfo
+{
+	font-weight: bold;
+}

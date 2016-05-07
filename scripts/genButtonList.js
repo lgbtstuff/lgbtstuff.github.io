@@ -18,7 +18,7 @@
 
  	// If categorization type is alphabetical, use the
  	// alphabet for buttons
- 	if ( catType == "alpha" )
+ 	if ( catType == "alpha" || catType == "alpha1" || catType == "alpha2" )
  	{
  		var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
  		buttonValues = alphabet.split("");
