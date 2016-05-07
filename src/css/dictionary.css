@@ -67,7 +67,7 @@ table.termTable
 /* If the screen is too small for the alphabetical buttons */
 @media only screen and ( max-width: 980px )
 {
-	div#catbar
+	div#dictcatbar
 	{
 		margin-right: 14px;
 		overflow-x: scroll;

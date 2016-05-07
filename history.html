@@ -80,7 +80,7 @@
             /* If the screen is too small for the alphabetical buttons */
             @media only screen and ( max-width: 980px )
             {
-            	div#catbar
+            	div#dictcatbar
             	{
             		margin-right: 14px;
             		overflow-x: scroll;
@@ -338,9 +338,20 @@
             
             /** The bios! */
             
-            div#catbar
+            div#biocatbar
             {
             	font-family: Quicksand, sans-serif;
+            }
+            
+            @media only screen and ( max-width: 1150px )
+            {
+            	div#biocatbar
+            	{
+            		margin-right: 14px;
+            		overflow-x: scroll;
+            		overflow-y: hidden;
+            		white-space: nowrap;
+            	}
             }
             
             ul#bionav li
@@ -526,7 +537,7 @@
                     These are the organizations.
                 </div>
                 <div class="tab" id="People">
-                    <div id="catbar">
+                    <div id="biocatbar">
                         <button onclick="searchBios( 'printAll', '' )">
                             All Bios
                         </button>
@@ -546,15 +557,16 @@
                         </button>
                         <ul id="bionav">
                         </ul>
-                        <div id="bioinfo">
-                            Here are all the people alphabetically by last name. Select a categorization method to narrow your search down further.
-                        </div>
+                    </div>
+                    <div id="bioinfo">
+                        Here are all the people alphabetically by last name. Select a categorization method to narrow your search down further.
                     </div>
                 </div>
                 <script>
                     clear( "tab" );
                     loadTooltips();
                     loadBios();
+                    genButtonList( "bionav", "biographies", "", "alpha2" );
                 </script>
             </p>
         </section>

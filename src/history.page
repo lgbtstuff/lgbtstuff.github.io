@@ -47,7 +47,7 @@ p.content
 
     div.tab
         id: "People"
-        div#catbar
+        div#biocatbar
             button
                 onclick: "searchBios( "printAll", "" )"
                 "All Bios"
@@ -73,9 +73,11 @@ p.content
                 "Search"
             
             ul#bionav
-            div#bioinfo < "Here are all the people alphabetically by last name. Select a categorization method to narrow your search down further."
+
+        div#bioinfo < "Here are all the people alphabetically by last name. Select a categorization method to narrow your search down further."
 
     script
         clear( "tab" );
         loadTooltips();
         loadBios();
+        genButtonList( "bionav", "biographies", "", "alpha2" );

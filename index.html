@@ -80,7 +80,7 @@
             /* If the screen is too small for the alphabetical buttons */
             @media only screen and ( max-width: 980px )
             {
-            	div#catbar
+            	div#dictcatbar
             	{
             		margin-right: 14px;
             		overflow-x: scroll;
@@ -338,9 +338,20 @@
             
             /** The bios! */
             
-            div#catbar
+            div#biocatbar
             {
             	font-family: Quicksand, sans-serif;
+            }
+            
+            @media only screen and ( max-width: 1150px )
+            {
+            	div#biocatbar
+            	{
+            		margin-right: 14px;
+            		overflow-x: scroll;
+            		overflow-y: hidden;
+            		white-space: nowrap;
+            	}
             }
             
             ul#bionav li
