@@ -26,8 +26,10 @@ function readTextFile( file )
 /**
  * Executes "searchDict( "searchbar", "" )" if the user presses enter
  * while selecting the element with id "searchText"
+ * @param #search
+ *      The type of data to search
  */
-function checkForEnter()
+function checkForEnter( search )
 {
     document.getElementById( "searchText" ).addEventListener( "keypress", function ( e ) {
         
@@ -36,7 +38,12 @@ function checkForEnter()
 
         // 13 is Enter
         if ( key === 13 )
-            searchDict( "searchbar", "" );
+        {
+            if ( search == "dict" )
+                searchDict( "searchbar", "" );
+            if ( search == "bio" )
+                searchBios( "searchbar", "" );
+        }
     } );
 }
 

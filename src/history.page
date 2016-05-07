@@ -81,3 +81,4 @@ p.content
         loadTooltips();
         loadBios();
         genButtonList( "bionav", "biographies", "", "alpha2" );
+        checkForEnter( "bio" );

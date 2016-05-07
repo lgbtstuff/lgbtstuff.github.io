@@ -79,9 +79,6 @@ function searchBios( catType, searchFor, sortType )
 		return;
 	}
 
-	if ( catType != "searchbar" )
-		document.getElementById( "bioinfo" ).innerHTML = "People under the category \"" + searchFor + "\"";
-
 	//
 	// Clear all the previously added bios
 	//
@@ -91,6 +88,8 @@ function searchBios( catType, searchFor, sortType )
 	// If the bios are being selected based off of alphabetization of the first name
 	if ( catType == 'alpha1' )
 	{
+		document.getElementById( "bioinfo" ).innerHTML = "People with first names starting with \"" + searchFor + "\"";
+		
 		// Go backwards so that final bio list is alphabetical (terms are added to the top of the table)
 		for (var i = itemList.length - 1; i >= 0; i--)
 		{
@@ -105,6 +104,8 @@ function searchBios( catType, searchFor, sortType )
 	// If the bios are being selected based off of alphabetization of the last name
 	if ( catType == 'alpha2' )
 	{
+		document.getElementById( "bioinfo" ).innerHTML = "People with last names starting with \"" + searchFor + "\"";
+
 		// Go backwards so that final bio list is alphabetical (terms are added to the top of the table)
 		for (var i = itemList.length - 1; i >= 0; i--)
 		{
@@ -119,6 +120,8 @@ function searchBios( catType, searchFor, sortType )
 	// If the bios are being selected by general category
 	else if (catType == 'general' )
 	{
+		document.getElementById( "bioinfo" ).innerHTML = "People under the category \"" + searchFor + "\"";
+
 		// Go backwards so that final bio list is alphabetical
 		for (var i = itemList.length - 1; i >= 0; i--)
 		{
