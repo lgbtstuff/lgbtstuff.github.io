@@ -19,7 +19,7 @@ function genImageMapArea( image, coords )
  		var newArea = document.createElement( 'area' );
 
  		// For the legislation map
- 		if ( image )
+ 		if ( image == true )
  		{
  			// Modify the area to contain the alternative text, shape, and the correct state linkage
  			var toCall = "tooltipInfo( \"" + states[ i / 2 ] + "\" )";
@@ -31,9 +31,6 @@ function genImageMapArea( image, coords )
  			// Add the correct coordinates to the new image map area
  			var coordinates = "" + coords[ i ] + ", " + coords[ i + 1 ] + ", " + ( coords[ i ] + 60 ) + ", " + ( coords[ i + 1 ] + 60 );
  			newArea.setAttribute( "coords", coordinates );
-
- 			// Add the correct id to the map area
-        	newArea.setAttribute( "id", states[ i / 2 ] );
 
         	// Add the image area to the correct image map
         	document.getElementById( "legislationMap" ).appendChild( newArea );
