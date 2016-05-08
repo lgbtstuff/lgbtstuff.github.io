@@ -31,12 +31,6 @@ p.content
 
         map.timeline#timelineMap
             name: "timeline"
-            area#first
-                shape: "rect"
-                coords: "0, 0, 60, 60"
-                alt: "1960"
-                onmouseover: "displayTooltip( 0 )"
-                onmouseout: "hideTooltip()"
 
     div.tab
         id: "Events"
