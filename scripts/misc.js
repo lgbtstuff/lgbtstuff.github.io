@@ -98,7 +98,7 @@ function clear( clss )
  */
 function genImageMapArea( image, coords )
 {
-    // An array of all the US state names
+    // An array of all the US state names, alphabetically
     var states = [ "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming" ];
 
     // Add all of the areas with the specified coordinates
@@ -133,7 +133,7 @@ function genImageMapArea( image, coords )
             newArea.setAttribute( "shape", "rect" );
 
             // Add the correct coordinates to the new image map area
-            var coordinates = "" + coords[ i ] + ", " + coords[ i + 1 ] + ", " + ( coords[ i ] + 60 ) + ", " + ( coords[ i + 1 ] + 60 );
+            var coordinates = "" + coords[ i ] + ", " + coords[ i + 1 ] + ", " + ( coords[ i ] + 30 ) + ", " + ( coords[ i + 1 ] + 30 );
             newArea.setAttribute( "coords", coordinates );
 
             // Add the image area to the correct image map

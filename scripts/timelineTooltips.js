@@ -20,7 +20,7 @@ function loadTooltips()
     var tooltipText = readTextFile( "scripts/Timeline.txt" ).split( "\n" );
 
     // Add all the tooltips to {@see #tooltips}
-    for ( var i = 2; i <= tooltipText.length;  i += 2 )
+    for ( var i = 2; i <= tooltipText.length;  i += 3 )
     {
         tooltips.push( new tooltip( tooltipText[ i - 2 ], tooltipText[ i - 1 ] ) );
     }
@@ -58,7 +58,7 @@ function displayTooltip( tooltipNum )
     // Add the info from the tooltip we're looking for to the span
     for ( var i = 0; i < tooltips.length;  i++ )
     {
-        if ( i + 1 == tooltipNum )
+        if ( i == tooltipNum )
         {
             current.appendChild( document.createElement( "span" ).appendChild( document.createTextNode( tooltips[ i ].heading ) ) );
             current.appendChild( document.createElement( "div" ).appendChild( document.createTextNode( tooltips[ i ].content ) ) );
@@ -70,7 +70,7 @@ function displayTooltip( tooltipNum )
 }
 
 /**
- * Hides the tooltip (display: hidden)
+ * Hides the tooltip (visibility: hidden)
  */
 function hideTooltip()
 {

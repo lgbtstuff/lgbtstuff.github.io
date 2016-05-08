@@ -35,7 +35,7 @@ p.content
                 shape: "rect"
                 coords: "0, 0, 60, 60"
                 alt: "1960"
-                onmouseover: "displayTooltip( 1 )"
+                onmouseover: "displayTooltip( 0 )"
                 onmouseout: "hideTooltip()"
 
     div.tab
@@ -80,6 +80,7 @@ p.content
     script
         clear( "tab" );
         loadTooltips();
+        genImageMapArea( false, [ 0, 0, 0, 60 ] );
         loadBios();
         genButtonList( "bionav", "biographies", "", "alpha2" );
         searchBios( "printAll", "" );
