@@ -1,6 +1,3 @@
-// An array of all the US state names
-var states = [ "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming" ];
-
 /**
  * Generates all an image maps mouseover "area" elements
  * @param #image
@@ -12,6 +9,9 @@ var states = [ "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colora
  */
 function genImageMapArea( image, coords )
 {
+	// An array of all the US state names
+	var states = [ "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming" ];
+
  	// Add all of the areas with the specified coordinates
  	for ( var i = 0; i < coords.length; i += 2 )
  	{
@@ -22,7 +22,7 @@ function genImageMapArea( image, coords )
  		if ( image )
  		{
  			// Modify the area to contain the alternative text, shape, and the correct state linkage
- 			var toCall = "tooltipInfo( " + states[ i / 2 ] + " )";
+ 			var toCall = "tooltipInfo( \"" + states[ i / 2 ] + "\" )";
 
  			newArea.setAttribute( "onmouseover", toCall );
  			newArea.setAttribute( "shape", "rect" );
@@ -40,7 +40,7 @@ function genImageMapArea( image, coords )
  		} else // For the timeline
  		{
  			// Modify the area to contain the shape and the correct date linkage
- 			var toCall = "displayTooltip( " + ( i / 2 ) + " )";
+ 			var toCall = "displayTooltip( \"" + ( i / 2 ) + "\" )";
 
  			newArea.setAttribute( "onmouseover", toCall );
  			newArea.setAttribute( "onmouseout", "hideTooltip()" );
