@@ -29,7 +29,7 @@ function genImageMapArea( image, coords )
  			newArea.setAttribute( "alt", states[ i / 2 ] );
 
  			// Add the correct coordinates to the new image map area
- 			var coordinates = "" + coords[ i ] + ", " + coords[ i + 1 ] + ", 60, 60";
+ 			var coordinates = "" + coords[ i ] + ", " + coords[ i + 1 ] + ", " + ( coords[ i ] + 60 ) + ", " + ( coords[ i + 1 ] + 60 );
  			newArea.setAttribute( "coords", coordinates );
 
  			// Add the correct id to the map area
@@ -40,14 +40,14 @@ function genImageMapArea( image, coords )
  		} else // For the timeline
  		{
  			// Modify the area to contain the shape and the correct date linkage
- 			var toCall = "displayTooltip( \"" + ( i / 2 ) + "\" )";
+ 			var toCall = "displayTooltip( " + ( i / 2 ) + " )";
 
  			newArea.setAttribute( "onmouseover", toCall );
  			newArea.setAttribute( "onmouseout", "hideTooltip()" );
  			newArea.setAttribute( "shape", "rect" );
 
  			// Add the correct coordinates to the new image map area
- 			var coordinates = "" + coords[ i ] + ", " + coords[ i + 1 ] + ", 60, 60";
+ 			var coordinates = "" + coords[ i ] + ", " + coords[ i + 1 ] + ", " + ( coords[ i ] + 60 ) + ", " + ( coords[ i + 1 ] + 60 );
  			newArea.setAttribute( "coords", coordinates );
 
         	// Add the image area to the correct image map
