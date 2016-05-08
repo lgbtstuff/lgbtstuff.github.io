@@ -16,11 +16,6 @@ p.content
 
         map.legislation#legislationMap
             name: "legislation"
-            area#TX
-                shape: "rect"
-                coords: "0, 0, 60, 60"
-                alt: "Texas"
-                onmouseover: "tooltipInfo( "Texas" )"
 
         span.mapinfo
             div#tooltipHeader < "State Name"
