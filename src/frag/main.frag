@@ -30,7 +30,6 @@ body
     script < src: "scripts\tooltipInfo.js"
     script < src: "scripts\timelineTooltips.js"
     script < src: "scripts\bioDisplay.js"
-    script < src: "scripts\genImageMapArea.js"
 
     section
         #[content]
