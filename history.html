@@ -539,7 +539,29 @@
                     </map>
                 </div>
                 <div class="tab" id="Events">
-                    This is the events tab.
+                    <div id="biocatbar">
+                        <button onclick="searchEvents( 'printAll', '' )">
+                            All People
+                        </button>
+                        <button id="alphaFirstCat" onclick="genButtonList( 'eventnav', 'events', '', 'alpha' )">
+                            Search Alphabetically
+                        </button>
+                        <button id="categoryCat" onclick="genButtonList( 'eventnav', 'events', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' )">
+                            Search by Category
+                        </button>
+                        <input id="searchText" name="searchbar" type="text" value="Search Bar">
+                        </input>
+                        <button onclick="searchEvents( 'searchbar', '' )">
+                            Search
+                        </button>
+                        <ul id="eventnav">
+                        </ul>
+                    </div>
+                    <div id="eventinfo">
+                        Here are all the events alphabetically. Select a categorization method to narrow your search down further.
+                    </div>
+                    <table class="eventTable" id="eventTable">
+                    </table>
                 </div>
                 <div class="tab" id="Organizations">
                     These are the organizations.
@@ -569,6 +591,8 @@
                     <div id="bioinfo">
                         Here are all the people alphabetically by last name. Select a categorization method to narrow your search down further.
                     </div>
+                    <table class="bioTable" id="bioTable">
+                    </table>
                 </div>
                 <script>
                     clear( "tab" );
@@ -578,6 +602,10 @@
                     genButtonList( "bionav", "biographies", "", "alpha2" );
                     searchBios( "printAll", "" );
                     checkForEnter( "bio" );
+                    loadEvents();
+                    genButtonList( "eventnav", "events", "", "alpha" );
+                    searchEvents( "printAll", "" );
+                    checkForEnter( "event" );
                 </script>
             </p>
         </section>

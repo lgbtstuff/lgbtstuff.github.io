@@ -73,7 +73,7 @@ function searchDict( catType, searchFor )
 
 	// Clear all the previously added terms
 	// Avoid the first row - this is the header
-	while (document.getElementById( "termTable" ).rows.length > 1 )
+	while ( document.getElementById( "termTable" ).rows.length > 1 )
 		document.getElementById( "termTable" ).deleteRow( 1 );
 
 	// If the terms are being selected based off of alphabetization
@@ -127,7 +127,7 @@ function searchDict( catType, searchFor )
  */
 function appendTerm( item )
 {
-	// Add a new row to the table below what's already been added
+	// Add a new row to the table below that's already been added
 	// Avoid the heading row
 	var newRow = document.getElementById( "termTable" ).insertRow( 1 );
 

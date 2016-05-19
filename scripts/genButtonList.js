@@ -71,6 +71,8 @@
  		return searchDict( catType, searchTerm );
  	if ( listType == "biographies" )
  		return searchBios( catType, searchTerm );
+ 	if ( listType == "events" )
+ 		return searchEvents( catType, searchTerm );
  }
 
  /**

@@ -34,7 +34,31 @@ p.content
 
     div.tab
         id: "Events"
-        "This is the events tab."
+        div#biocatbar
+            button
+                onclick: "searchEvents( "printAll", "" )"
+                "All People"
+
+            button#alphaFirstCat
+                onclick: "genButtonList( "eventnav", "events", "", "alpha" )"
+                "Search Alphabetically"
+
+            button#categoryCat
+                onclick: "genButtonList( "eventnav", "events", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" )"
+                "Search by Category"
+
+            input#searchText
+                type: "text"
+                name: "searchbar"
+                value: "Search Bar"
+            button
+                onclick: "searchEvents( "searchbar", "" )"
+                "Search"
+            
+            ul#eventnav
+
+        div#eventinfo < "Here are all the events alphabetically. Select a categorization method to narrow your search down further."
+        table.eventTable#eventTable
 
     div.tab
         id: "Organizations"
@@ -70,6 +94,7 @@ p.content
             ul#bionav
 
         div#bioinfo < "Here are all the people alphabetically by last name. Select a categorization method to narrow your search down further."
+        table.bioTable#bioTable
 
     script
         clear( "tab" );
@@ -79,3 +104,7 @@ p.content
         genButtonList( "bionav", "biographies", "", "alpha2" );
         searchBios( "printAll", "" );
         checkForEnter( "bio" );
+        loadEvents();
+        genButtonList( "eventnav", "events", "", "alpha" );
+        searchEvents( "printAll", "" );
+        checkForEnter( "event" );

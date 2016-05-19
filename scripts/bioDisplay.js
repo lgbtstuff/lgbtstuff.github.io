@@ -10,11 +10,6 @@ function bio( firstName, lastName, description, cat, cat2 )
 	this.description = description;
 	this.cat = cat;
 	this.cat2 = cat2;
-
-	this.toString = function()
-	{
-		return term + " - " + definition;
-	}
 }
 
 // An initially empty array to store info
@@ -63,6 +58,10 @@ function searchBios( catType, searchFor, sortType )
 	else	// Sort by first name
 		itemList.sort( function( a, b ) { return a.firstName > b.firstName ? 1 : ( a.firstName < b.firstName ? -1 : 0 ); } );
 
+	// Clear all the previously added bios
+	while ( document.getElementById( "bioTable" ).rows.length > 0 )
+		document.getElementById( "bioTable" ).deleteRow( 0 );
+
 	//
 	// Begin the actual searching
 	//
@@ -72,18 +71,12 @@ function searchBios( catType, searchFor, sortType )
 	{
 		// Go backwards so that final bio list is alphabetical
 		for ( var i = itemList.length - 1; i >= 0; i-- )
-			appendTerm( itemList[ i ] );
+			appendBio( itemList[ i ] );
 		document.getElementById( "bioinfo" ).innerHTML = "Here are all the people alphabetically. Select a categorization method to narrow your search down further.";
 		
 		// Jump out of the method
 		return;
 	}
-
-	//
-	// Clear all the previously added bios
-	//
-
-	/** To Be Implemented */
 
 	// If the bios are being selected based off of alphabetization of the first name
 	if ( catType == 'alpha1' )
@@ -96,7 +89,7 @@ function searchBios( catType, searchFor, sortType )
 			// If sorting by last name, match the first letter of the last name; same thing if searching by first name
 			if ( searchFor == itemList[ i ].firstName.charAt( 0 ) )
 			{
-				appendTerm( itemList[ i ] );
+				appendBio( itemList[ i ] );
 			}
 		}
 	}
@@ -112,7 +105,7 @@ function searchBios( catType, searchFor, sortType )
 			// If sorting by last name, match the first letter of the last name; same thing if searching by first name
 			if ( searchFor == itemList[ i ].lastName.charAt( 0 ) )
 			{
-				appendTerm( itemList[ i ] );
+				appendBio( itemList[ i ] );
 			}
 		}
 	}
@@ -127,7 +120,7 @@ function searchBios( catType, searchFor, sortType )
 		{
 			if ( searchFor == itemList[ i ].cat || searchFor == itemList[ i ].cat2 )
 			{
-				appendTerm( itemList[ i ] );
+				appendBio( itemList[ i ] );
 			}
 		}
 	}
@@ -146,7 +139,7 @@ function searchBios( catType, searchFor, sortType )
  			if ( itemList[ i ].firstName.toLowerCase().indexOf( searchFor ) > -1 ||
  				itemList[ i ].lastName.toLowerCase().indexOf( searchFor ) > -1 ||
  				itemList[ i ].description.toLowerCase().indexOf( searchFor ) > -1 )
- 				appendTerm( itemList[ i ] );
+ 				appendBio( itemList[ i ] );
  		}
 	}
 }
@@ -158,5 +151,18 @@ function searchBios( catType, searchFor, sortType )
  */
 function appendBio( item )
 {
-	/** To be implemented */
+	// Add a new row to the table below that's already been added
+	// Avoid the heading row
+	var newRow = document.getElementById( "bioTable" ).insertRow( 0 );
+
+	// Add two cells to this new row
+ 	var termCell = newRow.insertCell( 0 );
+ 	var defCell = newRow.insertCell( 1 );
+
+ 	// Give the new cells their IDs
+ 	termCell.setAttribute( "class", "bio" + item.cat );
+ 	defCell.setAttribute( "class", "description" + item.cat );
+
+ 	termCell.innerHTML = item.firstName + item.lastName;
+ 	defCell.innerHTML = item.description;
 }

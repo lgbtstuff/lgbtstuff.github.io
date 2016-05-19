@@ -43,6 +43,10 @@ function checkForEnter( search )
                 searchDict( "searchbar", "" );
             if ( search == "bio" )
                 searchBios( "searchbar", "" );
+            if ( search == "event" )
+                searchEvents( "searchbar", "" );
+            if ( search == "organization" )
+                searchOrganizations( "searchbar", "" );
         }
     } );
 }
