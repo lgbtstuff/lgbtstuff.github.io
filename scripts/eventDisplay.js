@@ -42,7 +42,7 @@ function searchEvents( catType, searchFor )
 	var itemList = [];
 	
 	// Add the items from the .txt file to the array of terms
-	for ( var i = 3; i < textByLine.length; i += 5 )
+	for ( var i = 3; i < textByLine.length; i += 4 )
 		itemList.push( new item( textByLine[ i - 3 ], textByLine[ i - 2 ], textByLine[ i - 1 ], textByLine[ i ] ) );
 
 	// Sorts the list alphabetically
@@ -121,7 +121,7 @@ function searchEvents( catType, searchFor )
 /**
  * Add the selected event to the page
  * @param #item
- *		The term to be added to the table
+ *		The event to be added to the table
  */
 function appendEvent( item )
 {

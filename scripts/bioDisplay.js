@@ -46,7 +46,7 @@ function searchBios( catType, searchFor, sortType )
 	var itemList = [];
 	
 	// Add the items from the .txt file to the array of terms
-	for ( var i = 3; i < textByLine.length; i += 5 )
+	for ( var i = 3; i < textByLine.length; i += 4 )
 		itemList.push( new item( textByLine[ i - 3 ].substring( 0, textByLine[ i - 3 ].indexOf( " " ) ), textByLine[ i - 3 ].substring( textByLine[ i - 3 ].indexOf( " " ) + 1 ), textByLine[ i - 2 ], textByLine[ i - 1 ], textByLine[ i ] ) );
 	
 	// Default to sorting by last name
@@ -147,7 +147,7 @@ function searchBios( catType, searchFor, sortType )
 /**
  * Add the selected bio to the page
  * @param #item
- *		The term to be added to the table
+ *		The bio to be added to the table
  */
 function appendBio( item )
 {
@@ -163,6 +163,6 @@ function appendBio( item )
  	termCell.setAttribute( "class", "bio" + item.cat );
  	defCell.setAttribute( "class", "description" + item.cat );
 
- 	termCell.innerHTML = item.firstName + item.lastName;
+ 	termCell.innerHTML = "" + item.firstName + item.lastName;
  	defCell.innerHTML = item.description;
 }

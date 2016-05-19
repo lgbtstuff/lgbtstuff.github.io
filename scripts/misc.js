@@ -39,16 +39,43 @@ function checkForEnter( search )
         // 13 is Enter
         if ( key === 13 )
         {
+            // These can be combined into one command since these are on different pages
             if ( search == "dict" )
                 searchDict( "searchbar", "" );
             if ( search == "bio" )
                 searchBios( "searchbar", "" );
-            if ( search == "event" )
-                searchEvents( "searchbar", "" );
-            if ( search == "organization" )
-                searchOrganizations( "searchbar", "" );
         }
     } );
+
+    if ( search == "event" )
+    {
+        document.getElementById( "searchText" ).addEventListener( "keypress", function ( e ) {
+        
+            // Determine the key that was pressed
+            var key = e.which || e.keyCode;
+
+            // 13 is Enter
+            if ( key === 13 )
+            {
+                searchEvents( "searchbar", "" );
+            }
+        } );
+    }
+
+    if ( search == "organization" )
+    {
+        document.getElementById( "searchText" ).addEventListener( "keypress", function ( e ) {
+        
+            // Determine the key that was pressed
+            var key = e.which || e.keyCode;
+
+            // 13 is Enter
+            if ( key === 13 )
+            {
+                searchOrganizations( "searchbar", "" );
+            }
+        } );
+    }
 }
 
 //
