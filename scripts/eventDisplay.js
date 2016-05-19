@@ -16,7 +16,7 @@ function event( name, description, cat, cat2 )
 var textByLine = [];
 
 /**
- * Reads in all of the bios from the file to be used
+ * Reads in all of the events from the file to be used
  * in future searching
  */
 function loadEvents()
@@ -36,7 +36,7 @@ function loadEvents()
  * @param #searchFor
  *		What we're searching for!
  */
-function searchBios( catType, searchFor )
+function searchEvents( catType, searchFor )
 {
 	// Create an array of all the terms
 	var itemList = [];
@@ -108,7 +108,7 @@ function searchBios( catType, searchFor )
 
 		document.getElementById( "eventinfo" ).innerHTML = "Search results for \"" + searchFor + "\"";
 
-		// Go backwards so that final bio list is alphabetical
+		// Go backwards so that final event list is alphabetical
  		for ( var i = itemList.length - 1; i >= 0; i-- )
  		{
  			if ( itemList[ i ].name.toLowerCase().indexOf( searchFor ) > -1 ||
@@ -119,7 +119,7 @@ function searchBios( catType, searchFor )
 }
 
 /**
- * Add the selected bio to the page
+ * Add the selected event to the page
  * @param #item
  *		The term to be added to the table
  */
