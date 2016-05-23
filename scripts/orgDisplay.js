@@ -104,7 +104,7 @@ function searchOrganizations( catType, searchFor )
 	else if ( catType == 'searchbar' )
 	{
 		// Finds search field input
-		searchFor = document.getElementById( "searchEvents" ).value.toLowerCase();
+		searchFor = document.getElementById( "searchOrganizations" ).value.toLowerCase();
 
 		document.getElementById( "organizationInfo" ).innerHTML = "Search results for \"" + searchFor + "\"";
 

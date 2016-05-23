@@ -1,6 +1,6 @@
 p.content
     h1 < "LGBT History"
-    ul#tabnav
+    div#tabnav < ul#tabnav
         li < a
             href: "#"
             onclick: "openTab( "Timeline" )"

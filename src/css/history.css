@@ -63,7 +63,7 @@ div.tab
 
 @media only screen and ( max-width: 475px )
 {
-	ul#tabnav
+	div#tabnav
 	{
 		margin-right: 14px;
 		overflow-x: scroll;
@@ -102,12 +102,12 @@ span.tooltip span
 
 /** The bios, events, and organizations! */
 
-div#biocatbar, div#eventcatbar
+div#biocatbar, div#eventcatbar, div#organizationcatbar
 {
 	font-family: Quicksand, sans-serif;
 }
 
-ul#bionav li, ul#eventnav li
+ul#bionav li, ul#eventnav li, ul#organizationnav li
 {
 	display: inline;
 	color: black;
@@ -118,7 +118,7 @@ ul#bionav li, ul#eventnav li
 	list-style-type: none;
 }
 
-div#bioinfo, div#eventinfo
+div#bioinfo, div#eventinfo, div#organizationInfo
 {
 	font-weight: bold;
 }
@@ -137,6 +137,17 @@ div#bioinfo, div#eventinfo
 @media only screen and ( max-width: 990px )
 {
 	div#eventcatbar
+	{
+		margin-right: 14px;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+}
+
+@media only screen and ( max-width: 990px )
+{
+	div#organizationcatbar
 	{
 		margin-right: 14px;
 		overflow-x: scroll;
