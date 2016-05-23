@@ -76,7 +76,7 @@ p.content
                 "Search by Location"
 
             button#dateCat
-                onclick: "genButtonList( "organizationnav", "organizations", [ "1941 - 1945", "1220 - 1240", "2006 - 2050", "1980" ], "date" )"
+                onclick: "genButtonList( "organizationnav", "organizations", [ "1941 - 1945", "1220 - 1240", "2006 - 2050" ], "date" )"
                 "Search by Date"
 
             input#searchOrganizations

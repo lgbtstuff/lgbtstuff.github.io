@@ -47,12 +47,12 @@ ul#tabnav li a
 
 ul#tabnav li a:hover
 {
-	background-color: #C45AEC;
+	background-color: #BF9AE1;
 }
 
 ul#tabnav li a:focus
 {
-	background-color: #842DCE;
+	background-color: #A868E3;
 }
 
 div.tab

@@ -1,7 +1,7 @@
 p.content
     "This is the home page! Yay!"
     
-    div#newsInfo < "Some Outside News Sources for You to Look Through"
+    div#newsInfo < "LGBTQ+ News Sources"
     div#news
         span#advocate < a(href: "http://www.advocate.com/") < "The Advocate"
         span#lgbtqNation < a(href: "http://www.lgbtqnation.com/") < "LGBTQ Nation"

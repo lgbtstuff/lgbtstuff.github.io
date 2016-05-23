@@ -86,34 +86,32 @@ th
  * Color terms based off of category
  * Terms have a specific width they cannot exceed
  */
-td.termSexuality, td.bioSexuality
+td.termSexuality, td.bioSexuality, td.eventSexuality, td.organizationSexuality
 {
 	background-color: rgb( 255, 178, 102 );	/* Orange */
 	width: 12em;
-	border-bottom: 24px solid lightblue;
-	border-collapse: collapse;
 }
 
-td.termGender, td.bioGender
+td.termGender, td.bioGender, td.eventGender, td.organizationGender
 {
 	background-color: rgb( 55, 255, 153 );	 /* Green */
 	width: 12em;
-	border-bottom: 24px solid lightblue;
-	border-collapse: collapse;
 }
 
-td.termTrans, td.bioTrans
+td.termTrans, td.bioTrans, td.eventTrans, td.organizationTrans
 {
 	background-color: rgb( 255, 153, 255 );	/* Pink */
 	width: 12em;
-	border-bottom: 24px solid lightblue;
-	border-collapse: collapse;
 }
 
-td.termMisc, td.bioMisc
+td.termMisc, td.bioMisc, td.eventMisc, td.organizationMisc
 {
 	background-color: #66A3FF;	/* Blue */
 	width: 12em;
+}
+
+td
+{
 	border-bottom: 24px solid lightblue;
 	border-collapse: collapse;
 }
