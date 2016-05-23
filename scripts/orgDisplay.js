@@ -3,12 +3,13 @@
 
 // Creates an object for the various organizations
 // "cat" is the category of the term
-function organization( name, description, cat, cat2 )
+function organization( name, description, location, startDate, endDate )
 {
 	this.name = name;
 	this.description = description;
-	this.cat = cat;
-	this.cat2 = cat2;
+	this.startDate = startDate;
+	this.endDate = endDate;
+	this.location = location;
 }
 
 // An initially empty array to store info
@@ -42,8 +43,8 @@ function searchOrganizations( catType, searchFor )
 	var itemList = [];
 	
 	// Add the items from the .txt file to the array of terms
-	for ( var i = 3; i < organizationByLine.length; i += 4 )
-		itemList.push( new organization( organizationByLine[ i - 3 ], organizationByLine[ i - 2 ], organizationByLine[ i - 1 ], organizationByLine[ i ] ) );
+	for ( var i = 3; i < organizationByLine.length; i += 5 )
+		itemList.push( new organization( organizationByLine[ i - 3 ], organizationByLine[ i - 2 ], organizationByLine[ i - 1 ], organizationByLine[ i ].substring( 0, organizationByLine.indexOf( " " ) ), organizationByLine[ i ].substring( organizationByLine.indexOf( " " ) + 1 ) ) );
 
 	// Sorts the list alphabetically
 	itemList.sort( function( a, b ) { return a.name > b.name ? 1 : ( a.name < b.name ? -1 : 0 ); } );
@@ -84,16 +85,37 @@ function searchOrganizations( catType, searchFor )
 		}
 	}
 
-	// If the organizations are being selected by general category
-	else if ( catType == 'general' )
+	// If the organizations are being selected by location
+	else if ( catType == 'location' )
 	{
-		document.getElementById( "organizationInfo" ).innerHTML = "Organizations under the category \"" + searchFor + "\"";
+		document.getElementById( "organizationInfo" ).innerHTML = "Organizations found in  \"" + searchFor + "\"";
 
 		// Go backwards so that final organization list is alphabetical
 		for ( var i = itemList.length - 1; i >= 0; i-- )
 		{
 			// If either category of the organization matches the category being searched for
-			if ( searchFor == itemList[ i ].cat || searchFor == itemList[ i ].cat2 )
+			if ( searchFor == itemList[ i ].location )
+			{
+				appendEvent( itemList[ i ] );
+			}
+		}
+	}
+
+	// If the organizations are being selected by date
+	else if ( catType == 'date' )
+	{
+		document.getElementById( "organizationInfo" ).innerHTML = "Organizations found in the time period \"" + searchFor + "\"";
+
+		// Go backwards so that final organization list is alphabetical
+		for ( var i = itemList.length - 1; i >= 0; i-- )
+		{
+			// If the date range of the organization overlaps the selected range
+			if ( ( itemList[ i ].startDate > Interger.parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
+				&& itemList[ i ].startDate < Interger.parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) )
+				|| ( itemList[ i ].endDate > Interger.parseInt( searchFor.substring( 0, searchFor.indexOf( "-" - 1 ) ) )
+				&& itemList[ i ].endDate < Interger.parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) )
+				|| ( itemList[ i ].startDate < Interger.parseInt( searchFor.substring( 0, searchFor.indexOf( "-" - 1 ) ) )
+				&& itemList[ i ].endDate > Interger.parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) ) )
 			{
 				appendEvent( itemList[ i ] );
 			}

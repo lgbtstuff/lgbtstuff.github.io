@@ -390,18 +390,7 @@
             
             @media only screen and ( max-width: 990px )
             {
-            	div#eventcatbar
-            	{
-            		margin-right: 14px;
-            		overflow-x: scroll;
-            		overflow-y: hidden;
-            		white-space: nowrap;
-            	}
-            }
-            
-            @media only screen and ( max-width: 990px )
-            {
-            	div#organizationcatbar
+            	div#eventcatbar, div#organizationcatbar
             	{
             		margin-right: 14px;
             		overflow-x: scroll;
@@ -612,11 +601,14 @@
                         <button onclick="searchOrganizations( 'printAll', '' )">
                             All Organizations
                         </button>
-                        <button id="alphaFirstCat" onclick="genButtonList( 'organizationnav', 'organizations', '', 'alpha' )">
+                        <button id="alphaCat" onclick="genButtonList( 'organizationnav', 'organizations', '', 'alpha' )">
                             Search Alphabetically
                         </button>
-                        <button id="categoryCat" onclick="genButtonList( 'organizationnav', 'organizations', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' )">
-                            Search by Category
+                        <button id="locationCat" onclick="genButtonList( 'organizationnav', 'organizations', [ 'USA', 'Czechoslovakia' ], 'location' )">
+                            Search by Location
+                        </button>
+                        <button id="dateCat" onclick="genButtonList( 'organizationnav', 'organizations', [ '1941 - 1945', '1220 - 1240', '2006 - 2050' ], 'date' )">
+                            Search by Date
                         </button>
                         <input id="searchOrganizations" name="searchbar" type="text" value="Search Bar">
                         </input>

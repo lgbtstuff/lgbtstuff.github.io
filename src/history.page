@@ -67,13 +67,17 @@ p.content
                 onclick: "searchOrganizations( "printAll", "" )"
                 "All Organizations"
 
-            button#alphaFirstCat
+            button#alphaCat
                 onclick: "genButtonList( "organizationnav", "organizations", "", "alpha" )"
                 "Search Alphabetically"
 
-            button#categoryCat
-                onclick: "genButtonList( "organizationnav", "organizations", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" )"
-                "Search by Category"
+            button#locationCat
+                onclick: "genButtonList( "organizationnav", "organizations", [ "USA", "Czechoslovakia" ], "location" )"
+                "Search by Location"
+
+            button#dateCat
+                onclick: "genButtonList( "organizationnav", "organizations", [ "1941 - 1945", "1220 - 1240", "2006 - 2050" ], "date" )"
+                "Search by Date"
 
             input#searchOrganizations
                 type: "text"
