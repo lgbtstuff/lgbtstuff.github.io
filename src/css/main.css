@@ -126,6 +126,7 @@ div#newsInfo
 
 div#news span
 {
+	font-size: 48px;
 	background-color: #9999ff;
 	transition: background-color 1.5s ease;
 	margin-left: 24px;
