@@ -43,7 +43,7 @@ function searchEvents( catType, searchFor )
 	
 	// Add the items from the .txt file to the array of terms
 	for ( var i = 3; i < eventByLine.length; i += 4 )
-		itemList.push( new item( eventByLine[ i - 3 ], eventByLine[ i - 2 ], eventByLine[ i - 1 ], eventByLine[ i ] ) );
+		itemList.push( new event( eventByLine[ i - 3 ], eventByLine[ i - 2 ], eventByLine[ i - 1 ], eventByLine[ i ] ) );
 
 	// Sorts the list alphabetically
 	itemList.sort( function( a, b ) { return a.name > b.name ? 1 : ( a.name < b.name ? -1 : 0 ); } );
@@ -104,7 +104,7 @@ function searchEvents( catType, searchFor )
 	else if ( catType == 'searchbar' )
 	{
 		// Finds search field input
-		searchFor = document.getElementById( "searchText" ).value.toLowerCase();
+		searchFor = document.getElementById( "searchEvents" ).value.toLowerCase();
 
 		document.getElementById( "eventinfo" ).innerHTML = "Search results for \"" + searchFor + "\"";
 
