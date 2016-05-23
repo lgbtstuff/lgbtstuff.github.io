@@ -3,9 +3,9 @@ p.content
     
     div#newsInfo < "Some Outside News Sources for You to Look Through"
     div#news
-        span < a(href: "http://www.advocate.com/") < img
+        span#advocate < a(href: "http://www.advocate.com/") < img
             src: "images\AdvLogo.png"
             alt: "Advocate Logo"
-        span < a(href: "http://www.lgbtqnation.com/") < img
-            src: "images\LGBTQLogo.png"
+        span#lgbtqNation < a(href: "http://www.lgbtqnation.com/") < img
+            src: "images\LGBTLogo.png"
             alt: "LGBTQ Nation Logo"

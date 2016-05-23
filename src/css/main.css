@@ -121,11 +121,14 @@ div#newsInfo
 {
 	text-decoration: underline;
 	font-weight: bold;
+	padding-left: 24px;
 }
 
 div#news span
 {
 	transition: box-shadow 2s ease;
+	padding-left: 24px;
+	padding-top: 16px;
 }
 
 div#news span:hover
