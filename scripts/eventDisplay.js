@@ -137,6 +137,6 @@ function appendEvent( item )
  	termCell.setAttribute( "class", "event" + item.cat );
  	defCell.setAttribute( "class", "description" + item.cat );
 
- 	termCell.innerHTML = item.firstName + item.lastName;
+ 	termCell.innerHTML = item.name;
  	defCell.innerHTML = item.description;
 }

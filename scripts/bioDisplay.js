@@ -160,6 +160,6 @@ function appendBio( item )
  	termCell.setAttribute( "class", "bio" + item.cat );
  	defCell.setAttribute( "class", "description" + item.cat );
 
- 	termCell.innerHTML = "" + item.firstName + item.lastName;
+ 	termCell.innerHTML = "" + item.firstName + " " + item.lastName;
  	defCell.innerHTML = item.description;
 }
