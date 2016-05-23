@@ -158,7 +158,7 @@ function appendBio( item )
 
  	// Give the new cells their IDs
  	termCell.setAttribute( "class", "bio" + item.cat );
- 	defCell.setAttribute( "class", "description" + item.cat );
+ 	defCell.setAttribute( "class", "description" );
 
  	termCell.innerHTML = "" + item.firstName + " " + item.lastName;
  	defCell.innerHTML = item.description;

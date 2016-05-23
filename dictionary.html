@@ -130,6 +130,11 @@
             	border-bottom: 24px solid lightblue;
             	border-collapse: collapse;
             }
+            
+            td.definition, td.description
+            {
+            	width: 45em;
+            }
         </style>
         <style>
             body
@@ -315,6 +320,16 @@
             	margin-left: 24px;
             }
             
+            @media only screen and ( max-width: 475px )
+            {
+            	div#tabnav
+            	{
+            		margin-right: 14px;
+            		overflow-x: scroll;
+            		overflow-y: hidden;
+            		white-space: nowrap;
+            	}
+            }
             
             /* The timeline! */
             
@@ -344,7 +359,7 @@
             }
             
             
-            /** The bios! */
+            /** The bios, events, and organizations! */
             
             div#biocatbar, div#eventcatbar
             {

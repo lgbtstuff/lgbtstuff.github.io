@@ -135,7 +135,7 @@ function appendEvent( item )
 
  	// Give the new cells their IDs
  	termCell.setAttribute( "class", "event" + item.cat );
- 	defCell.setAttribute( "class", "description" + item.cat );
+ 	defCell.setAttribute( "class", "description" );
 
  	termCell.innerHTML = item.name;
  	defCell.innerHTML = item.description;

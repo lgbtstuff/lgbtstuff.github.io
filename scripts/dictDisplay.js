@@ -137,7 +137,7 @@ function appendTerm( item )
 
  	// Give the new cells their IDs
  	termCell.setAttribute( "class", "term" + item.cat );
- 	defCell.setAttribute( "class", "definition" + item.cat );
+ 	defCell.setAttribute( "class", "definition" );
 
  	termCell.innerHTML = item.term;
  	defCell.innerHTML = item.definition;
