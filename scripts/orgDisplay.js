@@ -7,9 +7,9 @@ function organization( name, description, location, startDate, endDate )
 {
 	this.name = name;
 	this.description = description;
+	this.location = location;
 	this.startDate = startDate;
 	this.endDate = endDate;
-	this.location = location;
 }
 
 // An initially empty array to store info
@@ -116,7 +116,7 @@ function searchOrganizations( catType, searchFor )
 				&& itemList[ i ].endDate < parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) )
 				|| ( itemList[ i ].startDate < parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
 				&& itemList[ i ].endDate > parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) ) ) */
-			if ( itemList[ i ].startDate == parseInt ( searchFor ) )
+			if ( itemList[ i ].endDate == parseInt ( searchFor ) )
 			{
 				appendEvent( itemList[ i ] );
 			}
