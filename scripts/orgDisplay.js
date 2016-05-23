@@ -62,7 +62,7 @@ function searchOrganizations( catType, searchFor )
 	{
 		// Go backwards so that final organization list is alphabetical
 		for ( var i = itemList.length - 1; i >= 0; i-- )
-			appendEvent( itemList[ i ] );
+			appendOrganization( itemList[ i ] );
 		document.getElementById( "organizationInfo" ).innerHTML = "Here are all the organizations alphabetically. Select a categorization method to narrow your search down further.";
 		
 		// Jump out of the method
@@ -80,7 +80,7 @@ function searchOrganizations( catType, searchFor )
 			// If the first letter of the organization is what we're searching for
 			if ( searchFor == itemList[ i ].name.charAt( 0 ) )
 			{
-				appendEvent( itemList[ i ] );
+				appendOrganization( itemList[ i ] );
 			}
 		}
 	}
@@ -96,7 +96,7 @@ function searchOrganizations( catType, searchFor )
 			// If either category of the organization matches the category being searched for
 			if ( searchFor == itemList[ i ].location )
 			{
-				appendEvent( itemList[ i ] );
+				appendOrganization( itemList[ i ] );
 			}
 		}
 	}
@@ -117,7 +117,7 @@ function searchOrganizations( catType, searchFor )
 				|| ( itemList[ i ].startDate < parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
 				&& itemList[ i ].endDate > parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) ) )
 			{
-				appendEvent( itemList[ i ] );
+				appendOrganization( itemList[ i ] );
 			}
 		}
 	}
@@ -135,7 +135,7 @@ function searchOrganizations( catType, searchFor )
  		{
  			if ( itemList[ i ].name.toLowerCase().indexOf( searchFor ) > -1 ||
  				itemList[ i ].description.toLowerCase().indexOf( searchFor ) > -1 )
- 				appendEvent( itemList[ i ] );
+ 				appendOrganization( itemList[ i ] );
  		}
 	}
 }
@@ -145,7 +145,7 @@ function searchOrganizations( catType, searchFor )
  * @param #item
  *		The organization to be added to the table
  */
-function appendEvent( item )
+function appendOrganization( item )
 {
 	// Add a new row to the table below that's already been added
 	// Avoid the heading row
