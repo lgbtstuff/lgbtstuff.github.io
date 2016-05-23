@@ -43,6 +43,7 @@
  		// The method invocation to be run onclick as represented by a string
  		var toCall = "";
  		if ( catType == "alpha1" ) toCall = "chooseList( \"" + listType + "\", \"" + buttonValues[ i ] + "\", \"" + catType + "\", false )";
+ 		else if ( catType == "alpha2" ) toCall = "chooseList( \"" + listType + "\", \"" + buttonValues[ i ] + "\", \"" + catType + "\", true )";
  		else toCall = "chooseList( \"" + listType + "\", \"" + buttonValues[ i ] + "\", \"" + catType + "\" )";
 
  		// Modify the button to contain the category and the correct term linkage

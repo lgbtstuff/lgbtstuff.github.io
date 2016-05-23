@@ -117,8 +117,3 @@ td.termMisc, td.bioMisc
 	border-bottom: 24px solid lightblue;
 	border-collapse: collapse;
 }
-
-td.definition, td.description
-{
-	width: 45em;
-}
