@@ -34,7 +34,7 @@ p.content
 
     div.tab
         id: "Events"
-        div#biocatbar
+        div#eventcatbar
             button
                 onclick: "searchEvents( "printAll", "" )"
                 "All People"
@@ -47,7 +47,7 @@ p.content
                 onclick: "genButtonList( "eventnav", "events", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" )"
                 "Search by Category"
 
-            input#searchText
+            input#searchEvents
                 type: "text"
                 name: "searchbar"
                 value: "Search Bar"
@@ -99,12 +99,12 @@ p.content
     script
         clear( "tab" );
         loadTooltips();
-        genImageMapArea( false, [ 0, 0, 200, 0 ] );
         loadBios();
+        loadEvents();
+        genImageMapArea( false, [ 0, 0, 200, 0 ] );
         genButtonList( "bionav", "biographies", "", "alpha2" );
         searchBios( "printAll", "" );
         checkForEnter( "bio" );
-        loadEvents();
         genButtonList( "eventnav", "events", "", "alpha" );
         searchEvents( "printAll", "" );
         checkForEnter( "event" );

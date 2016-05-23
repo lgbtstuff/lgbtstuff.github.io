@@ -48,9 +48,6 @@ function searchBios( catType, searchFor, sortType )
 	// Add the items from the .txt file to the array of terms
 	for ( var i = 3; i < bioByLine.length; i += 4 )
 		itemList.push( new item( bioByLine[ i - 3 ].substring( 0, bioByLine[ i - 3 ].indexOf( " " ) ), bioByLine[ i - 3 ].substring( bioByLine[ i - 3 ].indexOf( " " ) + 1 ), bioByLine[ i - 2 ], bioByLine[ i - 1 ], bioByLine[ i ] ) );
-	
-	// Default to sorting by last name
-	if ( sortType == null ) sortType = true;
 
 	// Sorts the list alphabetically, by last or first name
 	if ( sortType )	// Sort by last name

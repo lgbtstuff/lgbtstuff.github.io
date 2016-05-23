@@ -300,12 +300,12 @@
             
             ul#tabnav li a:hover
             {
-            	background-color: #BDBDBD;
+            	background-color: #C45AEC;
             }
             
             ul#tabnav li a:focus
             {
-            	background-color: gray;
+            	background-color: #842DCE;
             }
             
             div.tab
@@ -345,9 +345,25 @@
             
             /** The bios! */
             
-            div#biocatbar
+            div#biocatbar, div#eventcatbar
             {
             	font-family: Quicksand, sans-serif;
+            }
+            
+            ul#bionav li, ul#eventnav li
+            {
+            	display: inline;
+            	color: black;
+            	font-size: 16px;
+            	font-family: Quicksand, sans-serif;
+            	text-decoration: none;
+            	padding: 0.25em 0.25em;
+            	list-style-type: none;
+            }
+            
+            div#bioinfo, div#eventcatbar
+            {
+            	font-weight: bold;
             }
             
             @media only screen and ( max-width: 1150px )
@@ -361,20 +377,15 @@
             	}
             }
             
-            ul#bionav li
+            @media only screen and ( max-width: 1050px )
             {
-            	display: inline;
-            	color: black;
-            	font-size: 16px;
-            	font-family: Quicksand, sans-serif;
-            	text-decoration: none;
-            	padding: 0.25em 0.25em;
-            	list-style-type: none;
-            }
-            
-            div#bioinfo
-            {
-            	font-weight: bold;
+            	div#eventcatbar
+            	{
+            		margin-right: 14px;
+            		overflow-x: scroll;
+            		overflow-y: hidden;
+            		white-space: nowrap;
+            	}
             }
         </style>
         <style>
@@ -545,7 +556,7 @@
                     </map>
                 </div>
                 <div class="tab" id="Events">
-                    <div id="biocatbar">
+                    <div id="eventcatbar">
                         <button onclick="searchEvents( 'printAll', '' )">
                             All People
                         </button>
@@ -555,7 +566,7 @@
                         <button id="categoryCat" onclick="genButtonList( 'eventnav', 'events', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' )">
                             Search by Category
                         </button>
-                        <input id="searchText" name="searchbar" type="text" value="Search Bar">
+                        <input id="searchEvents" name="searchbar" type="text" value="Search Bar">
                         </input>
                         <button onclick="searchEvents( 'searchbar', '' )">
                             Search
@@ -603,12 +614,12 @@
                 <script>
                     clear( "tab" );
                     loadTooltips();
-                    genImageMapArea( false, [ 0, 0, 200, 0 ] );
                     loadBios();
+                    loadEvents();
+                    genImageMapArea( false, [ 0, 0, 200, 0 ] );
                     genButtonList( "bionav", "biographies", "", "alpha2" );
                     searchBios( "printAll", "" );
                     checkForEnter( "bio" );
-                    loadEvents();
                     genButtonList( "eventnav", "events", "", "alpha" );
                     searchEvents( "printAll", "" );
                     checkForEnter( "event" );

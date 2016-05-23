@@ -47,12 +47,12 @@ ul#tabnav li a
 
 ul#tabnav li a:hover
 {
-	background-color: #BDBDBD;
+	background-color: #C45AEC;
 }
 
 ul#tabnav li a:focus
 {
-	background-color: gray;
+	background-color: #842DCE;
 }
 
 div.tab
@@ -92,9 +92,25 @@ span.tooltip span
 
 /** The bios! */
 
-div#biocatbar
+div#biocatbar, div#eventcatbar
 {
 	font-family: Quicksand, sans-serif;
+}
+
+ul#bionav li, ul#eventnav li
+{
+	display: inline;
+	color: black;
+	font-size: 16px;
+	font-family: Quicksand, sans-serif;
+	text-decoration: none;
+	padding: 0.25em 0.25em;
+	list-style-type: none;
+}
+
+div#bioinfo, div#eventcatbar
+{
+	font-weight: bold;
 }
 
 @media only screen and ( max-width: 1150px )
@@ -108,18 +124,13 @@ div#biocatbar
 	}
 }
 
-ul#bionav li
+@media only screen and ( max-width: 1050px )
 {
-	display: inline;
-	color: black;
-	font-size: 16px;
-	font-family: Quicksand, sans-serif;
-	text-decoration: none;
-	padding: 0.25em 0.25em;
-	list-style-type: none;
-}
-
-div#bioinfo
-{
-	font-weight: bold;
+	div#eventcatbar
+	{
+		margin-right: 14px;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
 }

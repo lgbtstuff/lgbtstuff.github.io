@@ -49,7 +49,7 @@ function checkForEnter( search )
 
     if ( search == "event" )
     {
-        document.getElementById( "searchText" ).addEventListener( "keypress", function ( e ) {
+        document.getElementById( "searchEvents" ).addEventListener( "keypress", function ( e ) {
         
             // Determine the key that was pressed
             var key = e.which || e.keyCode;
@@ -64,7 +64,7 @@ function checkForEnter( search )
 
     if ( search == "organization" )
     {
-        document.getElementById( "searchText" ).addEventListener( "keypress", function ( e ) {
+        document.getElementById( "searchOrganizations" ).addEventListener( "keypress", function ( e ) {
         
             // Determine the key that was pressed
             var key = e.which || e.keyCode;
