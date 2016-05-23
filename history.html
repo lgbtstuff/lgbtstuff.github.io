@@ -532,6 +532,7 @@
         <script src="scripts\timelineTooltips.js"></script>
         <script src="scripts\bioDisplay.js"></script>
         <script src="scripts\eventDisplay.js"></script>
+        <script src="scripts\orgDisplay.js"></script>
         <section>
             <p class="content">
                 <h1>
@@ -594,7 +595,29 @@
                     </table>
                 </div>
                 <div class="tab" id="Organizations">
-                    These are the organizations.
+                    <div id="organizationcatbar">
+                        <button onclick="searchOrganizations( 'printAll', '' )">
+                            All Organizations
+                        </button>
+                        <button id="alphaFirstCat" onclick="genButtonList( 'organizationnav', 'organizations', '', 'alpha' )">
+                            Search Alphabetically
+                        </button>
+                        <button id="categoryCat" onclick="genButtonList( 'organizationnav', 'organizations', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' )">
+                            Search by Category
+                        </button>
+                        <input id="searchOrganizations" name="searchbar" type="text" value="Search Bar">
+                        </input>
+                        <button onclick="searchOrganizations( 'searchbar', '' )">
+                            Search
+                        </button>
+                        <ul id="organizationnav">
+                        </ul>
+                    </div>
+                    <div id="organizationinfo">
+                        Here are all the organizations alphabetically. Select a categorization method to narrow your search down further.
+                    </div>
+                    <table class="organizationTable" id="organizationTable">
+                    </table>
                 </div>
                 <div class="tab" id="People">
                     <div id="biocatbar">
@@ -629,6 +652,7 @@
                     loadTooltips();
                     loadBios();
                     loadEvents();
+                    loadOrganizations();
                     genImageMapArea( false, [ 0, 0, 200, 0 ] );
                     genButtonList( "bionav", "biographies", "", "alpha2" );
                     searchBios( "printAll", "", true );
@@ -636,6 +660,9 @@
                     genButtonList( "eventnav", "events", "", "alpha" );
                     searchEvents( "printAll", "" );
                     checkForEnter( "event" );
+                    genButtonList( "organizationnav", "organizations", "", "alpha" );
+                    searchOrganizations( "printAll", "" );
+                    checkForEnter( "organization" );
                 </script>
             </p>
         </section>

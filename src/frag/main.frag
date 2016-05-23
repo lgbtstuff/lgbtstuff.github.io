@@ -32,6 +32,7 @@ body
     script < src: "scripts\timelineTooltips.js"
     script < src: "scripts\bioDisplay.js"
     script < src: "scripts\eventDisplay.js"
+    script < src: "scripts\orgDisplay.js"
 
     section
         #[content]

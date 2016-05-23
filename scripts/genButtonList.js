@@ -78,6 +78,8 @@
  		return searchBios( catType, searchTerm, sortType );
  	if ( listType == "events" )
  		return searchEvents( catType, searchTerm );
+ 	if ( listType == "organizations" )
+ 		return searchOrganizations( catType, searchTerm );
  }
 
  /**

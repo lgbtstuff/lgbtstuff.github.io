@@ -62,7 +62,31 @@ p.content
 
     div.tab
         id: "Organizations"
-        "These are the organizations."
+        div#organizationcatbar
+            button
+                onclick: "searchOrganizations( "printAll", "" )"
+                "All Organizations"
+
+            button#alphaFirstCat
+                onclick: "genButtonList( "organizationnav", "organizations", "", "alpha" )"
+                "Search Alphabetically"
+
+            button#categoryCat
+                onclick: "genButtonList( "organizationnav", "organizations", [ "Sexuality", "Gender", "Misc", "Trans" ], "general" )"
+                "Search by Category"
+
+            input#searchOrganizations
+                type: "text"
+                name: "searchbar"
+                value: "Search Bar"
+            button
+                onclick: "searchOrganizations( "searchbar", "" )"
+                "Search"
+            
+            ul#organizationnav
+
+        div#organizationinfo < "Here are all the organizations alphabetically. Select a categorization method to narrow your search down further."
+        table.organizationTable#organizationTable
 
     div.tab
         id: "People"
@@ -101,6 +125,7 @@ p.content
         loadTooltips();
         loadBios();
         loadEvents();
+        loadOrganizations();
         genImageMapArea( false, [ 0, 0, 200, 0 ] );
         genButtonList( "bionav", "biographies", "", "alpha2" );
         searchBios( "printAll", "", true );
@@ -108,3 +133,6 @@ p.content
         genButtonList( "eventnav", "events", "", "alpha" );
         searchEvents( "printAll", "" );
         checkForEnter( "event" );
+        genButtonList( "organizationnav", "organizations", "", "alpha" );
+        searchOrganizations( "printAll", "" );
+        checkForEnter( "organization" );
