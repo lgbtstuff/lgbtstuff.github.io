@@ -112,9 +112,9 @@ function searchOrganizations( catType, searchFor )
 			// If the date range of the organization overlaps the selected range
 			if ( ( itemList[ i ].startDate > parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
 				&& itemList[ i ].startDate < parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) )
-				|| ( itemList[ i ].endDate > parseInt( searchFor.substring( 0, searchFor.indexOf( "-" - 1 ) ) )
+				|| ( itemList[ i ].endDate > parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
 				&& itemList[ i ].endDate < parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) )
-				|| ( itemList[ i ].startDate < parseInt( searchFor.substring( 0, searchFor.indexOf( "-" - 1 ) ) )
+				|| ( itemList[ i ].startDate < parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
 				&& itemList[ i ].endDate > parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) ) )
 			{
 				appendEvent( itemList[ i ] );
