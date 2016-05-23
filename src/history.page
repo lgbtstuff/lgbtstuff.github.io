@@ -85,7 +85,7 @@ p.content
             
             ul#organizationnav
 
-        div#organizationinfo < "Here are all the organizations alphabetically. Select a categorization method to narrow your search down further."
+        div#organizationInfo < "Here are all the organizations alphabetically. Select a categorization method to narrow your search down further."
         table.organizationTable#organizationTable
 
     div.tab
