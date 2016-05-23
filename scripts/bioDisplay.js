@@ -14,7 +14,7 @@ function bio( firstName, lastName, description, cat, cat2 )
 
 // An initially empty array to store info
 // as read in later
-var textByLine = [];
+var bioByLine = [];
 
 /**
  * Reads in all of the bios from the file to be used
@@ -27,7 +27,7 @@ function loadBios()
 	
 	// Splits the text file into individual lines, storing
 	// these values in an array
-	textByLine = text.split( "\n" );
+	bioByLine = text.split( "\n" );
 }
 
 /** 
@@ -46,8 +46,8 @@ function searchBios( catType, searchFor, sortType )
 	var itemList = [];
 	
 	// Add the items from the .txt file to the array of terms
-	for ( var i = 3; i < textByLine.length; i += 4 )
-		itemList.push( new item( textByLine[ i - 3 ].substring( 0, textByLine[ i - 3 ].indexOf( " " ) ), textByLine[ i - 3 ].substring( textByLine[ i - 3 ].indexOf( " " ) + 1 ), textByLine[ i - 2 ], textByLine[ i - 1 ], textByLine[ i ] ) );
+	for ( var i = 3; i < bioByLine.length; i += 4 )
+		itemList.push( new item( bioByLine[ i - 3 ].substring( 0, bioByLine[ i - 3 ].indexOf( " " ) ), bioByLine[ i - 3 ].substring( bioByLine[ i - 3 ].indexOf( " " ) + 1 ), bioByLine[ i - 2 ], bioByLine[ i - 1 ], bioByLine[ i ] ) );
 	
 	// Default to sorting by last name
 	if ( sortType == null ) sortType = true;

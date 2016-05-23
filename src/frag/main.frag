@@ -23,6 +23,7 @@ body
             li < a(href: "history.html") < "LGBT History"
             li < a(href: "help.html") < "Help Resources"
             li < a(href: "map.html") < "Legislation Map"
+            li < a(href: "sources.html") < "Sources"
 
     script < src: "scripts\misc.js"
     script < src: "scripts\dictDisplay.js"
@@ -43,3 +44,4 @@ footer
         li < a(href: "history.html") < "LGBT History"
         li < a(href: "help.html") < "Help Resources"
         li < a(href: "map.html") < "Legislation Map"
+        li < a(href: "sources.html") < "Sources"

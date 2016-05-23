@@ -13,7 +13,7 @@ function event( name, description, cat, cat2 )
 
 // An initially empty array to store info
 // as read in later
-var textByLine = [];
+var eventByLine = [];
 
 /**
  * Reads in all of the events from the file to be used
@@ -26,7 +26,7 @@ function loadEvents()
 	
 	// Splits the text file into individual lines, storing
 	// these values in an array
-	textByLine = text.split( "\n" );
+	eventByLine = text.split( "\n" );
 }
 
 /** 
@@ -42,8 +42,8 @@ function searchEvents( catType, searchFor )
 	var itemList = [];
 	
 	// Add the items from the .txt file to the array of terms
-	for ( var i = 3; i < textByLine.length; i += 4 )
-		itemList.push( new item( textByLine[ i - 3 ], textByLine[ i - 2 ], textByLine[ i - 1 ], textByLine[ i ] ) );
+	for ( var i = 3; i < eventByLine.length; i += 4 )
+		itemList.push( new item( eventByLine[ i - 3 ], eventByLine[ i - 2 ], eventByLine[ i - 1 ], eventByLine[ i ] ) );
 
 	// Sorts the list alphabetically
 	itemList.sort( function( a, b ) { return a.name > b.name ? 1 : ( a.name < b.name ? -1 : 0 ); } );
