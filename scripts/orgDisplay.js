@@ -116,7 +116,7 @@ function searchOrganizations( catType, searchFor )
 				&& itemList[ i ].endDate < parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) )
 				|| ( itemList[ i ].startDate < parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
 				&& itemList[ i ].endDate > parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) ) ) */
-			if ( itemList[ i ].startDate == searchFor )
+			if ( itemList[ i ].startDate == parseInt ( searchFor ) )
 			{
 				appendEvent( itemList[ i ] );
 			}
