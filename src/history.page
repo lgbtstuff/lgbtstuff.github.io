@@ -68,7 +68,7 @@ p.content
         id: "People"
         div#biocatbar
             button
-                onclick: "searchBios( "printAll", "" )"
+                onclick: "searchBios( "printAll", "", true )"
                 "All People"
 
             button#alphaFirstCat

@@ -69,7 +69,7 @@ function searchBios( catType, searchFor, sortType )
 		// Go backwards so that final bio list is alphabetical
 		for ( var i = itemList.length - 1; i >= 0; i-- )
 			appendBio( itemList[ i ] );
-		document.getElementById( "bioinfo" ).innerHTML = "Here are all the people alphabetically. Select a categorization method to narrow your search down further.";
+		document.getElementById( "bioinfo" ).innerHTML = "Here are all the people alphabetically by last name. Select a categorization method to narrow your search down further.";
 		
 		// Jump out of the method
 		return;
