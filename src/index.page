@@ -1,3 +1,11 @@
 p.content
     "This is the home page! Yay!"
-    "Current news will be displayed here."
+    
+    div#newsInfo < "Some Outside News Sources for You to Look Through"
+    div#news
+        span < a(href: "http://www.advocate.com/") < img
+            src: "images\AdvLogo.png"
+            alt: "Advocate Logo"
+        span < a(href: "http://www.lgbtqnation.com/") < img
+            src: "images\LGBTQLogo.png"
+            alt: "LGBTQ Nation Logo"

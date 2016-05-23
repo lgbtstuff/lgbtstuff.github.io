@@ -250,6 +250,22 @@
             	color: black;
             	margin: 1em;
             }
+            
+            div#newsInfo
+            {
+            	text-decoration: underline;
+            	font-weight: bold;
+            }
+            
+            div#news span
+            {
+            	transition: box-shadow 2s ease;
+            }
+            
+            div#news span:hover
+            {
+            	box-shadow: 10px 10px 5px #888888;
+            }
         </style>
         <style>
             h1
@@ -536,7 +552,23 @@
         <section>
             <p class="content">
                 This is the home page! Yay!
-                Current news will be displayed here.
+                <div id="newsInfo">
+                    Some Outside News Sources for You to Look Through
+                </div>
+                <div id="news">
+                    <span>
+                        <a href="http://www.advocate.com/">
+                            <img src="images\AdvLogo.png" alt="Advocate Logo">
+                            </img>
+                       </a>
+                    </span>
+                    <span>
+                        <a href="http://www.lgbtqnation.com/">
+                            <img src="images\LGBTQLogo.png" alt="LGBTQ Nation Logo">
+                            </img>
+                       </a>
+                    </span>
+                </div>
             </p>
         </section>
     </body>
