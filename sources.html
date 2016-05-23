@@ -94,11 +94,12 @@
             	border-bottom: 18px solid lightblue;
             	border-collapse: collapse;
             }
+            
             /*
              * Color terms based off of category
              * Terms have a specific width they cannot exceed
              */
-            td.termSexuality
+            td.termSexuality, td.bioSexuality
             {
             	background-color: rgb( 255, 178, 102 );	/* Orange */
             	width: 12em;
@@ -106,7 +107,7 @@
             	border-collapse: collapse;
             }
             
-            td.termGender
+            td.termGender, td.bioGender
             {
             	background-color: rgb( 55, 255, 153 );	 /* Green */
             	width: 12em;
@@ -114,7 +115,7 @@
             	border-collapse: collapse;
             }
             
-            td.termTrans
+            td.termTrans, td.bioTrans
             {
             	background-color: rgb( 255, 153, 255 );	/* Pink */
             	width: 12em;
@@ -122,7 +123,7 @@
             	border-collapse: collapse;
             }
             
-            td.termMisc
+            td.termMisc, td.bioMisc
             {
             	background-color: #66A3FF;	/* Blue */
             	width: 12em;
@@ -221,7 +222,7 @@
             
             
             /* If the browser width is real small, add a scroll bar to the nav */
-            @media only screen and ( max-width: 910px )
+            @media only screen and ( max-width: 1025px )
             {
             	nav.main
             	{
@@ -233,7 +234,7 @@
             }
             
             /* Add a scroll bar to the footer */
-            @media only screen and ( max-width: 830px )
+            @media only screen and ( max-width: 910px )
             {
             	footer
             	{
@@ -361,7 +362,7 @@
             	list-style-type: none;
             }
             
-            div#bioinfo, div#eventcatbar
+            div#bioinfo, div#eventinfo
             {
             	font-weight: bold;
             }
@@ -377,7 +378,7 @@
             	}
             }
             
-            @media only screen and ( max-width: 1050px )
+            @media only screen and ( max-width: 990px )
             {
             	div#eventcatbar
             	{

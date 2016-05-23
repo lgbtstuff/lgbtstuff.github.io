@@ -108,7 +108,7 @@ ul#bionav li, ul#eventnav li
 	list-style-type: none;
 }
 
-div#bioinfo, div#eventcatbar
+div#bioinfo, div#eventinfo
 {
 	font-weight: bold;
 }
@@ -124,7 +124,7 @@ div#bioinfo, div#eventcatbar
 	}
 }
 
-@media only screen and ( max-width: 1050px )
+@media only screen and ( max-width: 990px )
 {
 	div#eventcatbar
 	{

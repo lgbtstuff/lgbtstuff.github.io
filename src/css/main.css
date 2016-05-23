@@ -88,7 +88,7 @@ ul#nav li a.active, ul#footer li a.active
 
 
 /* If the browser width is real small, add a scroll bar to the nav */
-@media only screen and ( max-width: 910px )
+@media only screen and ( max-width: 1025px )
 {
 	nav.main
 	{
@@ -100,7 +100,7 @@ ul#nav li a.active, ul#footer li a.active
 }
 
 /* Add a scroll bar to the footer */
-@media only screen and ( max-width: 830px )
+@media only screen and ( max-width: 910px )
 {
 	footer
 	{
