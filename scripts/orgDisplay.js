@@ -44,7 +44,7 @@ function searchOrganizations( catType, searchFor )
 	
 	// Add the items from the .txt file to the array of terms
 	for ( var i = 3; i < organizationByLine.length; i += 5 )
-		itemList.push( new organization( organizationByLine[ i - 3 ], organizationByLine[ i - 2 ], organizationByLine[ i - 1 ], parseInt( organizationByLine[ i ].substring( 0, organizationByLine.indexOf( " " ) ) ), parseInt( organizationByLine[ i ].substring( organizationByLine.indexOf( " " ) + 1 ) ) ) );
+		itemList.push( new organization( organizationByLine[ i - 3 ], organizationByLine[ i - 2 ], organizationByLine[ i - 1 ], parseInt( organizationByLine[ i ].substring( 0, organizationByLine.indexOf( "-" ) - 1 ) ), parseInt( organizationByLine[ i ].substring( organizationByLine.indexOf( "-" ) + 2 ) ) ) );
 
 	// Sorts the list alphabetically
 	itemList.sort( function( a, b ) { return a.name > b.name ? 1 : ( a.name < b.name ? -1 : 0 ); } );
@@ -110,12 +110,12 @@ function searchOrganizations( catType, searchFor )
 		for ( var i = itemList.length - 1; i >= 0; i-- )
 		{
 			// If the date range of the organization overlaps the selected range
-			if ( ( itemList[ i ].startDate > parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
-				&& itemList[ i ].startDate < parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) )
-				|| ( itemList[ i ].endDate > parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
-				&& itemList[ i ].endDate < parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) )
-				|| ( itemList[ i ].startDate < parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
-				&& itemList[ i ].endDate > parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) ) )
+			if ( ( itemList[ i ].startDate >= parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
+				&& itemList[ i ].startDate <= parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) )
+				|| ( itemList[ i ].endDate >= parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
+				&& itemList[ i ].endDate <= parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) )
+				|| ( itemList[ i ].startDate <= parseInt( searchFor.substring( 0, searchFor.indexOf( "-" ) - 1 ) )
+				&& itemList[ i ].endDate >= parseInt( searchFor.substring( searchFor.indexOf( "-" ) + 2 ) ) ) )
 			{
 				appendOrganization( itemList[ i ] );
 			}
