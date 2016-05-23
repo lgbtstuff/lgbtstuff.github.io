@@ -50,10 +50,10 @@ function searchBios( catType, searchFor, sortType )
 		itemList.push( new bio( bioByLine[ i - 3 ].substring( 0, bioByLine[ i - 3 ].indexOf( " " ) ), bioByLine[ i - 3 ].substring( bioByLine[ i - 3 ].indexOf( " " ) + 1 ), bioByLine[ i - 2 ], bioByLine[ i - 1 ], bioByLine[ i ] ) );
 
 	// Sorts the list alphabetically, by last or first name
-	if ( sortType )	// Sort by last name
-		itemList.sort( function( a, b ) { return a.lastName > b.lastName ? 1 : ( a.lastName < b.lastName ? -1 : 0 ); } );
-	else	// Sort by first name
+	if ( !sortType )	// Sort by first name
 		itemList.sort( function( a, b ) { return a.firstName > b.firstName ? 1 : ( a.firstName < b.firstName ? -1 : 0 ); } );
+	else	// Sort by last name
+		itemList.sort( function( a, b ) { return a.lastName > b.lastName ? 1 : ( a.lastName < b.lastName ? -1 : 0 ); } );
 
 	// Clear all the previously added bios
 	while ( document.getElementById( "bioTable" ).rows.length > 0 )

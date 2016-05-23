@@ -41,7 +41,9 @@
  		var newButton = document.createElement( 'button' );
 
  		// The method invocation to be run onclick as represented by a string
- 		var toCall = "chooseList( \"" + listType + "\", \"" + buttonValues[ i ] + "\", \"" + catType + "\" )";
+ 		var toCall = "";
+ 		if ( catType == "alpha1" ) toCall = "chooseList( \"" + listType + "\", \"" + buttonValues[ i ] + "\", \"" + catType + "\", false )";
+ 		else toCall = "chooseList( \"" + listType + "\", \"" + buttonValues[ i ] + "\", \"" + catType + "\" )";
 
  		// Modify the button to contain the category and the correct term linkage
  		newButton.setAttribute( "onclick", toCall );
@@ -64,20 +66,22 @@
  *		The letter/category we're searching for
  * @param catType
  *		The categorization method being utilized
+ * @param #sortType
+ *		Used for bios to determine whether to sort by first or last name
  */
- function chooseList( listType, searchTerm, catType )
+ function chooseList( listType, searchTerm, catType, sortType )
  {
  	if ( listType == "dictionary" )
  		return searchDict( catType, searchTerm );
  	if ( listType == "biographies" )
- 		return searchBios( catType, searchTerm );
+ 		return searchBios( catType, searchTerm, sortType );
  	if ( listType == "events" )
  		return searchEvents( catType, searchTerm );
  }
 
  /**
   * Clears the specified list
-  * @parm #toClear
+  * @param #toClear
   *		The ID of the list to be cleared
   */
  function clearList( toClear )
