@@ -149,7 +149,7 @@ function genImageMapArea( image, coords )
             newArea.setAttribute( "alt", states[ i / 2 ] );
 
             // Add the correct coordinates to the new image map area
-            var coordinates = "" + coords[ i ] + ", " + coords[ i + 1 ] + ", " + ( coords[ i ] + 16 ) + ", " + ( coords[ i + 1 ] + 11 );
+            var coordinates = "" + coords[ i ] + ", " + coords[ i + 1 ] + ", " + ( coords[ i ] + 20 ) + ", " + ( coords[ i + 1 ] + 12 );
             newArea.setAttribute( "coords", coordinates );
 
             // Add the image area to the correct image map
