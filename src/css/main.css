@@ -88,7 +88,7 @@ ul#nav li a.active, ul#footer li a.active
 
 
 /* If the browser width is real small, add a scroll bar to the nav */
-@media only screen and ( max-width: 1025px )
+@media only screen and ( max-width: 940px )
 {
 	nav.main
 	{
@@ -100,7 +100,7 @@ ul#nav li a.active, ul#footer li a.active
 }
 
 /* Add a scroll bar to the footer */
-@media only screen and ( max-width: 910px )
+@media only screen and ( max-width: 960px )
 {
 	footer
 	{
@@ -126,7 +126,7 @@ div#newsInfo
 
 div#news span
 {
-	font-size: 48px;
+	font-size: 24px;
 	background-color: #9999ff;
 	transition: background-color 1.5s ease;
 	margin-left: 24px;

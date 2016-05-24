@@ -1,5 +1,7 @@
 p.content
-    "This is the home page! Yay!"
+    "Welcome to LGBTStuff.github.io!<br><br>"
+    "This website is dedicated to providing easy access to information regarding<br>"
+    "current LGBT rights throughout the US, LGBT history, and LGBT terminology.<br>"
     
     div#newsInfo < "LGBTQ+ News Sources"
     div#news
