@@ -1,3 +1,4 @@
 p.content
-    "Research sources woooo!"
-    "The great deity that is Stack Overflow"
+    "Research sources."
+    "Many thanks to Stack Overflow for programming aid!"
+    a(href: "scripts\Sources.txt") < "Works Cited"
