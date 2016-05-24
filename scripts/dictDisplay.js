@@ -9,11 +9,6 @@ function item( term, definition, cat, cat2 )
 	this.definition = definition;
 	this.cat = cat;
 	this.cat2 = cat2;
-
-	this.toString = function()
-	{
-		return term + " - " + definition;
-	}
 }
 
 // An initially empty array to store dictionary terms
@@ -57,6 +52,11 @@ function searchDict( catType, searchFor )
 	// Begin the actual searching
 	//
 
+	// Clear all the previously added terms
+	// Avoid the first row - this is the header
+	while ( document.getElementById( "termTable" ).rows.length > 1 )
+		document.getElementById( "termTable" ).deleteRow( 1 );
+
 	// Add all the terms and then jump out of the method
 	if ( catType == 'printAll' )
 	{
@@ -70,11 +70,6 @@ function searchDict( catType, searchFor )
 	}
 
 	document.getElementById( "termTable" ).rows[ 0 ].cells[ 0 ].innerHTML = "Terms under the category \"" + searchFor + "\"";
-
-	// Clear all the previously added terms
-	// Avoid the first row - this is the header
-	while ( document.getElementById( "termTable" ).rows.length > 1 )
-		document.getElementById( "termTable" ).deleteRow( 1 );
 
 	// If the terms are being selected based off of alphabetization
 	if ( catType == 'alpha' )
