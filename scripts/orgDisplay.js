@@ -115,7 +115,7 @@ function searchOrganizations( catType, searchFor )
 				|| ( itemList[ i ].endDate >= parseInt( searchFor.substring( 0 )
 				&& itemList[ i ].endDate <= parseInt( searchFor.substring( 7 ) ) )
 				|| ( itemList[ i ].startDate <= parseInt( searchFor.substring( 0 ) )
-				&& itemList[ i ].endDate >= parseInt( searchFor.substring( 7 ) ) ) )
+				&& itemList[ i ].endDate >= parseInt( searchFor.substring( 7 ) ) ) ) )
 			{
 				appendOrganization( itemList[ i ] );
 			}
