@@ -37,7 +37,7 @@ p.content
         div#eventcatbar
             button
                 onclick: "searchEvents( "printAll", "" )"
-                "All People"
+                "All Events"
 
             button#alphaFirstCat
                 onclick: "genButtonList( "eventnav", "events", "", "alpha" )"
