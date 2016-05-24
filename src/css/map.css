@@ -26,6 +26,8 @@ div#tooltipHeader
 div#tooltip
 {
 	text-align: left;
+	overflow-x: none;
+	overflow-y: scroll;
 }
 
 /* Style the tooltip! */

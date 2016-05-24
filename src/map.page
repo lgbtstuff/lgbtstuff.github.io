@@ -10,8 +10,6 @@ p.content
         img.map#map
             src: "images\map.gif"
             alt: "Legislation Map"
-            width: "745px"
-            height: "429px"
             usemap: "#legislation"
 
         map.legislation#legislationMap

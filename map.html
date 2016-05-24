@@ -453,6 +453,8 @@
             div#tooltip
             {
             	text-align: left;
+            	overflow-x: none;
+            	overflow-y: scroll;
             }
             
             /* Style the tooltip! */
@@ -573,7 +575,7 @@
                     Mouse over the abbreviation of any state to get more information.
                 </div>
                 <div class="map">
-                    <img class="map" id="map" src="images\map.gif" alt="Legislation Map" width="745px" usemap="#legislation" height="429px">
+                    <img class="map" id="map" src="images\map.gif" alt="Legislation Map" usemap="#legislation">
                     </img>
                     <map class="legislation" id="legislationMap" name="legislation">
                     </map>
