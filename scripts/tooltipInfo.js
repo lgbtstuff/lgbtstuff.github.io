@@ -25,7 +25,7 @@ function tooltipInfo( state )
 	for ( var i = 6; i < text.length; i += 7 )
 	{
 		if ( text[ i - 6 ] == state )
-			info = text[ i - 5 ] + "<br>" + text[ i - 4 ] + "<br>" + text[ i - 3 ] + "<br>" + text[ i - 2 ] + "<br>" + text[ i - 1 ];
+			info = text[ i - 5 ] + "<br><br>" + text[ i - 4 ] + "<br><br>" + text[ i - 3 ] + "<br><br>" + text[ i - 2 ] + "<br><br>" + text[ i - 1 ];
 	}
 
  	document.getElementById( "tooltipHeader" ).innerHTML = state;
