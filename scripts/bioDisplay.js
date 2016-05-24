@@ -51,9 +51,9 @@ function searchBios( catType, searchFor, sortType )
 
 	// Sorts the list alphabetically, by last or first name
 	if ( !sortType )	// Sort by first name
-		itemList.sort( function( a, b ) { return a.firstName > b.firstName ? 1 : ( a.firstName < b.firstName ? -1 : 0 ); } );
+		itemList.sort( function( a, b ) { return a.firstName.toLowerCase() > b.firstName.toLowerCase() ? 1 : ( a.firstName.toLowerCase() < b.firstName.toLowerCase() ? -1 : 0 ); } );
 	else	// Sort by last name
-		itemList.sort( function( a, b ) { return a.lastName > b.lastName ? 1 : ( a.lastName < b.lastName ? -1 : 0 ); } );
+		itemList.sort( function( a, b ) { return a.lastName.toLowerCase() > b.lastName.toLowerCase() ? 1 : ( a.lastName.toLowerCase() < b.lastName.toLowerCase() ? -1 : 0 ); } );
 
 	// Clear all the previously added bios
 	while ( document.getElementById( "bioTable" ).rows.length > 0 )

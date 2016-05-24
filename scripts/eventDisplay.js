@@ -46,7 +46,7 @@ function searchEvents( catType, searchFor )
 		itemList.push( new event( eventByLine[ i - 3 ], eventByLine[ i - 2 ], eventByLine[ i - 1 ], eventByLine[ i ] ) );
 
 	// Sorts the list alphabetically
-	itemList.sort( function( a, b ) { return a.name > b.name ? 1 : ( a.name < b.name ? -1 : 0 ); } );
+	itemList.sort( function( a, b ) { return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : ( a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0 ); } );
 
 	// Clear all the previously added events
 	while ( document.getElementById( "eventTable" ).rows.length > 0 )

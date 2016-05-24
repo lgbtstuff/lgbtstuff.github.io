@@ -51,7 +51,7 @@ function searchDict( catType, searchFor )
 		itemList.push( new item( textByLine[ i - 3 ], textByLine[ i - 2 ], textByLine[ i - 1 ], textByLine[ i ] ) );
 	
 	// Sorts the list alphabetically
-	itemList.sort( function( a, b ) { return a.term > b.term ? 1 : ( a.term < b.term ? -1 : 0 ); } );
+	itemList.sort( function( a, b ) { return a.term.toLowerCase() > b.term.toLowerCase() ? 1 : ( a.term.toLowerCase() < b.term.toLowerCase() ? -1 : 0 ); } );
 
 	//
 	// Begin the actual searching

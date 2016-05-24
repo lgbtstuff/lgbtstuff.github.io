@@ -47,7 +47,7 @@ function searchOrganizations( catType, searchFor )
 		itemList.push( new organization( organizationByLine[ i - 3 ], organizationByLine[ i - 2 ], organizationByLine[ i - 1 ], parseInt( organizationByLine[ i ].substring( 0, organizationByLine.indexOf( "-" ) - 1 ) ), parseInt( organizationByLine[ i ].substring( organizationByLine.indexOf( "-" ) + 2 ) ) ) );
 
 	// Sorts the list alphabetically
-	itemList.sort( function( a, b ) { return a.name > b.name ? 1 : ( a.name < b.name ? -1 : 0 ); } );
+	itemList.sort( function( a, b ) { return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : ( a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0 ); } );
 
 	// Clear all the previously added organizations
 	while ( document.getElementById( "organizationTable" ).rows.length > 0 )
@@ -160,5 +160,6 @@ function appendOrganization( item )
  	defCell.setAttribute( "class", "description" );
 
  	termCell.innerHTML = item.name;
- 	defCell.innerHTML = item.description;
+ 	//defCell.innerHTML = item.description;
+ 	defCell.innerHTML = "" + item.startDate + " " + item.endDate;
 }
