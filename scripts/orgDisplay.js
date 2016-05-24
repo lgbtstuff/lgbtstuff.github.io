@@ -156,10 +156,9 @@ function appendOrganization( item )
  	var defCell = newRow.insertCell( 1 );
 
  	// Give the new cells their IDs
- 	termCell.setAttribute( "class", "organization" + item.cat );
+ 	termCell.setAttribute( "class", "organization" + item.location );
  	defCell.setAttribute( "class", "description" );
 
  	termCell.innerHTML = item.name;
- 	//defCell.innerHTML = item.description;
- 	defCell.innerHTML = "" + item.startDate + " " + item.endDate;
+ 	defCell.innerHTML = item.description;
 }

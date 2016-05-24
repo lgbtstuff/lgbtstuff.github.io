@@ -144,3 +144,9 @@ div#bioinfo, div#eventinfo, div#organizationInfo
 		white-space: nowrap;
 	}
 }
+
+td.organizationUSA
+{
+	background-color: rgb( 255, 178, 102 );	/* Orange */
+	width: 12em;
+}
