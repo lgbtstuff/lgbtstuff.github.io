@@ -32,40 +32,38 @@
             }
             
             /* Color the category buttons to match their categories */
-            button#Sexuality:hover, button#Gender:hover, button#Trans:hover, button#Misc:hover
+            button#Sexuality, button#Gender, button#Trans, button#Misc
+            {
+            	border-width: 2px;
+            	border-color: #009ACD;
+            }
+            
+            button#Sexuality:hover, button#Gender:hover, button#Trans:hover, button#Misc:hover, button#Political:hover, button#USA:hover, button#Protests:hover
             {
             	border-color: #0D4F8B;
             }
             
             /* Don't have a focus state */
-            button#Sexuality:focus, button#Gender:focus, button#Trans:focus, button#Misc:focus {  }
+            button#Sexuality:focus, button#Gender:focus, button#Trans:focus, button#Misc:focus, button#Political:focus, button#USA:focus, button#Protests:focus {  }
             
-            button#Sexuality
+            button#Sexuality, button#Political, button#USA
             {
             	background-color: rgb( 255, 178, 102 );	/* Orange */
-            	border-width: 2px;
-            	border-color: #009ACD;
             }
             
-            button#Gender
+            button#Gender, button#Protests
             {
             	background-color: rgb( 55, 255, 153 );	 /* Green */
-            	border-width: 2px;
-            	border-color: #009ACD;
             }
             
             button#Trans
             {
             	background-color: rgb( 255, 153, 255 );	/* Pink */
-            	border-width: 2px;
-            	border-color: #009ACD;
             }
             
             button#Misc
             {
             	background-color: #66A3FF;	/* Blue */
-            	border-width: 2px;
-            	border-color: #009ACD;
             }
             
             
@@ -99,25 +97,25 @@
              * Color terms based off of category
              * Terms have a specific width they cannot exceed
              */
-            td.termSexuality, td.bioSexuality, td.eventSexuality, td.organizationSexuality
+            td.termSexuality, td.bioSexuality, td.eventPolitical, td.organizationUSA
             {
             	background-color: rgb( 255, 178, 102 );	/* Orange */
             	width: 12em;
             }
             
-            td.termGender, td.bioGender, td.eventGender, td.organizationGender
+            td.termGender, td.eventProtests
             {
             	background-color: rgb( 55, 255, 153 );	 /* Green */
             	width: 12em;
             }
             
-            td.termTrans, td.bioTrans, td.eventTrans, td.organizationTrans
+            td.termTrans, td.bioTrans
             {
             	background-color: rgb( 255, 153, 255 );	/* Pink */
             	width: 12em;
             }
             
-            td.termMisc, td.bioMisc, td.eventMisc, td.organizationMisc
+            td.termMisc, td.bioMisc, td.eventMisc
             {
             	background-color: #66A3FF;	/* Blue */
             	width: 12em;
@@ -462,7 +460,7 @@
             span.mapinfo
             {
             	width: 300px;
-            	height: 340px;
+            	height: 332px;
             	background-color: darkgray;
             	color: #fff;
             

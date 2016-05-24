@@ -32,40 +32,38 @@
             }
             
             /* Color the category buttons to match their categories */
-            button#Sexuality:hover, button#Gender:hover, button#Trans:hover, button#Misc:hover
+            button#Sexuality, button#Gender, button#Trans, button#Misc
+            {
+            	border-width: 2px;
+            	border-color: #009ACD;
+            }
+            
+            button#Sexuality:hover, button#Gender:hover, button#Trans:hover, button#Misc:hover, button#Political:hover, button#USA:hover, button#Protests:hover
             {
             	border-color: #0D4F8B;
             }
             
             /* Don't have a focus state */
-            button#Sexuality:focus, button#Gender:focus, button#Trans:focus, button#Misc:focus {  }
+            button#Sexuality:focus, button#Gender:focus, button#Trans:focus, button#Misc:focus, button#Political:focus, button#USA:focus, button#Protests:focus {  }
             
-            button#Sexuality
+            button#Sexuality, button#Political, button#USA
             {
             	background-color: rgb( 255, 178, 102 );	/* Orange */
-            	border-width: 2px;
-            	border-color: #009ACD;
             }
             
-            button#Gender
+            button#Gender, button#Protests
             {
             	background-color: rgb( 55, 255, 153 );	 /* Green */
-            	border-width: 2px;
-            	border-color: #009ACD;
             }
             
             button#Trans
             {
             	background-color: rgb( 255, 153, 255 );	/* Pink */
-            	border-width: 2px;
-            	border-color: #009ACD;
             }
             
             button#Misc
             {
             	background-color: #66A3FF;	/* Blue */
-            	border-width: 2px;
-            	border-color: #009ACD;
             }
             
             
@@ -99,25 +97,25 @@
              * Color terms based off of category
              * Terms have a specific width they cannot exceed
              */
-            td.termSexuality, td.bioSexuality, td.eventSexuality, td.organizationSexuality
+            td.termSexuality, td.bioSexuality, td.eventPolitical, td.organizationUSA
             {
             	background-color: rgb( 255, 178, 102 );	/* Orange */
             	width: 12em;
             }
             
-            td.termGender, td.bioGender, td.eventGender, td.organizationGender
+            td.termGender, td.eventProtests
             {
             	background-color: rgb( 55, 255, 153 );	 /* Green */
             	width: 12em;
             }
             
-            td.termTrans, td.bioTrans, td.eventTrans, td.organizationTrans
+            td.termTrans, td.bioTrans
             {
             	background-color: rgb( 255, 153, 255 );	/* Pink */
             	width: 12em;
             }
             
-            td.termMisc, td.bioMisc, td.eventMisc, td.organizationMisc
+            td.termMisc, td.bioMisc, td.eventMisc
             {
             	background-color: #66A3FF;	/* Blue */
             	width: 12em;
@@ -462,7 +460,7 @@
             span.mapinfo
             {
             	width: 300px;
-            	height: 340px;
+            	height: 332px;
             	background-color: darkgray;
             	color: #fff;
             
@@ -606,7 +604,7 @@
                         <button id="alphaFirstCat" onclick="genButtonList( 'eventnav', 'events', '', 'alpha' )">
                             Search Alphabetically
                         </button>
-                        <button id="categoryCat" onclick="genButtonList( 'eventnav', 'events', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' )">
+                        <button id="categoryCat" onclick="genButtonList( 'eventnav', 'events', [ 'Political', 'Protests', 'Misc' ], 'general' )">
                             Search by Category
                         </button>
                         <input id="searchEvents" name="searchbar" type="text" value="Search Bar">
@@ -631,10 +629,10 @@
                         <button id="alphaCat" onclick="genButtonList( 'organizationnav', 'organizations', '', 'alpha' )">
                             Search Alphabetically
                         </button>
-                        <button id="locationCat" onclick="genButtonList( 'organizationnav', 'organizations', [ 'USA', 'Czechoslovakia' ], 'location' )">
+                        <button id="locationCat" onclick="genButtonList( 'organizationnav', 'organizations', [ 'USA', 'Use this button to show that this works' ], 'location' )">
                             Search by Location
                         </button>
-                        <button id="dateCat" onclick="genButtonList( 'organizationnav', 'organizations', [ '1941 - 1945', '1220 - 1240', '2006 - 2050' ], 'date' )">
+                        <button id="dateCat" onclick="genButtonList( 'organizationnav', 'organizations', [ '1950 - 1959', '1960 - 1969', '1970 - 1979', '1980 - 1989' ], 'date' )">
                             Search by Date
                         </button>
                         <input id="searchOrganizations" name="searchbar" type="text" value="Search Bar">
@@ -662,7 +660,7 @@
                         <button id="alphaSecondCat" onclick="genButtonList( 'bionav', 'biographies', '', 'alpha2' )">
                             Search by Last Name
                         </button>
-                        <button id="categoryCat" onclick="genButtonList( 'bionav', 'biographies', [ 'Sexuality', 'Gender', 'Misc', 'Trans' ], 'general' )">
+                        <button id="categoryCat" onclick="genButtonList( 'bionav', 'biographies', [ 'Sexuality', 'Misc', 'Trans' ], 'general' )">
                             Search by Category
                         </button>
                         <input id="searchText" name="searchbar" type="text" value="Search Bar">
