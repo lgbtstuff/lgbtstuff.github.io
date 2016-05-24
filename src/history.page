@@ -20,7 +20,7 @@ p.content
 
     div.tab
         id: "Timeline"
-        "This is the timeline."
+        "This is the timeline. (Work in Progress)"
 
         div < img.timeline#timeline
             src: "images\timeline.png"
