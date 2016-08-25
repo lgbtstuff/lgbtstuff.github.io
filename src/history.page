@@ -130,7 +130,7 @@ p.content
         loadBios();
         loadEvents();
         loadOrganizations();
-        genImageMapArea( false, [ 0, 0, 60, 0 ] );
+        genImageMapArea( false, [ 0, 0, 100, 0 ] );
         genButtonList( "bionav", "biographies", "", "alpha2" );
         searchBios( "printAll", "", true );
         checkForEnter( "bio" );

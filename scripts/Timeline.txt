@@ -2,5 +2,5 @@
 This is the information on an event in 1960!
 
 1972
-This is the information on an event in 1972!
+This is the information on an event in 1972! The box size scales with the amount of information.
 
