@@ -60,7 +60,6 @@ function displayTooltip( tooltipNum )
     {
         if ( i == tooltipNum )
         {
-            current.appendChild( document.createElement( "div" ).appendChild( document.createTextNode( tooltips[ i ].heading ) ) );
             current.appendChild( document.createElement( "div" ).appendChild( document.createTextNode( tooltips[ i ].content ) ) );
         }
     }
